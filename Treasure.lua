@@ -141,7 +141,36 @@ local points = {
         [68208480]={ type="currency", quest=37410, currency=823, npc=85568, }, -- Avalanche
     },
     ["FrostfireRidge"] = {
-
+        -- garrison
+        [16104980]={ type="currency", quest=33942, id="Supply Dump", currency=824, },
+        [21605070]={ type="currency", quest=34931, id="Pale Loot Sack", currency=824, },
+        [24001300]={ type="currency", quest=34647, id="Snow-Covered Strongbox", currency=824, },
+        [34202350]={ type="currency", quest=32803, id="Thunderlord Cache", currency=824, },
+        [37205920]={ type="currency", quest=34967, id="Raided Loot", currency=824, },
+        [43705550]={ type="currency", quest=34841, id="Forgotten Supplies", currency=824, },
+        [51002280]={ type="currency", quest=34521, id="Glowing Obsidian Shard", currency=824, },
+        [56707180]={ type="currency", quest=36863, id="Iron Horde Munitions", currency=824, },
+        [64702570]={ type="currency", quest=33946, id="Survivalist's Cache", currency=824, },
+        [66702640]={ type="currency", quest=33948, id="Goren Leftovers", currency=824, },
+        [68204580]={ type="currency", quest=33947, id="Grimfrost Treasure", currency=824, },
+        [69006910]={ type="currency", quest=33017, id="Iron Horde Supplies", currency=824, },
+        [74505620]={ type="currency", quest=34937, id="Lady Sena's Other Materials Stash", currency=824, },
+        -- treasures
+        [09804540]={ type="item", quest=34641, id=111407, note="Sealed Jug", },
+        [19201200]={ type="item", quest=34642, id=111408, note="Lucky Coin", },
+        [21900960]={ type="item", quest=33926, id=108739, note="Lagoon Pool", toy=true, },
+        [23102500]={ type="item", quest=33916, id=108735, note="Arena Master's War Horn", toy=true, },
+        [24202720]={ type="item", quest=33501, id=63293, note="Spectator's Chest, booze", },
+        [24204860]={ type="item", quest=34507, id=110689, note="Frozen Frostwolf Axe", },
+        [25502040]={ type="item", quest=34648, id=111415, note="Gnawed Bone", },
+        [27604280]={ type="item", quest=33500, id=43696, note="Slave's Stash, booze", },
+        [38403780]={ type="item", quest=33502, id=112087, note="Obsidian Petroglyph", },
+        [40902010]={ type="item", quest=34473, id=110536, note="Envoy's Satchel", },
+        [42401970]={ type="item", quest=34520, id=120341, note="Burning Pearl", },
+        [42703170]={ type="item", quest=33940, id=112187, note="Crag-Leaper's Cache", },
+        [57105210]={ type="item", quest=34476, id=111554, note="Frozen Orc Skeleton", },
+        [63401480]={ type="plain", quest=33525, id=UNKNOWN, npc=75081, }, -- Young Orc Woman
+        [64406580]={ type="item", quest=33505, id=117564, note="Wiggling Egg", pet=true, },
     },
     ["Gorgrond"] = {
 
