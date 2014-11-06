@@ -119,14 +119,14 @@ local points = {
         [43807740]={ type="item", quest=33383, id=117551, npc=81639, }, -- Brambleking Fili
         [44005760]={ type="item", quest=33642, id=119449, npc=75071, }, -- Mother Om'ra, hunter quest
         [44802080]={ type="item", quest=35906, id=113561, npc=77310, }, -- Mad King Sporeon 
-        [46007160]={ type="currency", quest=37351, currency=823, npc=84911, }, -- Demidos
+        [46007160]={ type="npc", quest=37351, currency=823, npc=84911, }, -- Demidos
         [48007760]={ type="item", quest=37355, id=119360, npc=85121, }, -- Lady Temptessa
-        [48208100]={ type="currency", quest=37354, currency=823, npc=85029, }, -- Shadowspeaker Niir
+        [48208100]={ type="npc", quest=37354, currency=823, npc=85029, }, -- Shadowspeaker Niir
         [48602260]={ type="item", quest=35553, id=113542, npc=82374, }, -- Rai'vosh, reusable slow-fall Item
         [48604360]={ type="item", quest=33064, id=109075, npc=77085, }, -- Dark Emanation
         [48806640]={ type="item", quest=33389, id=113570, toy=true, npc=75435, }, -- Yggdrel
         [49604200]={ type="item", quest=35555, id=113541, npc=82411, }, -- Darktalon
-        [50207240]={ type="currency", quest=37352, currency=823, npc=84925, }, -- Quartermaster Hershak
+        [50207240]={ type="npc", quest=37352, currency=823, npc=84925, }, -- Quartermaster Hershak
         [50807880]={ type="item", quest=37356, id=86213, npc=86213, }, -- Aqualir
         [51807920]={ type="item", quest=37353, id=85001, npc=85001, }, -- Master Sergeant Milgra
         [52801680]={ type="item", quest=35731, id=113540, npc=82326, }, -- Ba'ruun, reusable food (no buff)
@@ -138,7 +138,7 @@ local points = {
         [61408880]={ type="item", quest=37411, id=119411, npc=85837, }, -- Slivermaw
         [61606180]={ type="item", quest=35725, id=113557, npc=82207, }, -- Faebright
         [67806380]={ type="item", quest=35688, id=113556, npc=82676, }, -- Enavra
-        [68208480]={ type="currency", quest=37410, currency=823, npc=85568, }, -- Avalanche
+        [68208480]={ type="npc", quest=37410, currency=823, npc=85568, }, -- Avalanche
     },
     ["FrostfireRidge"] = {
         -- garrison
@@ -169,8 +169,51 @@ local points = {
         [42401970]={ type="item", quest=34520, id=120341, note="Burning Pearl", },
         [42703170]={ type="item", quest=33940, id=112187, note="Crag-Leaper's Cache", },
         [57105210]={ type="item", quest=34476, id=111554, note="Frozen Orc Skeleton", },
-        [63401480]={ type="plain", quest=33525, id=UNKNOWN, npc=75081, }, -- Young Orc Woman
+        [63401480]={ type="npc", quest=33525, npc=75081, note=UNKNOWN, }, -- Young Orc Woman
         [64406580]={ type="item", quest=33505, id=117564, note="Wiggling Egg", pet=true, },
+        -- rares
+        [67407820]={ type="item", quest=34477, id=112086, npc=78621, }, -- Cyclonic Fury
+        [41206820]={ type="item", quest=34843, id=111953, npc=80242, }, -- Chillfang
+        [28206620]={ type="item", quest=34470, id=111666, npc=78606, }, -- Pale Fishmonger
+        [38606300]={ type="item", quest=34865, id=112077, npc=80312, }, -- Grutush the Pillager
+        [51806480]={ type="item", quest=34825, id=111948, npc=80190, }, -- Gruuk
+        [76406340]={ type="item", quest=34132, id=112094, npc=77526, }, -- Scout Goreseeker
+        [25405500]={ type="item", quest=34129, id=112066, npc=77513, }, -- Coldstomp the Griever
+        [27405000]={ type="item", quest=34497, id=111476, npc=78867, toy=true, }, -- Breathless
+        [40404700]={ type="item", quest=33014, id=111490, npc=72294, }, -- Cindermaw
+        [66403140]={ type="item", quest=33843, id=111533, npc=74613, }, -- Broodmother Reeg'ak
+        [36803400]={ type="item", quest=33938, id=111576, npc=76918, }, -- Primalist Mur'og
+        [26803160]={ type="item", quest=34133, id=111475, npc=77527, }, -- The Beater
+        [40402780]={ type="item", quest=34559, id=111477, npc=79145, }, -- Yaga the Scarred
+        [61602640]={ type="item", quest=34708, id=112078, npc=79678, }, -- Jehil the Climber
+        [34002320]={ type="npc", quest=32941, id=101436, npc=71721, currency=824, }, -- Canyon Icemother
+        [54602220]={ type="item", quest=32918, id=111530, npc=71665, }, -- Giant-Slayer Kul
+        [58603420]={ type="npc", quest=34130, npc=78151, currency=824, }, -- Huntmaster Kuang
+        [54606940]={ type="item", quest=34131, id=111484, npc=76914, }, -- Coldtusk
+        [71404680]={ type="item", quest=33504, id=107661, npc=74971, }, -- Firefury Giant
+        [47005520]={ type="item", quest=34839, id=111955, npc=80235, }, -- Gurun
+        [50201860]={ type="npc", quest=33531, npc=75120, note=UNKNOWN, }, -- Clumsy Cragmaul Brute
+        [84404880]={ type="npc", quest=nil, npc=84384, note=UNKNOWN, }, -- Taskmaster Kullah
+        [85005220]={ type="npc", quest=37556, npc=87600, currency=823, }, -- Jaluk the Pacifist
+        [88605740]={ type="npc", quest=37525, npc=84378, currency=823, }, -- Ak'ox the Slaughterer
+        [86604880]={ type="item", quest=37401, id=119359, npc=84392, }, -- Ragore Driftstalker
+        [86605180]={ type="npc", quest=37403, npc=84376, currency=823, }, -- Earthshaker Holar
+        [83604720]={ type="npc", quest=37402, npc=87622, currency=823, }, -- Ogom the Mangler
+        [87004640]={ type="npc", quest=37404, npc=84374, currency=823, }, -- Kaga the Ironbender
+        [70002700]={ type="npc", quest=37381, npc=87351, currency=823, }, -- Mother of Goren
+        [72203300]={ type="item", quest=34361, id=111534, npc=78265, }, -- The Bone Crawler
+        [68801940]={ type="npc", quest=37382, npc=87348, currency=823, }, -- Hoarfrost
+        [72203000]={ type="npc", quest=nil, npc=87349, note=UNKNOWN }, -- Gomtar the Agile
+        [72203600]={ type="npc", quest=37380, npc=87352, note="Flees" }, -- Gibblette the Cowardly
+        [70003600]={ type="item", quest=33562, id=111545, npc=72364, currency=824, }, -- Gorg'ak the Lava Guzzler
+        [70603900]={ type="npc", quest=37379, npc=87356, currency=823, }, -- Vrok the Ancient
+        [72402420]={ type="npc", quest=37378, npc=87357, currency=823, }, -- Valkor
+        [43600940]={ type="item", quest=37384, id=119379, npc=82618, }, -- Tor'goroth
+        [38201600]={ type="item", quest=37383, id=119399, npc=82620, }, -- Son of Goramal
+        [45001500]={ type="npc", quest=37385, npc=82617, currency=823, }, -- Slogtusk the Corpse-Eater
+        [48202340]={ type="item", quest=37386, id=119390, npc=82616, }, -- Jabberjaw
+        [43002100]={ type="item", quest=37387, id=119356, npc=82614, }, -- Moltnoma
+        [40601240]={ type="npc", quest=34522, npc=79104, currency=823, }, -- Ug'lok the Frozen
     },
     ["Gorgrond"] = {
 
@@ -253,6 +296,15 @@ local point_info_handlers = {
         local name, _, texture = GetCurrencyInfo(point.currency)
         return point.id or CURRENCY, trimmed_icon(texture)
     end,
+    npc = function(point)
+        local texture = default_texture
+        if point.id then
+            texture = select(10, GetItemInfo(point.id))
+        elseif point.currency then
+            texture = select(3, GetCurrencyInfo(point.currency))
+        end
+        return mob_name(point.npc) or ('npc:'..point.npc), trimmed_icon(texture)
+    end,
 }
 local get_point_info = function(point)
     if not default_texture then
@@ -281,12 +333,12 @@ local tooltip_handlers = {
 local function handle_tooltip(tooltip, point)
     if point then
         (tooltip_handlers[point.type] or tooltip_handlers.default)(tooltip, point)
+        if point.npc and point.type ~= "npc" then
+            tooltip:AddDoubleLine(CREATURE, mob_name(point.npc) or point.npc)
+        end
         if point.currency then
             local name = GetCurrencyInfo(point.currency)
             tooltip:AddLine(name)
-        end
-        if point.npc then
-            tooltip:AddDoubleLine(CREATURE, mob_name(point.npc) or point.npc)
         end
         if point.note then
             tooltip:AddLine(point.note)
