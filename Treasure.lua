@@ -203,7 +203,7 @@ local point_info_handlers = {
         return point.id, trimmed_icon(default_texture)
     end,
     currency = function(point)
-        local name, _, texture = select(3, GetCurrencyInfo(point.currency))
+        local name, _, texture = GetCurrencyInfo(point.id)
         return name, trimmed_icon(texture)
     end,
     npc = function(point)
