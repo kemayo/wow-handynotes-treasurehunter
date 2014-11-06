@@ -49,7 +49,7 @@ local points = {
     },
     -- e.g.:
     ["KunLaiSummit"] = {
-        [52907140] = { type="item", item=86394, note="in the cave", quest=31413, }, -- Hozen Warrior Spear
+        [52907140] = { item=86394, note="in the cave", quest=31413, }, -- Hozen Warrior Spear
     }.
     --]]
     ["NagrandDraenor"] = {
@@ -57,226 +57,226 @@ local points = {
     },
     ["ShadowmoonValleyDR"] = {
         -- garrison-y
-        [27100260]={ type="currency", quest=35280, currency=824, label="Stolen Treasure", },
-        [26500570]={ type="currency", quest=34174, currency=824, label="Fantastic Fish", },
-        [28800710]={ type="currency", quest=35279, currency=824, label="Sunken Treasure", },
-        [30301990]={ type="currency", quest=35530, currency=824, label="Lunarfall Egg", note="Moves to the garrison once built", },
-        [45802460]={ type="currency", quest=33570, currency=824, label="Shadowmoon Exile Treasure", note="cave below Exile Rise", },
-        [52902490]={ type="currency", quest=37254, currency=824, label="Mushroom-Covered Chest", },
-        [57904530]={ type="currency", quest=33568, currency=824, label="Kaliri Egg", },
-        [28303930]={ type="currency", quest=33571, currency=824, label="Shadowmoon Treasure", },
-        [42106130]={ type="currency", quest=33041, currency=824, label="Iron Horde Cargo Shipment", },
-        [84504470]={ type="currency", quest=33885, currency=824, label="Cargo of the Raven Queen", },
+        [27100260]={ quest=35280, currency=824, label="Stolen Treasure", },
+        [26500570]={ quest=34174, currency=824, label="Fantastic Fish", },
+        [28800710]={ quest=35279, currency=824, label="Sunken Treasure", },
+        [30301990]={ quest=35530, currency=824, label="Lunarfall Egg", note="Moves to the garrison once built", },
+        [45802460]={ quest=33570, currency=824, label="Shadowmoon Exile Treasure", note="cave below Exile Rise", },
+        [52902490]={ quest=37254, currency=824, label="Mushroom-Covered Chest", },
+        [57904530]={ quest=33568, currency=824, label="Kaliri Egg", },
+        [28303930]={ quest=33571, currency=824, label="Shadowmoon Treasure", },
+        [42106130]={ quest=33041, currency=824, label="Iron Horde Cargo Shipment", },
+        [84504470]={ quest=33885, currency=824, label="Cargo of the Raven Queen", },
         -- treasures
-        [20303060]={ type="item", quest=33575, item=108904, note="Demonic Cache", },
-        [22803390]={ type="item", quest=33572, item=113373, note="Rotting Basket", },
-        [30004530]={ type="item", quest=35919, item=113563, note="Shadowmoon Sacrificial Dagger" },
-        [31303910]={ type="item", quest=33886, item=109081, note="Ronokk's Belongings", },
-        [33503970]={ type="item", quest=33569, item=113545, note="Reusable mana potion", },
-        [34204350]={ type="item", quest=33866, item=109124, note="Veema's Herb Bag", },
-        [34404620]={ type="item", quest=33891, item=108901, note="Giant Moonwillow Cone", },
-        [35904090]={ type="item", quest=33540, item=113546, note="Uzko's Knickknacks", },
-        [36704450]={ type="item", quest=33573, item=113378, },
-        [36804140]={ type="item", quest=33046, item=113547, note="Beloved's Offering, offhand decoration", },
-        [37202310]={ type="item", quest=33613, item=108945, note="in cave, Bubbling Cauldron", },
-        [37202610]={ type="item", quest=35677, item=110506, note="Sunken Fishing Boat, fishy fun items", },
-        [37505930]={ type="item", quest=33567, item=108903, note="Iron Horde Tribute", },
-        [37704430]={ type="item", quest=33584, item=113531, note="Consumable: Rested XP", },
-        [38504300]={ type="item", quest=33614, item=113408, note="Greka's Urn", },
-        [39208380]={ type="item", quest=33566, item=113372, note="Waterlogged Chest", },
-        [41502790]={ type="item", quest=33869, item=108902, note="Armored Elekk Tusk", },
-        [43806060]={ type="plain", quest=33611, label="Peaceful Offering 1", },
-        [44505920]={ type="plain", quest=33612, label="Peaceful Offering 4", },
-        [44506350]={ type="plain", quest=33384, label="Peaceful Offering 3", },
-        [45206050]={ type="plain", quest=33610, label="Peaceful Offering 2", },
-        [47104610]={ type="item", quest=33564, item=108900, note="Hanging Satchel", },
-        [48704750]={ type="item", quest=35798, item=109130, note="Glowing Cave Mushroom", },
-        [49303750]={ type="item", quest=33867, item=109739, note="Astrologer's Box", toy=true, },
-        [51107910]={ type="item", quest=33574, item=113375, note="Vindicator's Cache", toy=true, },
-        [51803550]={ type="plain", quest=33037, label="False-Bottomed Jar", note="Gold", },
-        [55004500]={ type="item", quest=35581, item=109124, note="Alchemist's Satchel", },
-        [55307480]={ type="item", quest=35580, item=117550, note="Swamplighter Hive", toy=true, },
-        [55801990]={ type="item", quest=35600, item=118104, note="Strange Spore", pet=true, },
-        [58902200]={ type="item", quest=35603, item=113215, note="Mikkal's Chest, a sick burn from the NPC", },
-        [66903350]={ type="item", quest=36507, item=116875, note="Orc Skeleton", },
-        [67108430]={ type="item", quest=33565, item=44722, note="Scaly Rylak Egg, ah the memories", },
+        [20303060]={ quest=33575, item=108904, note="Demonic Cache", },
+        [22803390]={ quest=33572, item=113373, note="Rotting Basket", },
+        [30004530]={ quest=35919, item=113563, note="Shadowmoon Sacrificial Dagger" },
+        [31303910]={ quest=33886, item=109081, note="Ronokk's Belongings", },
+        [33503970]={ quest=33569, item=113545, note="Reusable mana potion", },
+        [34204350]={ quest=33866, item=109124, note="Veema's Herb Bag", },
+        [34404620]={ quest=33891, item=108901, note="Giant Moonwillow Cone", },
+        [35904090]={ quest=33540, item=113546, note="Uzko's Knickknacks", },
+        [36704450]={ quest=33573, item=113378, },
+        [36804140]={ quest=33046, item=113547, note="Beloved's Offering, offhand decoration", },
+        [37202310]={ quest=33613, item=108945, note="in cave, Bubbling Cauldron", },
+        [37202610]={ quest=35677, item=110506, note="Sunken Fishing Boat, fishy fun items", },
+        [37505930]={ quest=33567, item=108903, note="Iron Horde Tribute", },
+        [37704430]={ quest=33584, item=113531, note="Consumable: Rested XP", },
+        [38504300]={ quest=33614, item=113408, note="Greka's Urn", },
+        [39208380]={ quest=33566, item=113372, note="Waterlogged Chest", },
+        [41502790]={ quest=33869, item=108902, note="Armored Elekk Tusk", },
+        [43806060]={ quest=33611, label="Peaceful Offering 1", },
+        [44505920]={ quest=33612, label="Peaceful Offering 4", },
+        [44506350]={ quest=33384, label="Peaceful Offering 3", },
+        [45206050]={ quest=33610, label="Peaceful Offering 2", },
+        [47104610]={ quest=33564, item=108900, note="Hanging Satchel", },
+        [48704750]={ quest=35798, item=109130, note="Glowing Cave Mushroom", },
+        [49303750]={ quest=33867, item=109739, note="Astrologer's Box", toy=true, },
+        [51107910]={ quest=33574, item=113375, note="Vindicator's Cache", toy=true, },
+        [51803550]={ quest=33037, label="False-Bottomed Jar", note="Gold", },
+        [55004500]={ quest=35581, item=109124, note="Alchemist's Satchel", },
+        [55307480]={ quest=35580, item=117550, note="Swamplighter Hive", toy=true, },
+        [55801990]={ quest=35600, item=118104, note="Strange Spore", pet=true, },
+        [58902200]={ quest=35603, item=113215, note="Mikkal's Chest, a sick burn from the NPC", },
+        [66903350]={ quest=36507, item=116875, note="Orc Skeleton", },
+        [67108430]={ quest=33565, item=44722, note="Scaly Rylak Egg, ah the memories", },
         -- rares (do these count for the 'treasure hunter' achievement?)
-        [21602100]={ type="item", quest=33640, item=108906, npc=75482, }, -- Veloss
-        [27604360]={ type="item", quest=36880, item=118734, npc=86689, }, -- Sneevel
-        [29600620]={ type="item", quest=35281, item=111666, npc=81406, }, -- Bahameye
-        [29603380]={ type="item", quest=33664, item=113082, npc=76380, }, -- Gorum
-        [29605080]={ type="item", quest=37357, item=119369, npc=85451, }, -- Malgosh Shadowkeeper
-        [31905720]={ type="item", quest=37359, item=119392, npc=85078, }, -- Voidreaver Urnae
-        [32203500]={ type="item", quest=33039, item=109061, npc=72362, }, -- Ku'targ the Voidseer
-        [32604140]={ type="item", quest=35847, item=109074, npc=83385, }, -- Voidseer Kalurg
-        [37203640]={ type="item", quest=33061, item=109060, npc=77140, }, -- Amaukwa
-        [37404880]={ type="item", quest=35558, item=113631, toy=true, npc=79524, }, -- Hypnocroak
-        [37601460]={ type="item", quest=33055, item=108907, npc=72537, }, -- Leaf-Reader Kurri
-        [38607020]={ type="item", quest=35523, item=113559, npc=82362, }, -- Morva Soultwister
-        [40804440]={ type="item", quest=33043, item=109078, npc=74206, }, -- Killmaw
-        [41008300]={ type="item", quest=35448, item=113548, npc=82268, }, -- Darkmaster Go'vid
-        [42804100]={ type="item", quest=33038, item=113553, npc=75434, }, -- Windfang Matriarch
-        [43807740]={ type="item", quest=33383, item=117551, npc=81639, }, -- Brambleking Fili
-        [44005760]={ type="item", quest=33642, item=119449, npc=75071, }, -- Mother Om'ra, hunter quest
-        [44802080]={ type="item", quest=35906, item=113561, npc=77310, }, -- Mad King Sporeon 
-        [46007160]={ type="npc", quest=37351, currency=823, npc=84911, }, -- Demidos
-        [48007760]={ type="item", quest=37355, item=119360, npc=85121, }, -- Lady Temptessa
-        [48208100]={ type="npc", quest=37354, currency=823, npc=85029, }, -- Shadowspeaker Niir
-        [48602260]={ type="item", quest=35553, item=113542, npc=82374, }, -- Rai'vosh, reusable slow-fall Item
-        [48604360]={ type="item", quest=33064, item=109075, npc=77085, }, -- Dark Emanation
-        [48806640]={ type="item", quest=33389, item=113570, toy=true, npc=75435, }, -- Yggdrel
-        [49604200]={ type="item", quest=35555, item=113541, npc=82411, }, -- Darktalon
-        [50207240]={ type="npc", quest=37352, currency=823, npc=84925, }, -- Quartermaster Hershak
-        [50807880]={ type="item", quest=37356, item=86213, npc=86213, }, -- Aqualir
-        [51807920]={ type="item", quest=37353, item=85001, npc=85001, }, -- Master Sergeant Milgra
-        [52801680]={ type="item", quest=35731, item=113540, npc=82326, }, -- Ba'ruun, reusable food (no buff)
-        [53005060]={ type="item", quest=34068, item=109077, npc=72606, }, -- Rockhoof
-        [54607060]={ type="item", quest=33643, item=108957, npc=75492, }, -- Venomshade
-        [57404840]={ type="item", quest=35909, item=113571, npc=83553, }, -- Insha'tar
-        [58408680]={ type="plain", quest=37409, label="Nagidna", npc=85555, note="in a cave @ 59,89", }, -- item not known yet...
-        [61005520]={ type="item", quest=35732, item=113543, npc=82415, }, -- Shinri
-        [61408880]={ type="item", quest=37411, item=119411, npc=85837, }, -- Slivermaw
-        [61606180]={ type="item", quest=35725, item=113557, npc=82207, }, -- Faebright
-        [67806380]={ type="item", quest=35688, item=113556, npc=82676, }, -- Enavra
-        [68208480]={ type="npc", quest=37410, currency=823, npc=85568, }, -- Avalanche
+        [21602100]={ quest=33640, item=108906, npc=75482, }, -- Veloss
+        [27604360]={ quest=36880, item=118734, npc=86689, }, -- Sneevel
+        [29600620]={ quest=35281, item=111666, npc=81406, }, -- Bahameye
+        [29603380]={ quest=33664, item=113082, npc=76380, }, -- Gorum
+        [29605080]={ quest=37357, item=119369, npc=85451, }, -- Malgosh Shadowkeeper
+        [31905720]={ quest=37359, item=119392, npc=85078, }, -- Voidreaver Urnae
+        [32203500]={ quest=33039, item=109061, npc=72362, }, -- Ku'targ the Voidseer
+        [32604140]={ quest=35847, item=109074, npc=83385, }, -- Voidseer Kalurg
+        [37203640]={ quest=33061, item=109060, npc=77140, }, -- Amaukwa
+        [37404880]={ quest=35558, item=113631, toy=true, npc=79524, }, -- Hypnocroak
+        [37601460]={ quest=33055, item=108907, npc=72537, }, -- Leaf-Reader Kurri
+        [38607020]={ quest=35523, item=113559, npc=82362, }, -- Morva Soultwister
+        [40804440]={ quest=33043, item=109078, npc=74206, }, -- Killmaw
+        [41008300]={ quest=35448, item=113548, npc=82268, }, -- Darkmaster Go'vid
+        [42804100]={ quest=33038, item=113553, npc=75434, }, -- Windfang Matriarch
+        [43807740]={ quest=33383, item=117551, npc=81639, }, -- Brambleking Fili
+        [44005760]={ quest=33642, item=119449, npc=75071, }, -- Mother Om'ra, hunter quest
+        [44802080]={ quest=35906, item=113561, npc=77310, }, -- Mad King Sporeon 
+        [46007160]={ quest=37351, currency=823, npc=84911, }, -- Demidos
+        [48007760]={ quest=37355, item=119360, npc=85121, }, -- Lady Temptessa
+        [48208100]={ quest=37354, currency=823, npc=85029, }, -- Shadowspeaker Niir
+        [48602260]={ quest=35553, item=113542, npc=82374, }, -- Rai'vosh, reusable slow-fall Item
+        [48604360]={ quest=33064, item=109075, npc=77085, }, -- Dark Emanation
+        [48806640]={ quest=33389, item=113570, toy=true, npc=75435, }, -- Yggdrel
+        [49604200]={ quest=35555, item=113541, npc=82411, }, -- Darktalon
+        [50207240]={ quest=37352, currency=823, npc=84925, }, -- Quartermaster Hershak
+        [50807880]={ quest=37356, item=86213, npc=86213, }, -- Aqualir
+        [51807920]={ quest=37353, item=85001, npc=85001, }, -- Master Sergeant Milgra
+        [52801680]={ quest=35731, item=113540, npc=82326, }, -- Ba'ruun, reusable food (no buff)
+        [53005060]={ quest=34068, item=109077, npc=72606, }, -- Rockhoof
+        [54607060]={ quest=33643, item=108957, npc=75492, }, -- Venomshade
+        [57404840]={ quest=35909, item=113571, npc=83553, }, -- Insha'tar
+        [58408680]={ quest=37409, label="Nagidna", npc=85555, note="in a cave @ 59,89", }, -- item not known yet...
+        [61005520]={ quest=35732, item=113543, npc=82415, }, -- Shinri
+        [61408880]={ quest=37411, item=119411, npc=85837, }, -- Slivermaw
+        [61606180]={ quest=35725, item=113557, npc=82207, }, -- Faebright
+        [67806380]={ quest=35688, item=113556, npc=82676, }, -- Enavra
+        [68208480]={ quest=37410, currency=823, npc=85568, }, -- Avalanche
     },
     ["FrostfireRidge"] = {
         -- garrison
-        [16104980]={ type="currency", quest=33942, label="Supply Dump", currency=824, },
-        [21605070]={ type="currency", quest=34931, label="Pale Loot Sack", currency=824, },
-        [24001300]={ type="currency", quest=34647, label="Snow-Covered Strongbox", currency=824, },
-        [34202350]={ type="currency", quest=32803, label="Thunderlord Cache", currency=824, },
-        [37205920]={ type="currency", quest=34967, label="Raided Loot", currency=824, },
-        [43705550]={ type="currency", quest=34841, label="Forgotten Supplies", currency=824, },
-        [51002280]={ type="currency", quest=34521, label="Glowing Obsidian Shard", currency=824, },
-        [56707180]={ type="currency", quest=36863, label="Iron Horde Munitions", currency=824, },
-        [64702570]={ type="currency", quest=33946, label="Survivalist's Cache", currency=824, },
-        [66702640]={ type="currency", quest=33948, label="Goren Leftovers", currency=824, },
-        [68204580]={ type="currency", quest=33947, label="Grimfrost Treasure", currency=824, },
-        [69006910]={ type="currency", quest=33017, label="Iron Horde Supplies", currency=824, },
-        [74505620]={ type="currency", quest=34937, label="Lady Sena's Other Materials Stash", currency=824, },
+        [16104980]={ quest=33942, label="Supply Dump", currency=824, },
+        [21605070]={ quest=34931, label="Pale Loot Sack", currency=824, },
+        [24001300]={ quest=34647, label="Snow-Covered Strongbox", currency=824, },
+        [34202350]={ quest=32803, label="Thunderlord Cache", currency=824, },
+        [37205920]={ quest=34967, label="Raided Loot", currency=824, },
+        [43705550]={ quest=34841, label="Forgotten Supplies", currency=824, },
+        [51002280]={ quest=34521, label="Glowing Obsidian Shard", currency=824, },
+        [56707180]={ quest=36863, label="Iron Horde Munitions", currency=824, },
+        [64702570]={ quest=33946, label="Survivalist's Cache", currency=824, },
+        [66702640]={ quest=33948, label="Goren Leftovers", currency=824, },
+        [68204580]={ quest=33947, label="Grimfrost Treasure", currency=824, },
+        [69006910]={ quest=33017, label="Iron Horde Supplies", currency=824, },
+        [74505620]={ quest=34937, label="Lady Sena's Other Materials Stash", currency=824, },
         -- treasures
-        [09804540]={ type="item", quest=34641, item=111407, note="Sealed Jug", },
-        [19201200]={ type="item", quest=34642, item=111408, note="Lucky Coin", },
-        [21900960]={ type="item", quest=33926, item=108739, note="Lagoon Pool", toy=true, },
-        [23102500]={ type="item", quest=33916, item=108735, note="Arena Master's War Horn", toy=true, },
-        [24202720]={ type="item", quest=33501, item=63293, note="Spectator's Chest, booze", },
-        [24204860]={ type="item", quest=34507, item=110689, note="Frozen Frostwolf Axe", },
-        [25502040]={ type="item", quest=34648, item=111415, note="Gnawed Bone", },
-        [27604280]={ type="item", quest=33500, item=43696, note="Slave's Stash, booze", },
-        [38403780]={ type="item", quest=33502, item=112087, note="Obsidian Petroglyph", },
-        [40902010]={ type="item", quest=34473, item=110536, note="Envoy's Satchel", },
-        [42401970]={ type="item", quest=34520, item=120341, note="Burning Pearl", },
-        [42703170]={ type="item", quest=33940, item=112187, note="Crag-Leaper's Cache", },
-        [57105210]={ type="item", quest=34476, item=111554, note="Frozen Orc Skeleton", },
-        [63401480]={ type="npc", quest=33525, npc=75081, note=UNKNOWN, }, -- Young Orc Woman
-        [64406580]={ type="item", quest=33505, item=117564, note="Wiggling Egg", pet=true, },
+        [09804540]={ quest=34641, item=111407, note="Sealed Jug", },
+        [19201200]={ quest=34642, item=111408, note="Lucky Coin", },
+        [21900960]={ quest=33926, item=108739, note="Lagoon Pool", toy=true, },
+        [23102500]={ quest=33916, item=108735, note="Arena Master's War Horn", toy=true, },
+        [24202720]={ quest=33501, item=63293, note="Spectator's Chest, booze", },
+        [24204860]={ quest=34507, item=110689, note="Frozen Frostwolf Axe", },
+        [25502040]={ quest=34648, item=111415, note="Gnawed Bone", },
+        [27604280]={ quest=33500, item=43696, note="Slave's Stash, booze", },
+        [38403780]={ quest=33502, item=112087, note="Obsidian Petroglyph", },
+        [40902010]={ quest=34473, item=110536, note="Envoy's Satchel", },
+        [42401970]={ quest=34520, item=120341, note="Burning Pearl", },
+        [42703170]={ quest=33940, item=112187, note="Crag-Leaper's Cache", },
+        [57105210]={ quest=34476, item=111554, note="Frozen Orc Skeleton", },
+        [63401480]={ quest=33525, npc=75081, note=UNKNOWN, }, -- Young Orc Woman
+        [64406580]={ quest=33505, item=117564, note="Wiggling Egg", pet=true, },
         -- rares
-        [67407820]={ type="item", quest=34477, item=112086, npc=78621, }, -- Cyclonic Fury
-        [41206820]={ type="item", quest=34843, item=111953, npc=80242, }, -- Chillfang
-        [28206620]={ type="item", quest=34470, item=111666, npc=78606, }, -- Pale Fishmonger
-        [38606300]={ type="item", quest=34865, item=112077, npc=80312, }, -- Grutush the Pillager
-        [51806480]={ type="item", quest=34825, item=111948, npc=80190, }, -- Gruuk
-        [76406340]={ type="item", quest=34132, item=112094, npc=77526, }, -- Scout Goreseeker
-        [25405500]={ type="item", quest=34129, item=112066, npc=77513, }, -- Coldstomp the Griever
-        [27405000]={ type="item", quest=34497, item=111476, npc=78867, toy=true, }, -- Breathless
-        [40404700]={ type="item", quest=33014, item=111490, npc=72294, }, -- Cindermaw
-        [66403140]={ type="item", quest=33843, item=111533, npc=74613, }, -- Broodmother Reeg'ak
-        [36803400]={ type="item", quest=33938, item=111576, npc=76918, }, -- Primalist Mur'og
-        [26803160]={ type="item", quest=34133, item=111475, npc=77527, }, -- The Beater
-        [40402780]={ type="item", quest=34559, item=111477, npc=79145, }, -- Yaga the Scarred
-        [61602640]={ type="item", quest=34708, item=112078, npc=79678, }, -- Jehil the Climber
-        [34002320]={ type="npc", quest=32941, item=101436, npc=71721, currency=824, }, -- Canyon Icemother
-        [54602220]={ type="item", quest=32918, item=111530, npc=71665, }, -- Giant-Slayer Kul
-        [58603420]={ type="npc", quest=34130, npc=78151, currency=824, }, -- Huntmaster Kuang
-        [54606940]={ type="item", quest=34131, item=111484, npc=76914, }, -- Coldtusk
-        [71404680]={ type="item", quest=33504, item=107661, npc=74971, }, -- Firefury Giant
-        [47005520]={ type="item", quest=34839, item=111955, npc=80235, }, -- Gurun
-        [50201860]={ type="npc", quest=33531, npc=75120, note=UNKNOWN, }, -- Clumsy Cragmaul Brute
-        [84404880]={ type="npc", quest=nil, npc=84384, note=UNKNOWN, }, -- Taskmaster Kullah
-        [85005220]={ type="npc", quest=37556, npc=87600, currency=823, }, -- Jaluk the Pacifist
-        [88605740]={ type="npc", quest=37525, npc=84378, currency=823, }, -- Ak'ox the Slaughterer
-        [86604880]={ type="item", quest=37401, item=119359, npc=84392, }, -- Ragore Driftstalker
-        [86605180]={ type="npc", quest=37403, npc=84376, currency=823, }, -- Earthshaker Holar
-        [83604720]={ type="npc", quest=37402, npc=87622, currency=823, }, -- Ogom the Mangler
-        [87004640]={ type="npc", quest=37404, npc=84374, currency=823, }, -- Kaga the Ironbender
-        [70002700]={ type="npc", quest=37381, npc=87351, currency=823, }, -- Mother of Goren
-        [72203300]={ type="item", quest=34361, item=111534, npc=78265, }, -- The Bone Crawler
-        [68801940]={ type="npc", quest=37382, npc=87348, currency=823, }, -- Hoarfrost
-        [72203000]={ type="npc", quest=nil, npc=87349, note=UNKNOWN }, -- Gomtar the Agile
-        [72203600]={ type="npc", quest=37380, npc=87352, note="Flees" }, -- Gibblette the Cowardly
-        [70003600]={ type="item", quest=33562, item=111545, npc=72364, currency=824, }, -- Gorg'ak the Lava Guzzler
-        [70603900]={ type="npc", quest=37379, npc=87356, currency=823, }, -- Vrok the Ancient
-        [72402420]={ type="npc", quest=37378, npc=87357, currency=823, }, -- Valkor
-        [43600940]={ type="item", quest=37384, item=119379, npc=82618, }, -- Tor'goroth
-        [38201600]={ type="item", quest=37383, item=119399, npc=82620, }, -- Son of Goramal
-        [45001500]={ type="npc", quest=37385, npc=82617, currency=823, }, -- Slogtusk the Corpse-Eater
-        [48202340]={ type="item", quest=37386, item=119390, npc=82616, }, -- Jabberjaw
-        [43002100]={ type="item", quest=37387, item=119356, npc=82614, }, -- Moltnoma
-        [40601240]={ type="npc", quest=34522, npc=79104, currency=823, }, -- Ug'lok the Frozen
+        [67407820]={ quest=34477, item=112086, npc=78621, }, -- Cyclonic Fury
+        [41206820]={ quest=34843, item=111953, npc=80242, }, -- Chillfang
+        [28206620]={ quest=34470, item=111666, npc=78606, }, -- Pale Fishmonger
+        [38606300]={ quest=34865, item=112077, npc=80312, }, -- Grutush the Pillager
+        [51806480]={ quest=34825, item=111948, npc=80190, }, -- Gruuk
+        [76406340]={ quest=34132, item=112094, npc=77526, }, -- Scout Goreseeker
+        [25405500]={ quest=34129, item=112066, npc=77513, }, -- Coldstomp the Griever
+        [27405000]={ quest=34497, item=111476, npc=78867, toy=true, }, -- Breathless
+        [40404700]={ quest=33014, item=111490, npc=72294, }, -- Cindermaw
+        [66403140]={ quest=33843, item=111533, npc=74613, }, -- Broodmother Reeg'ak
+        [36803400]={ quest=33938, item=111576, npc=76918, }, -- Primalist Mur'og
+        [26803160]={ quest=34133, item=111475, npc=77527, }, -- The Beater
+        [40402780]={ quest=34559, item=111477, npc=79145, }, -- Yaga the Scarred
+        [61602640]={ quest=34708, item=112078, npc=79678, }, -- Jehil the Climber
+        [34002320]={ quest=32941, item=101436, npc=71721, currency=824, }, -- Canyon Icemother
+        [54602220]={ quest=32918, item=111530, npc=71665, }, -- Giant-Slayer Kul
+        [58603420]={ quest=34130, npc=78151, currency=824, }, -- Huntmaster Kuang
+        [54606940]={ quest=34131, item=111484, npc=76914, }, -- Coldtusk
+        [71404680]={ quest=33504, item=107661, npc=74971, }, -- Firefury Giant
+        [47005520]={ quest=34839, item=111955, npc=80235, }, -- Gurun
+        [50201860]={ quest=33531, npc=75120, note=UNKNOWN, }, -- Clumsy Cragmaul Brute
+        [84404880]={ quest=nil, npc=84384, note=UNKNOWN, }, -- Taskmaster Kullah
+        [85005220]={ quest=37556, npc=87600, currency=823, }, -- Jaluk the Pacifist
+        [88605740]={ quest=37525, npc=84378, currency=823, }, -- Ak'ox the Slaughterer
+        [86604880]={ quest=37401, item=119359, npc=84392, }, -- Ragore Driftstalker
+        [86605180]={ quest=37403, npc=84376, currency=823, }, -- Earthshaker Holar
+        [83604720]={ quest=37402, npc=87622, currency=823, }, -- Ogom the Mangler
+        [87004640]={ quest=37404, npc=84374, currency=823, }, -- Kaga the Ironbender
+        [70002700]={ quest=37381, npc=87351, currency=823, }, -- Mother of Goren
+        [72203300]={ quest=34361, item=111534, npc=78265, }, -- The Bone Crawler
+        [68801940]={ quest=37382, npc=87348, currency=823, }, -- Hoarfrost
+        [72203000]={ quest=nil, npc=87349, note=UNKNOWN }, -- Gomtar the Agile
+        [72203600]={ quest=37380, npc=87352, note="Flees" }, -- Gibblette the Cowardly
+        [70003600]={ quest=33562, item=111545, npc=72364, currency=824, }, -- Gorg'ak the Lava Guzzler
+        [70603900]={ quest=37379, npc=87356, currency=823, }, -- Vrok the Ancient
+        [72402420]={ quest=37378, npc=87357, currency=823, }, -- Valkor
+        [43600940]={ quest=37384, item=119379, npc=82618, }, -- Tor'goroth
+        [38201600]={ quest=37383, item=119399, npc=82620, }, -- Son of Goramal
+        [45001500]={ quest=37385, npc=82617, currency=823, }, -- Slogtusk the Corpse-Eater
+        [48202340]={ quest=37386, item=119390, npc=82616, }, -- Jabberjaw
+        [43002100]={ quest=37387, item=119356, npc=82614, }, -- Moltnoma
+        [40601240]={ quest=34522, npc=79104, currency=823, }, -- Ug'lok the Frozen
     },
     ["Gorgrond"] = {
         -- treasures
-        [39006810]={ type="item", quest=36631, label="Sasha's Secret Stash", note="Random green + gold", },
-        [40007230]={ type="item", quest=36170, item=118715, note="Femur of Improbability", },
-        [40407660]={ type="item", quest=36621, item=118710, note="Explorer Canister", currency=824, },
-        [41705300]={ type="item", quest=36506, item=118702, note="Brokor's Sack", },
-        [41807810]={ type="plain", quest=36658, label="Evermorn Supply Cache", },
-        [42408340]={ type="plain", quest=36625, label="Discarded Pack", note="Gold", },
-        [42604680]={ type="currency", quest=35056, label="Horned Skull", currency=824, },
-        [43109290]={ type="item", quest=34241, item=118227, note="Ockbar's Pack", },
-        [43606980]={ type="plain", quest=36118, label="Pile of Rubble", note="Random green + gold", },
-        [43704240]={ type="currency", quest=36618, label="Iron Supply Chest", currency=824, },
-        [44207420]={ type="currency", quest=35709, label="Laughing Skull Cache", currency=824, },
-        [45004260]={ type="item", quest=36634, item=118713, note="Sniper's Crossbow", },
-        [45704970]={ type="item", quest=36610, item=118708, note="Suntouched Spear", },
-        [46105000]={ type="currency", quest=36651, label="Harvestable Precious Crystal", currency=824, },
-        [46204290]={ type="item", quest=36521, item=118707, note="Petrified Rylak Egg", },
-        [48109340]={ type="plain", quest=36604, label="Stashed Emergency Rucksack", },
-        [48904730]={ type="item", quest=36203, item=118716, note="Warm Goren Egg", toy=true, },
-        [49304360]={ type="item", quest=36596, item=107645, note="Weapons Cache", currency=824, },
-        [52506690]={ type="item", quest=36509, item=118717, note="Odd Skull", },
-        [53008000]={ type="item", quest=34940, item=118718, note="Strange Looking Dagger", },
-        [53107440]={ type="item", quest=36654, item=118714, note="Remains of Balik Orecrusher", },
-        [57805600]={ type="item", quest=36605, item=118703, note="Remains of Balldir Deeprock", },
-        [59406370]={ type="item", quest=36628, item=118712, note="Vindicator's Hammer", },
-        [71906660]={ type="currency", quest=nil, label="Sunken Treasure", currency=824, },
+        [39006810]={ quest=36631, label="Sasha's Secret Stash", note="Random green + gold", },
+        [40007230]={ quest=36170, item=118715, note="Femur of Improbability", },
+        [40407660]={ quest=36621, item=118710, note="Explorer Canister", currency=824, },
+        [41705300]={ quest=36506, item=118702, note="Brokor's Sack", },
+        [41807810]={ quest=36658, label="Evermorn Supply Cache", },
+        [42408340]={ quest=36625, label="Discarded Pack", note="Gold", },
+        [42604680]={ quest=35056, label="Horned Skull", currency=824, },
+        [43109290]={ quest=34241, item=118227, note="Ockbar's Pack", },
+        [43606980]={ quest=36118, label="Pile of Rubble", note="Random green + gold", },
+        [43704240]={ quest=36618, label="Iron Supply Chest", currency=824, },
+        [44207420]={ quest=35709, label="Laughing Skull Cache", currency=824, },
+        [45004260]={ quest=36634, item=118713, note="Sniper's Crossbow", },
+        [45704970]={ quest=36610, item=118708, note="Suntouched Spear", },
+        [46105000]={ quest=36651, label="Harvestable Precious Crystal", currency=824, },
+        [46204290]={ quest=36521, item=118707, note="Petrified Rylak Egg", },
+        [48109340]={ quest=36604, label="Stashed Emergency Rucksack", },
+        [48904730]={ quest=36203, item=118716, note="Warm Goren Egg", toy=true, },
+        [49304360]={ quest=36596, item=107645, note="Weapons Cache", currency=824, },
+        [52506690]={ quest=36509, item=118717, note="Odd Skull", },
+        [53008000]={ quest=34940, item=118718, note="Strange Looking Dagger", },
+        [53107440]={ quest=36654, item=118714, note="Remains of Balik Orecrusher", },
+        [57805600]={ quest=36605, item=118703, note="Remains of Balldir Deeprock", },
+        [59406370]={ quest=36628, item=118712, note="Vindicator's Hammer", },
+        [71906660]={ quest=nil, label="Sunken Treasure", currency=824, },
         -- rares
-        [37608140]={ type="item", quest=36600, item=118231, npc=85970, }, -- Riptar
-        [38206620]={ type="item", quest=35910, item=118224, npc=79629, }, -- Stomper Kreego
-        [40007900]={ type="item", quest=35335, item=118222, npc=82085, toy=true, }, -- Bashiok
-        [40205960]={ type="item", quest=36394, item=114227, npc=80725, toy=true, }, -- Sulfurious
-        [41804540]={ type="item", quest=36391, item=118230, npc=81038, }, -- Gelgor of the Blue Flame
-        [44609220]={ type="item", quest=36656, item=118223, npc=86137, }, -- Sunclaw
-        [46003360]={ type="npc", quest=37368, npc=86579, achievement=9655,  }, -- Blademaster Ro'gor
-        [46205080]={ type="item", quest=36204, item=118229, npc=80868, }, -- Glut
-        [46804320]={ type="item", quest=36186, item=118210, npc=84431, }, -- Greldrok the Cunning
-        [47002380]={ type="npc", quest=37365, npc=86577, achievement=9655, }, -- Horgg
-        [47002580]={ type="npc", quest=37364, npc=86582, achievement=9655, }, -- Morgo Kain
-        [47603060]={ type="npc", quest=37367, npc=86574, achievement=9655, }, -- Inventor Blammo
-        [47804140]={ type="item", quest=36393, item=118211, npc=85264, }, -- Rolkor
-        [48202100]={ type="npc", quest=37362, npc=86566, achievement=9655, }, -- Defector Dazgo
-        [49003380]={ type="npc", quest=37363, npc=86562, achievement=9655, }, -- Maniacal Madgard
-        [50002380]={ type="npc", quest=37366, npc=86571, achievement=9655, }, -- Durp the Hated
-        [50605320]={ type="item", quest=36178, item=118709, npc=84406, pet=true, }, -- Mandrakor
-        [52207020]={ type="item", quest=35908, item=118209, npc=83522, }, -- Hive Queen Skrikka
-        [52805360]={ type="item", quest=37413, item=119397, npc=78269, currency=823, }, -- Gnarljaw
-        [53404460]={ type="item", quest=35503, item=118212, npc=82311, }, -- Char the Burning
-        [53407820]={ type="item", quest=34726, item=118208, npc=76473, }, -- Mother Araneae
-        [54207240]={ type="item", quest=36837, item=118228, npc=86520, }, -- Stompalupagus
-        [55004660]={ type="item", quest=37377, item=119412, npc=88672, currency=823, achievement=9678, }, -- Hunter Bal'ra
-        [57406860]={ type="item", quest=36387, item=118221, npc=85250, toy=true, }, -- Fossilwood the Petrified
-        [57603580]={ type="item", quest=37370, item=119406, npc=82058, currency=823, achievement=9678, }, -- Depthroot
-        [58006360]={ type="item", quest=35153, item=113453, npc=80785, }, -- Fungal Praetorian
-        [58604120]={ type="npc", quest=37371, npc=86268, currency=823, achievement=9678, }, -- Alkali
-        [59604300]={ type="item", quest=37375, item=119414, npc=88583, currency=823, achievement=9678, }, -- Grove Warden Yal
-        [61803930]={ type="item", quest=37376, item=119391, npc=88586, currency=823, achievement=9678, }, -- Mogamago
-        [63803160]={ type="npc", quest=37372, npc=86266, achievement=9678, }, -- Venolasix
-        [64006180]={ type="item", quest=36794, item=118213, npc=86410, }, -- Sylldross
-        [69204460]={ type="item", quest=37369, item=119432, npc=86257, toy=true, achievement=9678, }, -- Basten
-        [70803400]={ type="item", quest=37374, item=119367, npc=88582, currency=823, achievement=9678, }, -- Swift Onyx Flayer
-        [72803580]={ type="npc", quest=37373, npc=88580, achievement=9678, }, -- Firestarter Grash
-        [76004200]={ type="npc", quest=37405, npc=80371, currency=823, }, -- Typhon
+        [37608140]={ quest=36600, item=118231, npc=85970, }, -- Riptar
+        [38206620]={ quest=35910, item=118224, npc=79629, }, -- Stomper Kreego
+        [40007900]={ quest=35335, item=118222, npc=82085, toy=true, }, -- Bashiok
+        [40205960]={ quest=36394, item=114227, npc=80725, toy=true, }, -- Sulfurious
+        [41804540]={ quest=36391, item=118230, npc=81038, }, -- Gelgor of the Blue Flame
+        [44609220]={ quest=36656, item=118223, npc=86137, }, -- Sunclaw
+        [46003360]={ quest=37368, npc=86579, achievement=9655,  }, -- Blademaster Ro'gor
+        [46205080]={ quest=36204, item=118229, npc=80868, }, -- Glut
+        [46804320]={ quest=36186, item=118210, npc=84431, }, -- Greldrok the Cunning
+        [47002380]={ quest=37365, npc=86577, achievement=9655, }, -- Horgg
+        [47002580]={ quest=37364, npc=86582, achievement=9655, }, -- Morgo Kain
+        [47603060]={ quest=37367, npc=86574, achievement=9655, }, -- Inventor Blammo
+        [47804140]={ quest=36393, item=118211, npc=85264, }, -- Rolkor
+        [48202100]={ quest=37362, npc=86566, achievement=9655, }, -- Defector Dazgo
+        [49003380]={ quest=37363, npc=86562, achievement=9655, }, -- Maniacal Madgard
+        [50002380]={ quest=37366, npc=86571, achievement=9655, }, -- Durp the Hated
+        [50605320]={ quest=36178, item=118709, npc=84406, pet=true, }, -- Mandrakor
+        [52207020]={ quest=35908, item=118209, npc=83522, }, -- Hive Queen Skrikka
+        [52805360]={ quest=37413, item=119397, npc=78269, currency=823, }, -- Gnarljaw
+        [53404460]={ quest=35503, item=118212, npc=82311, }, -- Char the Burning
+        [53407820]={ quest=34726, item=118208, npc=76473, }, -- Mother Araneae
+        [54207240]={ quest=36837, item=118228, npc=86520, }, -- Stompalupagus
+        [55004660]={ quest=37377, item=119412, npc=88672, currency=823, achievement=9678, }, -- Hunter Bal'ra
+        [57406860]={ quest=36387, item=118221, npc=85250, toy=true, }, -- Fossilwood the Petrified
+        [57603580]={ quest=37370, item=119406, npc=82058, currency=823, achievement=9678, }, -- Depthroot
+        [58006360]={ quest=35153, item=113453, npc=80785, }, -- Fungal Praetorian
+        [58604120]={ quest=37371, npc=86268, currency=823, achievement=9678, }, -- Alkali
+        [59604300]={ quest=37375, item=119414, npc=88583, currency=823, achievement=9678, }, -- Grove Warden Yal
+        [61803930]={ quest=37376, item=119391, npc=88586, currency=823, achievement=9678, }, -- Mogamago
+        [63803160]={ quest=37372, npc=86266, achievement=9678, }, -- Venolasix
+        [64006180]={ quest=36794, item=118213, npc=86410, }, -- Sylldross
+        [69204460]={ quest=37369, item=119432, npc=86257, toy=true, achievement=9678, }, -- Basten
+        [70803400]={ quest=37374, item=119367, npc=88582, currency=823, achievement=9678, }, -- Swift Onyx Flayer
+        [72803580]={ quest=37373, npc=88580, achievement=9678, }, -- Firestarter Grash
+        [76004200]={ quest=37405, npc=80371, currency=823, }, -- Typhon
     },
     ["Talador"] = {
 
@@ -286,28 +286,28 @@ local points = {
     },
     -- these might /all/ be junk? don't know yet
     ["garrisonsmvalliance_tier1"] = {
-        [49604380]={ type="currency", quest=35530, currency=824, label="Lunarfall Egg", note="wagon", },
-        [51800110]={ type="currency", quest=35289, currency=824, label="Spark's Stolen Supplies", note="cave by lake", },
-        [42405436]={ type="currency", quest=35381, currency=824, label="Pippers' Buried Supplies 1", },
-        [50704850]={ type="currency", quest=35382, currency=824, label="Pippers' Buried Supplies 2", },
-        [30802830]={ type="currency", quest=35383, currency=824, label="Pippers' Buried Supplies 3", },
-        [49197683]={ type="currency", quest=35384, currency=824, label="Pippers' Buried Supplies 4", },
+        [49604380]={ quest=35530, currency=824, label="Lunarfall Egg", note="wagon", },
+        [51800110]={ quest=35289, currency=824, label="Spark's Stolen Supplies", note="cave by lake", },
+        [42405436]={ quest=35381, currency=824, label="Pippers' Buried Supplies 1", },
+        [50704850]={ quest=35382, currency=824, label="Pippers' Buried Supplies 2", },
+        [30802830]={ quest=35383, currency=824, label="Pippers' Buried Supplies 3", },
+        [49197683]={ quest=35384, currency=824, label="Pippers' Buried Supplies 4", },
     },
     ["garrisonsmvalliance_tier2"] = {
-        [37306590]={ type="currency", quest=35530, currency=824, label="Lunarfall Egg, wagon", },
-        [51800110]={ type="currency", quest=35289, currency=824, label="Spark's Stolen Supplies", note="cave by lake", },
-        [41685803]={ type="currency", quest=35381, currency=824, label="Pippers' Buried Supplies 1", },
-        [51874545]={ type="currency", quest=35382, currency=824, label="Pippers' Buried Supplies 2", },
-        [34972345]={ type="currency", quest=35383, currency=824, label="Pippers' Buried Supplies 3", },
-        [46637608]={ type="currency", quest=35384, currency=824, label="Pippers' Buried Supplies 4", },
+        [37306590]={ quest=35530, currency=824, label="Lunarfall Egg, wagon", },
+        [51800110]={ quest=35289, currency=824, label="Spark's Stolen Supplies", note="cave by lake", },
+        [41685803]={ quest=35381, currency=824, label="Pippers' Buried Supplies 1", },
+        [51874545]={ quest=35382, currency=824, label="Pippers' Buried Supplies 2", },
+        [34972345]={ quest=35383, currency=824, label="Pippers' Buried Supplies 3", },
+        [46637608]={ quest=35384, currency=824, label="Pippers' Buried Supplies 4", },
     },
     ["garrisonsmvalliance_tier3"] = {
-        [61277261]={ type="currency", quest=35530, currency=824, label="Lunarfall Egg, tent", },
-        [51800110]={ type="currency", quest=35289, currency=824, label="Spark's Stolen Supplies", note="cave by lake", },
-        [60575515]={ type="currency", quest=35381, currency=824, label="Pippers' Buried Supplies 1", },
-        [37307491]={ type="currency", quest=35382, currency=824, label="Pippers' Buried Supplies 2", },
-        [37864378]={ type="currency", quest=35383, currency=824, label="Pippers' Buried Supplies 3", },
-        [61527154]={ type="currency", quest=35384, currency=824, label="Pippers' Buried Supplies 4", },
+        [61277261]={ quest=35530, currency=824, label="Lunarfall Egg, tent", },
+        [51800110]={ quest=35289, currency=824, label="Spark's Stolen Supplies", note="cave by lake", },
+        [60575515]={ quest=35381, currency=824, label="Pippers' Buried Supplies 1", },
+        [37307491]={ quest=35382, currency=824, label="Pippers' Buried Supplies 2", },
+        [37864378]={ quest=35383, currency=824, label="Pippers' Buried Supplies 3", },
+        [61527154]={ quest=35384, currency=824, label="Pippers' Buried Supplies 4", },
     },
 }
 
