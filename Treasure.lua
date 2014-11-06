@@ -14,6 +14,7 @@ local db
 local defaults = {
     profile = {
         show_junk = true,
+        show_npcs = true,
         found = false,
         icon_scale = 1.0,
         icon_alpha = 1.0,
@@ -39,18 +40,15 @@ local points = {
     --[[ structure:
     [mapFile] = { -- "_terrain1" etc will be stripped from attempts to fetch this
         [coord] = {
-            type=[type], -- item / plain
-            id=[id/string], -- item: itemid, plain: text-description
+            label=[string], -- label: text that'll be the label, optional
+            item=[id], -- itemid
             quest=[id], -- will be checked, for whether character already has it
+            achievement=[id], -- will be shown in the tooltip
             junk=[bool], -- doesn't count for achievement
-            npc=[id], -- related npc id, which admittedly isn't used for anything
+            npc=[id], -- related npc id, used to display names in tooltip
             note=[string], -- some text which might be helpful
         },
     },
-    -- e.g.:
-    ["KunLaiSummit"] = {
-        [52907140] = { item=86394, note="in the cave", quest=31413, }, -- Hozen Warrior Spear
-    }.
     --]]
     ["NagrandDraenor"] = {
 
@@ -401,7 +399,12 @@ local get_point_info = function(point)
     if point then
         local label = work_out_label(point)
         local icon = work_out_texture(point)
-        local category = point.junk and "junk" or "treasure"
+        local category = "treasure"
+        if point.npc then
+            category = "npc"
+        elseif point.junk then
+            category = "junk"
+        end
         return label, icon, category, point.quest
     end
 end
@@ -545,6 +548,7 @@ do
                     -- Debug("iter step", state, icon, db.icon_scale, db.icon_alpha, category, quest)
                     if (
                         (category ~= "junk" or db.show_junk)
+                        and (category ~= "npc" or db.show_npcs)
                         and (db.found or not (quest and IsQuestFlaggedCompleted(quest)))
                     ) then
                         return state, nil, icon, db.icon_scale, db.icon_alpha
@@ -598,15 +602,20 @@ local options = {
             name = "Item icons",
             desc = "Show the icons for items, if known; otherwise, the achievement icon will be used",
         },
-        show_junk = {
-            type = "toggle",
-            name = "Junk",
-            desc = "Show items which don't count for any achievement",
-        },
+        -- show_junk = {
+        --     type = "toggle",
+        --     name = "Junk",
+        --     desc = "Show items which don't count for any achievement",
+        -- },
         found = {
             type = "toggle",
             name = "Show found",
             desc = "Show waypoints for items you've already found?",
+        },
+        show_npcs = {
+            type = "toggle",
+            name = "Show NPCs",
+            desc = "Show rare NPCs to be killed, generally for items or achievements",
         },
     },
 }
