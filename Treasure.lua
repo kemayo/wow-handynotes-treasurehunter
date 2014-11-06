@@ -277,7 +277,88 @@ local points = {
         [76004200]={ quest=37405, npc=80371, currency=823, }, -- Typhon
     },
     ["Talador"] = {
-
+        -- treasures
+        [33307670]={ quest=34259, label="Bonechewer Remnants", currency=824, },
+        [35509660]={ quest=34249, label="Farmer's Bounty", currency=824, },
+        [36509610]={ quest=34182, item=117567, note="Aarko's Family Treasure", },
+        [37607490]={ quest=nil, item=112371, note="Bonechewer Spear", }, -- questionable?
+        [38201250]={ quest=34258, label="Light of the Sea", currency=824, },
+        [38408450]={ quest=34257, item=116119, note="Treasure of Ango'rosh", },
+        [39307770]={ quest=35162, item=112699, note="Teroclaw Nest", pet=true, },
+        [39505520]={ quest=34254, item=117570, note="Soulbinder's Reliquary", },
+        [39807670]={ quest=35162, item=112699, note="Teroclaw Nest", pet=true, },
+        [40608950]={ quest=34140, label="Yuuri's Gift", currency=824, },
+        [47009170]={ quest=34256, item=116128, note="Relic of Telmor", },
+        [52502950]={ quest=34235, item=116132, note="Luminous Shell", },
+        [54002760]={ quest=34290, item=116402, note="Ketya's Stash", pet=true, },
+        [54105630]={ quest=35162, item=112699, note="Teroclaw Nest", pet=true, },
+        [55206680]={ quest=34253, item=116118, note="Draenei Weapons", currency=824, },
+        [57402670]={ quest=34238, item=116120, note="Foreman's Lunchbox", },
+        [58901200]={ quest=33933, item=108743, note="Deceptia's Smoldering Boots", toy=true, },
+        [61107170]={ quest=34116, label="Norana's Cache", },
+        [62003240]={ quest=34236, item=116131, note="Amethyl Crystal", currency=824, },
+        [62404800]={ quest=34252, item=110506, note="Barrel of Fish", },
+        [64607920]={ quest=34251, item=117571, note="Iron Box", },
+        [64901330]={ quest=34232, item=116117, note="Rook's Tacklebox", },
+        [65501130]={ quest=34233, item=117568, note="Jug of Aged Ironwine", },
+        [65508860]={ quest=34255, item=116129, note="Webbed Sac", },
+        [65908520]={ quest=34276, label="Rusted Lockbox", note="Random green", },
+        [66608690]={ quest=34239, item=117569, note="Curious Deathweb Egg", toy=true, },
+        [69905610]={ quest=34101, item=109192, note="Lightbearer", },
+        [70100700]={ quest=36937, label="Burning Blade Cache", currency=823, },
+        [70803200]={ quest=35162, item=112699, note="Teroclaw Nest", pet=true, },
+        [70903550]={ quest=35162, item=112699, note="Teroclaw Nest", pet=true, },
+        [72403700]={ quest=35162, item=112699, note="Teroclaw Nest", pet=true, },
+        [72803560]={ quest=35162, item=112699, note="Teroclaw Nest", pet=true, },
+        [73503070]={ quest=35162, item=112699, note="Teroclaw Nest", pet=true, },
+        [73505140]={ quest=34471, item=116127, note="Bright Coin", },
+        [74303400]={ quest=35162, item=112699, note="Teroclaw Nest", pet=true, },
+        [74602930]={ quest=35162, item=112699, note="Teroclaw Nest", pet=true, },
+        [75003600]={ quest=33649, npc=75644, }, -- Iron Scout (not sure what's on this... wowhead is silent...)
+        [75704140]={ quest=34261, label="Keluu's Belongings", note="Gold", },
+        [75804480]={ quest=34250, item=116128, note="Relic of Aruuna", },
+        [77005000]={ quest=34248, item=116116, note="Charred Sword", },
+        [78201480]={ quest=34263, item=117572, note="Pure Crystal Dust", },
+        [81803500]={ quest=34260, item=109118, note="Aruuna Mining Cart", },
+        -- rares
+        [22207400]={ quest=36919, npc=85572, note="In a crate, no loot", }, -- Grrbrrgle
+        [30502640]={ quest=37345, npc=82920, item=119388, }, -- Lord Korinak
+        [31404750]={ quest=37344, npc=87668, currency=823, note="3 people needed to stand on the symbols", }, -- Orumo the Observer
+        [31806380]={ quest=34189, npc=77719, item=116113, }, -- Glimmerwing
+        [33803780]={ quest=37346, npc=82942, currency=823, }, -- Lady Demlash
+        [34205700]={ quest=34221, npc=77795, item=113670, toy=true, }, -- Echo of Murmur
+        [36804100]={ quest=37350, npc=88436, item=119383, }, -- Vigilant Paarthos
+        [37203760]={ quest=37348, npc=82988, currency=823, }, -- Kurlosh Doomfang
+        [37607040]={ quest=34165, npc=77620, item=116123, }, -- Cro Fleshrender
+        [37802140]={ quest=37342, npc=88494, currency=823, achievement=9633, }, -- Legion Vanguard
+        [38001460]={ quest=37343, npc=82922, item=119435, achievement=9633, }, -- Xothear the Destroyer (also drops 119371)
+        [39004960]={ quest=37349, npc=82998, item=119353, }, -- Matron of Sin
+        [41004200]={ quest=37347, npc=82930, currency=823, }, -- Shadowflame Terrorwalker
+        [41805940]={ quest=34671, npc=79543, item=112370, }, -- Shirzir
+        [44003800]={ quest=37339, npc=87597, achievement=9633, }, -- Bombardier Gu'gok
+        [46002740]={ quest=37337, npc=88071, currency=823, achievement=9633, }, -- War Council: Strategist Ankor, Archmagus Tekar, Soulbinder Naylana
+        [46005500]={ quest=34145, npc=77614, item=113288, }, -- Frenzied Golem (also drops 113287)
+        [46603520]={ quest=37338, npc=88043, item=119378, achievement=9633, }, -- Avatar of Socrethar
+        [47603900]={ quest=37340, npc=83019, item=119402, achievement=9633, }, -- Gug'tol
+        [48002500]={ quest=37312, npc=83008, item=119403, achievement=9633, }, -- Haakun the All-Consuming
+        [49009200]={ quest=34208, npc=77784, item=116070, }, -- Lo'marg Jawcrusher
+        [50203520]={ quest=37341, npc=82992, item=119386, achievement=9633, }, -- Felfire Consort
+        [50808380]={ quest=35018, npc=80204, item=112373, }, -- Felbark
+        [53802580]={ quest=34135, npc=77529, item=112263, }, -- Yazheera the Incinerator
+        [53909100]={ quest=34668, npc=79485, item=116110, }, -- Talonpriest Zorkra
+        [56606360]={ quest=35219, npc=78710, item=116122, toy=true, }, -- Kharazos the Triumphant, Galzomar, Sikthiss
+        [57207540]={ quest=34134, npc=77453, item=117563, }, -- Isaari
+        [59008800]={ quest=34171, npc=77634, item=116126, note="Kill the hatchlings to summon", }, -- Taladorantula
+        [59505960]={ quest=34196, npc=77741, item=116112, }, -- Ra'kahn
+        [62004600]={ quest=34185, npc=77715, item=116124, }, -- Hammertooth
+        [63802070]={ quest=34945, npc=80524, item=112475, note="Enrages if you kill his pet", }, -- Underseer Bloodmane
+        [66808540]={ quest=34498, npc=78872, item=116125, toy=true, }, -- Klikixx
+        [67408060]={ quest=34929, npc=80471, item=116075, }, -- Gennadian
+        [67703550]={ quest=36858, npc=86549, item=117562, }, -- Steeltusk
+        [68201580]={ quest=34142, npc=77561, item=112499, }, -- Dr. Gloom
+        [69603340]={ quest=34205, npc=77776, item=112261, }, -- Wandering Vindicator
+        [78005040]={ quest=34167, npc=77626, item=112369, }, -- Hen-Mother Hami
+        [86403040]={ quest=34859, npc=79334, item=116077, }, -- No'losh
     },
     ["SpiresOfArak"] = {
 
