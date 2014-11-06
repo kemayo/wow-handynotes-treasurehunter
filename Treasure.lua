@@ -57,16 +57,16 @@ local points = {
     },
     ["ShadowmoonValleyDR"] = {
         -- garrison-y
-        [27100260]={ type="currency", quest=35280, id=824, note="Stolen Treasure", },
-        [26500570]={ type="currency", quest=34174, id=824, note="Fantastic Fish", },
-        [28800710]={ type="currency", quest=35279, id=824, note="Sunken Treasure", },
-        [30301990]={ type="currency", quest=35530, id=824, note="Lunarfall Egg", note="Moves to the garrison once built", },
-        [45802460]={ type="currency", quest=33570, id=824, note="Shadowmoon Exile Treasure", note="cave below Exile Rise", },
-        [52902490]={ type="currency", quest=37254, id=824, note="Mushroom-Covered Chest", },
-        [57904530]={ type="currency", quest=33568, id=824, note="Kaliri Egg", },
-        [28303930]={ type="currency", quest=33571, id=824, note="Shadowmoon Treasure", },
-        [42106130]={ type="currency", quest=33041, id=824, note="Iron Horde Cargo Shipment", },
-        [84504470]={ type="currency", quest=33885, id=824, note="Cargo of the Raven Queen", },
+        [27100260]={ type="currency", quest=35280, currency=824, id="Stolen Treasure", },
+        [26500570]={ type="currency", quest=34174, currency=824, id="Fantastic Fish", },
+        [28800710]={ type="currency", quest=35279, currency=824, id="Sunken Treasure", },
+        [30301990]={ type="currency", quest=35530, currency=824, id="Lunarfall Egg", note="Moves to the garrison once built", },
+        [45802460]={ type="currency", quest=33570, currency=824, id="Shadowmoon Exile Treasure", note="cave below Exile Rise", },
+        [52902490]={ type="currency", quest=37254, currency=824, id="Mushroom-Covered Chest", },
+        [57904530]={ type="currency", quest=33568, currency=824, id="Kaliri Egg", },
+        [28303930]={ type="currency", quest=33571, currency=824, id="Shadowmoon Treasure", },
+        [42106130]={ type="currency", quest=33041, currency=824, id="Iron Horde Cargo Shipment", },
+        [84504470]={ type="currency", quest=33885, currency=824, id="Cargo of the Raven Queen", },
         -- treasures
         [20303060]={ type="item", quest=33575, id=108904, note="Demonic Cache", },
         [22803390]={ type="item", quest=33572, id=113373, note="Rotting Basket", },
@@ -101,44 +101,44 @@ local points = {
         [66903350]={ type="item", quest=36507, id=116875, note="Orc Skeleton", },
         [67108430]={ type="item", quest=33565, id=44722, note="Scaly Rylak Egg, ah the memories", },
         -- rares (do these count for the 'treasure hunter' achievement?)
-        [21602100]={ type="item", quest=33640, id=108906, note="Veloss", npc=75482, },
-        [27604360]={ type="item", quest=36880, id=118734, note="Sneevel", npc=86689, },
-        [29600620]={ type="item", quest=35281, id=111666, note="Bahameye", npc=81406, },
-        [29603380]={ type="item", quest=33664, id=113082, note="Gorum", npc=76380, },
-        [29605080]={ type="item", quest=37357, id=119369, note="Malgosh Shadowkeeper", npc=85451, },
-        [31905720]={ type="item", quest=37359, id=119392, note="Voidreaver Urnae", npc=85078, },
-        [32203500]={ type="item", quest=33039, id=109061, note="Ku'targ the Voidseer", npc=72362, },
-        [32604140]={ type="item", quest=35847, id=109074, note="Voidseer Kalurg", npc=83385, },
-        [37203640]={ type="item", quest=33061, id=109060, note="Amaukwa", npc=77140, },
-        [37404880]={ type="item", quest=35558, id=113631, note="Hypnocroak", toy=true, npc=79524, },
-        [37601460]={ type="item", quest=33055, id=108907, note="Leaf-Reader Kurri", npc=72537, },
-        [38607020]={ type="item", quest=35523, id=113559, note="Morva Soultwister", npc=82362, },
-        [40804440]={ type="item", quest=33043, id=109078, note="Killmaw", npc=74206, },
-        [41008300]={ type="item", quest=35448, id=113548, note="Darkmaster Go'vid", npc=82268, },
-        [42804100]={ type="item", quest=33038, id=113553, note="Windfang Matriarch", npc=75434, },
-        [43807740]={ type="item", quest=33383, id=117551, note="Brambleking Fili", npc=81639, },
-        [44005760]={ type="item", quest=33642, id=119449, note="Mother Om'ra, hunter quest", npc=75071, },
-        [44802080]={ type="item", quest=35906, id=113561, note="Mad King Sporeon ", npc=77310, },
-        [46007160]={ type="currency", quest=37351, id=823, note="Demidos", npc=84911, },
-        [48007760]={ type="item", quest=37355, id=119360, note="Lady Temptessa", npc=85121, },
-        [48208100]={ type="currency", quest=37354, id=823, note="Shadowspeaker Niir", npc=85029, },
-        [48602260]={ type="item", quest=35553, id=113542, note="Rai'vosh, reusable slow-fall Item", npc=82374, },
-        [48604360]={ type="item", quest=33064, id=109075, note="Dark Emanation", npc=77085, },
-        [48806640]={ type="item", quest=33389, id=113570, note="Yggdrel", toy=true, npc=75435, },
-        [49604200]={ type="item", quest=35555, id=113541, note="Darktalon", npc=82411, },
-        [50207240]={ type="currency", quest=37352, id=823, note="Quartermaster Hershak", npc=84925, },
-        [50807880]={ type="item", quest=37356, id=86213, note="Aqualir", npc=86213, },
-        [51807920]={ type="item", quest=37353, id=85001, note="Master Sergeant Milgra", npc=85001, },
-        [52801680]={ type="item", quest=35731, id=113540, note="Ba'ruun, reusable food (no buff)", npc=82326, },
-        [53005060]={ type="item", quest=34068, id=109077, note="Rockhoof", npc=72606, },
-        [54607060]={ type="item", quest=33643, id=108957, note="Venomshade", npc=75492, },
-        [57404840]={ type="item", quest=35909, id=113571, note="Insha'tar", npc=83553, },
-        [58408680]={ type="plain", quest=37409, id="Nagidna,", note="in a cave @ 59,89", npc=85555, }, -- item not known yet...
-        [61005520]={ type="item", quest=35732, id=113543, note="Shinri, 400% Ground Mount with Cooldown", npc=82415, },
-        [61408880]={ type="item", quest=37411, id=119411, note="Slivermaw", npc=85837, },
-        [61606180]={ type="item", quest=35725, id=113557, note="Faebright", npc=82207, },
-        [67806380]={ type="item", quest=35688, id=113556, note="Enavra", npc=82676, },
-        [68208480]={ type="currency", quest=37410, id=823, note="Avalanche", npc=85568, },
+        [21602100]={ type="item", quest=33640, id=108906, npc=75482, }, -- Veloss
+        [27604360]={ type="item", quest=36880, id=118734, npc=86689, }, -- Sneevel
+        [29600620]={ type="item", quest=35281, id=111666, npc=81406, }, -- Bahameye
+        [29603380]={ type="item", quest=33664, id=113082, npc=76380, }, -- Gorum
+        [29605080]={ type="item", quest=37357, id=119369, npc=85451, }, -- Malgosh Shadowkeeper
+        [31905720]={ type="item", quest=37359, id=119392, npc=85078, }, -- Voidreaver Urnae
+        [32203500]={ type="item", quest=33039, id=109061, npc=72362, }, -- Ku'targ the Voidseer
+        [32604140]={ type="item", quest=35847, id=109074, npc=83385, }, -- Voidseer Kalurg
+        [37203640]={ type="item", quest=33061, id=109060, npc=77140, }, -- Amaukwa
+        [37404880]={ type="item", quest=35558, id=113631, toy=true, npc=79524, }, -- Hypnocroak
+        [37601460]={ type="item", quest=33055, id=108907, npc=72537, }, -- Leaf-Reader Kurri
+        [38607020]={ type="item", quest=35523, id=113559, npc=82362, }, -- Morva Soultwister
+        [40804440]={ type="item", quest=33043, id=109078, npc=74206, }, -- Killmaw
+        [41008300]={ type="item", quest=35448, id=113548, npc=82268, }, -- Darkmaster Go'vid
+        [42804100]={ type="item", quest=33038, id=113553, npc=75434, }, -- Windfang Matriarch
+        [43807740]={ type="item", quest=33383, id=117551, npc=81639, }, -- Brambleking Fili
+        [44005760]={ type="item", quest=33642, id=119449, npc=75071, }, -- Mother Om'ra, hunter quest
+        [44802080]={ type="item", quest=35906, id=113561, npc=77310, }, -- Mad King Sporeon 
+        [46007160]={ type="currency", quest=37351, currency=823, npc=84911, }, -- Demidos
+        [48007760]={ type="item", quest=37355, id=119360, npc=85121, }, -- Lady Temptessa
+        [48208100]={ type="currency", quest=37354, currency=823, npc=85029, }, -- Shadowspeaker Niir
+        [48602260]={ type="item", quest=35553, id=113542, npc=82374, }, -- Rai'vosh, reusable slow-fall Item
+        [48604360]={ type="item", quest=33064, id=109075, npc=77085, }, -- Dark Emanation
+        [48806640]={ type="item", quest=33389, id=113570, toy=true, npc=75435, }, -- Yggdrel
+        [49604200]={ type="item", quest=35555, id=113541, npc=82411, }, -- Darktalon
+        [50207240]={ type="currency", quest=37352, currency=823, npc=84925, }, -- Quartermaster Hershak
+        [50807880]={ type="item", quest=37356, id=86213, npc=86213, }, -- Aqualir
+        [51807920]={ type="item", quest=37353, id=85001, npc=85001, }, -- Master Sergeant Milgra
+        [52801680]={ type="item", quest=35731, id=113540, npc=82326, }, -- Ba'ruun, reusable food (no buff)
+        [53005060]={ type="item", quest=34068, id=109077, npc=72606, }, -- Rockhoof
+        [54607060]={ type="item", quest=33643, id=108957, npc=75492, }, -- Venomshade
+        [57404840]={ type="item", quest=35909, id=113571, npc=83553, }, -- Insha'tar
+        [58408680]={ type="plain", quest=37409, id="Nagidna", npc=85555, note="in a cave @ 59,89", }, -- item not known yet...
+        [61005520]={ type="item", quest=35732, id=113543, npc=82415, }, -- Shinri
+        [61408880]={ type="item", quest=37411, id=119411, npc=85837, }, -- Slivermaw
+        [61606180]={ type="item", quest=35725, id=113557, npc=82207, }, -- Faebright
+        [67806380]={ type="item", quest=35688, id=113556, npc=82676, }, -- Enavra
+        [68208480]={ type="currency", quest=37410, currency=823, npc=85568, }, -- Avalanche
     },
     ["FrostfireRidge"] = {
 
@@ -154,30 +154,48 @@ local points = {
     },
     -- these might /all/ be junk? don't know yet
     ["garrisonsmvalliance_tier1"] = {
-        [49604380]={ type="currency", quest=35530, id=824, note="Lunarfall Egg, wagon", },
-        [51800110]={ type="currency", quest=35289, id=824, note="Spark's Stolen Supplies, cave by lake", },
-        [42405436]={ type="currency", quest=35381, id=824, note="Pippers' Buried Supplies 1", },
-        [50704850]={ type="currency", quest=35382, id=824, note="Pippers' Buried Supplies 2", },
-        [30802830]={ type="currency", quest=35383, id=824, note="Pippers' Buried Supplies 3", },
-        [49197683]={ type="currency", quest=35384, id=824, note="Pippers' Buried Supplies 4", },
+        [49604380]={ type="currency", quest=35530, currency=824, id="Lunarfall Egg", note="wagon", },
+        [51800110]={ type="currency", quest=35289, currency=824, id="Spark's Stolen Supplies", note="cave by lake", },
+        [42405436]={ type="currency", quest=35381, currency=824, id="Pippers' Buried Supplies 1", },
+        [50704850]={ type="currency", quest=35382, currency=824, id="Pippers' Buried Supplies 2", },
+        [30802830]={ type="currency", quest=35383, currency=824, id="Pippers' Buried Supplies 3", },
+        [49197683]={ type="currency", quest=35384, currency=824, id="Pippers' Buried Supplies 4", },
     },
     ["garrisonsmvalliance_tier2"] = {
-        [37306590]={ type="currency", quest=35530, id=824, note="Lunarfall Egg, wagon", },
-        [51800110]={ type="currency", quest=35289, id=824, note="Spark's Stolen Supplies, cave by lake", },
-        [41685803]={ type="currency", quest=35381, id=824, note="Pippers' Buried Supplies 1", },
-        [51874545]={ type="currency", quest=35382, id=824, note="Pippers' Buried Supplies 2", },
-        [34972345]={ type="currency", quest=35383, id=824, note="Pippers' Buried Supplies 3", },
-        [46637608]={ type="currency", quest=35384, id=824, note="Pippers' Buried Supplies 4", },
+        [37306590]={ type="currency", quest=35530, currency=824, id="Lunarfall Egg, wagon", },
+        [51800110]={ type="currency", quest=35289, currency=824, id="Spark's Stolen Supplies", note="cave by lake", },
+        [41685803]={ type="currency", quest=35381, currency=824, id="Pippers' Buried Supplies 1", },
+        [51874545]={ type="currency", quest=35382, currency=824, id="Pippers' Buried Supplies 2", },
+        [34972345]={ type="currency", quest=35383, currency=824, id="Pippers' Buried Supplies 3", },
+        [46637608]={ type="currency", quest=35384, currency=824, id="Pippers' Buried Supplies 4", },
     },
     ["garrisonsmvalliance_tier3"] = {
-        [61277261]={ type="currency", quest=35530, id=824, note="Lunarfall Egg, tent", },
-        [51800110]={ type="currency", quest=35289, id=824, note="Spark's Stolen Supplies, cave by lake", },
-        [60575515]={ type="currency", quest=35381, id=824, note="Pippers' Buried Supplies 1", },
-        [37307491]={ type="currency", quest=35382, id=824, note="Pippers' Buried Supplies 2", },
-        [37864378]={ type="currency", quest=35383, id=824, note="Pippers' Buried Supplies 3", },
-        [61527154]={ type="currency", quest=35384, id=824, note="Pippers' Buried Supplies 4", },
+        [61277261]={ type="currency", quest=35530, currency=824, id="Lunarfall Egg, tent", },
+        [51800110]={ type="currency", quest=35289, currency=824, id="Spark's Stolen Supplies", note="cave by lake", },
+        [60575515]={ type="currency", quest=35381, currency=824, id="Pippers' Buried Supplies 1", },
+        [37307491]={ type="currency", quest=35382, currency=824, id="Pippers' Buried Supplies 2", },
+        [37864378]={ type="currency", quest=35383, currency=824, id="Pippers' Buried Supplies 3", },
+        [61527154]={ type="currency", quest=35384, currency=824, id="Pippers' Buried Supplies 4", },
     },
 }
+
+local cache_tooltip = CreateFrame("GameTooltip", "HNTreasureHunterTooltip")
+cache_tooltip:AddFontStrings(
+    cache_tooltip:CreateFontString("$parentTextLeft1", nil, "GameTooltipText"),
+    cache_tooltip:CreateFontString("$parentTextRight1", nil, "GameTooltipText")
+)
+local name_cache = {}
+function mob_name(id)
+    if not name_cache[id] then
+        -- this doesn't work with just clearlines and the setowner outside of this, and I'm not sure why
+        cache_tooltip:SetOwner(WorldFrame, "ANCHOR_NONE")
+        cache_tooltip:SetHyperlink(("unit:Creature-0-0-0-0-%d"):format(id))
+        if cache_tooltip:IsShown() then
+            name_cache[id] = HNTreasureHunterTooltipTextLeft1:GetText()
+        end
+    end
+    return name_cache[id]
+end
 
 local default_texture, default_texture_riches, garrison_texture, garrison_name
 local icon_cache = {}
@@ -203,12 +221,8 @@ local point_info_handlers = {
         return point.id, trimmed_icon(default_texture)
     end,
     currency = function(point)
-        local name, _, texture = GetCurrencyInfo(point.id)
-        return name, trimmed_icon(texture)
-    end,
-    npc = function(point)
-        local name
-        return name or ('npc:'..point.npc), trimmed_icon(default_texture)
+        local name, _, texture = GetCurrencyInfo(point.currency)
+        return point.id or CURRENCY, trimmed_icon(texture)
     end,
 }
 local get_point_info = function(point)
@@ -217,12 +231,6 @@ local get_point_info = function(point)
     end
     if point then
         local label, icon = point_info_handlers[point.type](point)
-        if point.note then
-            label = ("%s (%s)"):format(label, point.note)
-        end
-        if not (point.junk) then
-            label = ("%s: %s"):format(ITEM_QUALITY3_DESC, label) -- rare
-        end
         local category = point.junk and "junk" or "treasure"
         return label, icon, category, point.quest
     end
@@ -230,6 +238,38 @@ end
 local get_point_info_by_coord = function(mapFile, coord)
     mapFile = string.gsub(mapFile, "_terrain%d+$", "")
     return get_point_info(points[mapFile] and points[mapFile][coord])
+end
+
+local tooltip_handlers = {
+    item = function(tooltip, point)
+        tooltip:SetHyperlink(("item:%d"):format(point.id))
+    end,
+    default = function(tooltip, point)
+        local label = get_point_info(point)
+        tooltip:SetText(label or UNKNOWN)
+    end,
+}
+local function handle_tooltip(tooltip, point)
+    if point then
+        (tooltip_handlers[point.type] or tooltip_handlers.default)(tooltip, point)
+        if point.currency then
+            local name = GetCurrencyInfo(point.currency)
+            tooltip:AddLine(name)
+        end
+        if point.npc then
+            tooltip:AddDoubleLine(CREATURE, mob_name(point.npc) or point.npc)
+        end
+        if point.note then
+            tooltip:AddLine(point.note)
+        end
+    else
+        tooltip:SetText(UNKNOWN)
+    end
+    tooltip:Show()
+end
+local handle_tooltip_by_coord = function(tooltip, mapFile, coord)
+    mapFile = string.gsub(mapFile, "_terrain%d+$", "")
+    return handle_tooltip(tooltip, points[mapFile] and points[mapFile][coord])
 end
 
 ---------------------------------------------------------
@@ -244,11 +284,7 @@ function HLHandler:OnEnter(mapFile, coord)
     else
         tooltip:SetOwner(self, "ANCHOR_RIGHT")
     end
-    local label = get_point_info_by_coord(mapFile, coord)
-    if label then
-        tooltip:SetText(label)
-        tooltip:Show()
-    end
+    handle_tooltip_by_coord(tooltip, mapFile, coord)
 end
 
 local function createWaypoint(button, mapFile, coord)
