@@ -185,7 +185,7 @@ cache_tooltip:AddFontStrings(
     cache_tooltip:CreateFontString("$parentTextRight1", nil, "GameTooltipText")
 )
 local name_cache = {}
-function mob_name(id)
+local function mob_name(id)
     if not name_cache[id] then
         -- this doesn't work with just clearlines and the setowner outside of this, and I'm not sure why
         cache_tooltip:SetOwner(WorldFrame, "ANCHOR_NONE")
