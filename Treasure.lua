@@ -361,7 +361,93 @@ local points = {
         [86403040]={ quest=34859, npc=79334, item=116077, }, -- No'losh
     },
     ["SpiresOfArak"] = {
-
+        -- archaeology
+        [33302730]={ quest=36422, label="Sun-Touched Cache", currency=829, note="Needs archaeology", },
+        [42701830]={ quest=36244, label="Misplaced Scrolls", note="Needs archaeology", currency=829, },
+        [43001640]={ quest=36245, label="Relics of the Outcasts", currency=829, note="Needs archaeology", },
+        [43202720]={ quest=36355, label="Relics of the Outcasts", currency=829, note="Needs archaeology", },
+        [46004410]={ quest=36354, label="Relics of the Outcasts", currency=829, note="Needs archaeology", },
+        [51904890]={ quest=36360, label="Relics of the Outcasts", currency=829, note="Needs archaeology", },
+        [52404280]={ quest=36416, label="Misplaced Scroll", currency=829, note="Needs archaeology", },
+        [56304530]={ quest=36433, label="Smuggled Apexis Artifacts", currency=829, note="Needs archaeology", },
+        [60205390]={ quest=36359, label="Relics of the Outcasts", currency=829, note="Needs archaeology", },
+        [67403980]={ quest=36356, label="Relics of the Outcasts", currency=829, note="Needs archaeology", },
+        -- shrines
+        [43802470]={ quest=36397, item=115463, note="Take to a Shrine of Terrok", },
+        [43901500]={ quest=36395, item=115463, note="Take to a Shrine of Terrok", },
+        [48906250]={ quest=36399, item=115463, note="Take to a Shrine of Terrok", },
+        [53108450]={ quest=nil, item=115463, note="Take to a Shrine of Terrok", },
+        [55602200]={ quest=36400, item=115463, note="Take to a Shrine of Terrok", },
+        [69204330]={ quest=36398, item=115463, note="Take to a Shrine of Terrok", },
+        [42402670]={ quest=36388, item=118242, note="Gift of Anzu", note="Drink Elixir of Shadow Sight", },
+        [46904050]={ quest=36389, item=118238, note="Gift of Anzu", note="Drink Elixir of Shadow Sight", },
+        [48604450]={ quest=36386, item=118237, note="Gift of Anzu", note="Drink Elixir of Shadow Sight", },
+        [52001960]={ quest=36392, item=118239, note="Gift of Anzu", note="Drink Elixir of Shadow Sight", },
+        [57007900]={ quest=36390, item=118241, note="Gift of Anzu", note="Drink Elixir of Shadow Sight", },
+        [61105550]={ quest=36381, item=118240, note="Gift of Anzu", note="Drink Elixir of Shadow Sight", },
+        [48305260]={ quest=36405, item=118267, note="Offering to the Raven Mother", },
+        [48905470]={ quest=36406, item=118267, note="Offering to the Raven Mother", },
+        [51906460]={ quest=36407, item=118267, note="Offering to the Raven Mother", },
+        [53305560]={ quest=36403, item=118267, note="Offering to the Raven Mother", },
+        [61006380]={ quest=36410, item=118267, note="Offering to the Raven Mother", },
+        -- treasures
+        [36801720]={ quest=36243, label="Outcast's Belongings", note="Random green", },
+        [50402580]={ quest=36444, item=118691, note="Iron Horde Explosives", },
+        [50702880]={ quest=36247, label="Lost Herb Satchel", note="Assorted herbs", },
+        [36303940]={ quest=36402, item=120337, note="Orcish Signaling Horn", },
+        [37204740]={ quest=36420, label="Garrison Supplies", currency=824, },
+        [36505790]={ quest=36418, item=116914, note="Ephial's Dark Grimoire", },
+        [47803610]={ quest=36411, item=116911, note="Lost Ring", },
+        [49203730]={ quest=36445, item=116835, note="Assassin's Spear", },
+        [46903400]={ quest=36446, label="Outcast's Pouch", note="Random green", },
+        [47903070]={ quest=36361, item=116920, note="Shattered Hand Lockbox", },
+        [42102170]={ quest=36447, label="Outcast's Belongings", note="Random green", },
+        [34102750]={ quest=36421, label="Sun-Touched Cache", currency=824, note="Needs archaeology?", },
+        [68203880]={ quest=36375, npc=85190, item=118692, }, -- Sethekk Idol
+        [71604850]={ quest=36450, item=109223, note="Sethekk Ritual Brew", },
+        [41805050]={ quest=36451, item=116918, note="Garrison Workman's Hammer", },
+        [56202880]={ quest=36362, label="Shattered Hand Cache", currency=824, },
+        [68408900]={ quest=36453, label="Coinbender's Payment", currency=824, },
+        [63606740]={ quest=36454, item=109130, note="Mysterious Mushrooms", },
+        [66505650]={ quest=36455, label="Waterlogged Satchel", note="Random green", },
+        [54403240]={ quest=36364, item=118695, note="Toxicfang Venom", currency=824, },
+        [59708130]={ quest=36365, label="Spray-O-Matic 5000 XT", currency=824, },
+        [60908460]={ quest=36456, label="Shredder Parts", currency=824, },
+        [55509080]={ quest=36366, label="Campaign Contributions", note="Gold", },
+        [50502210]={ quest=36401, item=116919, note="Fractured Sunstone", },
+        [44401200]={ quest=36377, npc=85206, item=118693, }, -- Rukhmar's Image
+        [40605500]={ quest=36458, item=116913, note="Abandoned Mining Pick", },
+        [58706030]={ quest=36340, item=116922, note="Ogron Plunder (Hobbit reference!)", },
+        [37305070]={ quest=36657, item=116887, note="Feed the dog Rooby Reat from the chef downstairs", },
+        [37705640]={ quest=36462, item=116020, note="Unlocks a chest in Admiral Taylor's Garrison Town Hall", },
+        [59109060]={ quest=nil, item=116917, note="In the control room", },
+        -- rares
+        [25202420]={ quest=36943, npc=86978, item=118696, currency=824, }, -- Gaze, not certain about item-drop
+        [33005900]={ quest=36305, npc=84951, item=116836, }, -- Gobblefin
+        [33402200]={ quest=36265, npc=84805, item=116858, }, -- Stonespite
+        [36405240]={ quest=36129, npc=82247, item=116837, }, -- Nas Dunberlin
+        [38402780]={ quest=36470, npc=85504, item=118107, pet=true, }, -- Rotcap
+        [46402860]={ quest=36267, npc=84807, item=118198, }, -- Durkath Steelmaw
+        [46802300]={ quest=35599, npc=80614, item=116839, }, -- Blade-Dancer Aeryx
+        [51800720]={ quest=37394, npc=83990, note="No loot?", }, -- Solar Magnifier
+        [52003540]={ quest=36478, npc=79938, item=118201, }, -- Shadowbark
+        [52805480]={ quest=36472, npc=85520, item=116857, }, -- Swarmleaf
+        [53208900]={ quest=36396, npc=84417, item=118206, }, -- Mutafen
+        [54606320]={ quest=36278, npc=84836, item=116838, }, -- Talonbreaker
+        [54803960]={ quest=36297, npc=84890, item=118200, }, -- Festerbloom
+        [56609460]={ quest=36306, npc=84955, item=118202, }, -- Jiasska the Sporegorger
+        [57407400]={ quest=36254, npc=84775, item=116852, }, -- Tesska the Broken
+        [58208460]={ quest=36291, npc=84887, item=116907, }, -- Betsi Boombasket
+        [58604520]={ quest=36298, npc=84912, item=116855, }, -- Sunderthorn
+        [59201500]={ quest=36887, npc=86724, item=118279, }, -- Hermit Palefur
+        [59403740]={ quest=36279, npc=84838, item=118199, }, -- Poisonmaster Bortusk
+        [62603740]={ quest=36268, npc=84810, item=118735, }, -- Kalos the Bloodbathed
+        [64006480]={ quest=36283, npc=84856, item=118205, }, -- Blightglow
+        [66005500]={ quest=36288, npc=84872, item=118204, }, -- Oskiira the Vengeful
+        [69004880]={ quest=36276, npc=84833, item=118203, }, -- Sangrikrass
+        [69005400]={ quest=37406, npc=80372, note="No loot", }, -- Echidna
+        [71203380]={ quest=37392, npc=87027, currency=823, }, -- Shadow Hulk
+        [74404280]={ quest=37390, npc=87019, currency=823, }, -- Glutonous Giant
     },
     -- these might /all/ be junk? don't know yet
     ["garrisonsmvalliance_tier1"] = {
