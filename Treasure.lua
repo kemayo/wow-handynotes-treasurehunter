@@ -51,7 +51,122 @@ local points = {
     },
     --]]
     ["NagrandDraenor"] = {
-
+        -- steamwheedle supplies
+        [50108220]={ quest=35577, label="Steamwheedle Supplies", note="Use a glider", currency=824, },
+        [52708010]={ quest=35583, label="Steamwheedle Supplies", note="Use a glider", currency=824, },
+        [64601760]={ quest=35648, label="Steamwheedle Supplies", note="Use a glider", currency=824, },
+        [70601860]={ quest=35646, label="Steamwheedle Supplies", note="Use a glider", currency=824, },
+        [77805190]={ quest=35591, label="Steamwheedle Supplies", note="Use a glider", currency=824, },
+        [87602030]={ quest=35662, label="Steamwheedle Supplies", note="Use a glider", currency=824, },
+        [88204260]={ quest=35616, label="Steamwheedle Supplies", note="Use a glider", currency=824, },
+        -- abu'gar
+        [38404940]={ quest=36072, item=114245, note="Abu'Gar's Favorite Lure", },
+        [65906120]={ quest=35711, item=114242, note="Abu'gar's Vitality", },
+        [85403870]={ quest=36089, item=114243, note="Abu'gar's Missing Reel", },
+        -- glider-required
+        [70501390]={ quest=35643, label="Mountain Climber's Pack", note="Use a glider", currency=824, },
+        [73007040]={ quest=35678, label="Warsong Lockbox", note="Use a glider", currency=824, },
+        [76107000]={ quest=35682, item=118678, note="Warsong Spear, use a glider", },
+        [80606060]={ quest=35593, label="Warsong Spoils", note="Use a glider", currency=824, },
+        [81103720]={ quest=35661, item=118262, note="Brilliant Dreampetal, use a glider", },
+        [87504500]={ quest=35622, label="Hidden Stash", currency=824, note="Use a glider", },
+        [88901820]={ quest=35660, label="Fungus-Covered Chest", note="Use a glider", currency=824, },
+        -- generic garrison supplies
+        [37707060]={ quest=34760, label="Treasure of Kull'krosh", currency=824, },
+        [40406860]={ quest=37435, label="Spirit Coffer", currency=824, },
+        [43305750]={ quest=35987, label="Genedar Debris", currency=824, },
+        [44606750]={ quest=36002, label="Genedar Debris", currency=824, },
+        [47207430]={ quest=35576, label="Goblin Pack", currency=824, },
+        [48006010]={ quest=35999, label="Genedar Debris", currency=824, },
+        [48607270]={ quest=36008, label="Genedar Debris", currency=824, },
+        [51706030]={ quest=35695, label="Warsong Cache", currency=824, },
+        [55306820]={ quest=36011, label="Genedar Debris", currency=824, },
+        [56607290]={ quest=36050, label="Adventurer's Pouch", currency=824, },
+        [73001090]={ quest=35951, label="A Pile of Dirt", note="Jump down", currency=824, },
+        [73006220]={ quest=35590, label="Goblin Pack", currency=824, },
+        [73107550]={ quest=35673, label="Appropriated Warsong Supplies", currency=824, },
+        [77101660]={ quest=36174, label="Bounty of the Elements", currency=824, note="Cave, use the Elemental Stones for access", },
+        [88913310]={ quest=36857, label="Smuggler's Cache", note="In a cave, dodge the tripwires", currency=824, },
+        [89406580]={ quest=35976, label="Warsong Supplies", currency=824, },
+        -- treasures
+        [38305880]={ quest=36109, label="Goldtoe's Plunder", npc=84068, item=114054, note="Gold, parrot has the key", },
+        [45605200]={ quest=35969, label="Adventurer's Pack", note="Gold, random green", },
+        [45806630]={ quest=36020, item=117981, note="Fragment of Oshu'gun", "i607 Intellect Shield", },
+        [50006650]={ quest=35579, item=118264, note="Void-Infused Crystal", "i613 2H Strength Sword", },
+        [52404440]={ quest=36073, item=118250, note="Warsong Helm", },
+        [57806220]={ quest=36115, item=118278, note="Pale Elixir", "Manareg Potion", },
+        [58205260]={ quest=35694, item=118266, note="Golden Kaliri Egg", },
+        [58305940]={ quest=36021, item=116688, note="Pokkar's Thirteenth Axe", "i605 1H Strength Axe", },
+        [61805740]={ quest=36082, label="Lost Pendant", note="Green amulet", },
+        [62506710]={ quest=36116, label="Bag of Herbs", note="Assorted herbs", },
+        [64703580]={ quest=36071, item=118235, note="Watertight Bag", },
+        [64706580]={ quest=36046, item=118253, note="Telaar Defender Shield", "i605 Agility/Intellect Ring", },
+        [66901950]={ quest=35954, item=118234, note="Elemental Offering, jump down", },
+        [67404900]={ quest=36039, item=118252, note="Highmaul Sledge", "i605 Strength Ring", },
+        [67605980]={ quest=35759, label="Abandoned Cargo", note="Gold, random green", },
+        [69905240]={ quest=35597, label="Adventurer's Pack", note="Gold, random green", },
+        [72706100]={ quest=36035, item=118254, note="Polished Saberon Skull", "i605 Agility/Strength Ring", },
+        [73102160]={ quest=35692, item=118233, note="Freshwater Clam", },
+        [73901410]={ quest=35955, label="Adventurer's Sack", note="Gold", },
+        [75206500]={ quest=36102, label="Saberon Stash", note="Gold, jump down", },
+        [75306570]={ quest=36099, item=61986, note="Important Exploration Supplies", },
+        [75404710]={ quest=36074, item=118236, note="Gambler's Purse", "Flavor Item", },
+        [75806200]={ quest=36077, label="Adventurer's Mace", note="Gold, green mace", },
+        [77302820]={ quest=35986, item=116760, note="Bone-Carved Dagger", "i597 Agility Dagger", },
+        [78901550]={ quest=36036, item=118251, note="Elemental Shackles", "i605 Agility Ring", },
+        [81007980]={ quest=36049, item=118255, note="Ogre Beads", "i605 Str Ring", },
+        [81501300]={ quest=35953, item=116640, note="Adventurer's Staff", "Gold", },
+        [82305660]={ quest=35765, label="Adventurer's Pack", note="Gold, random green", },
+        [87107290]={ quest=36051, item=118054, note="Grizzlemaw's Bonepile", },
+        -- rares
+        [34607700]={ quest=34727, npc=79725, item=118244, }, -- Captain Ironbeard (also drops 116809)
+        [38001960]={ quest=37397, npc=87846, achievement=9571, }, -- Pit Slayer
+        [38602240]={ quest=37395, npc=87788, item=119405, achievement=9571, }, -- Durg Spinecrusher
+        [40001600]={ quest=37395, npc=87837, achievement=9571, }, -- Bonebreaker
+        [42207860]={ quest=34725, npc=80122, currency=824, note="In a cave", }, -- Gaz'orda
+        [42804920]={ quest=35875, npc=83409, item=116765, }, -- Ophiis
+        [43003640]={ quest=37400, npc=87234, item=119380, achievement=9541, }, -- Brutag Grimblade
+        [43803440]={ quest=37473, npc=87239, achievement=9541, }, -- Krahl Deadeye
+        [45003640]={ quest=37472, npc=87344, achievement=9541, }, -- Gortag Steelgrip
+        [45801520]={ quest=36229, npc=84435, item=118690, }, -- Mr. Pinchy Sr.
+        [45803480]={ quest=37399, npc=86959, item=119355, achievement=9541, }, -- Karosh Blackwind
+        [47607080]={ quest=35865, npc=83401, item=116815, pet=true, }, -- Netherspawn
+        [52009000]={ quest=37408, npc=80370, }, -- Lernaea
+        [52205580]={ quest=35715, npc=82764, item=118246, }, -- Gar'lua
+        [54806120]={ quest=35931, npc=83634, item=116797, }, -- Scout Pokhar
+        [58008400]={ quest=35900, npc=83526, item=118688, }, -- Ru'klaa
+        [58201200]={ quest=37398, npc=88210, achievement=9617, }, -- Krud the Eviscerator
+        [58201800]={ quest=37637, npc=88208, currency=823, }, -- Pit Beast
+        [61804720]={ quest=35912, npc=83542, currency=824, }, -- Sean Whitesea
+        [61806900]={ quest=35943, npc=83680, item=116800, }, -- Outrider Duretha
+        [65003900]={ quest=35920, npc=83591, item=116814, }, -- Tura'aka
+        [66605660]={ quest=35717, npc=82778, item=116824, }, -- Gnarlhoof the Rabid
+        [66805120]={ quest=35714, npc=82758, item=116795, }, -- Greatfeather
+        [70004180]={ quest=35893, npc=83483, item=116807, }, -- Flinthide
+        [70602940]={ quest=35877, npc=83428, item=116808, }, -- Windcaller Korast
+        [73605780]={ quest=35712, npc=82755, item=118243, }, -- Redclaw the Feral
+        [74801180]={ quest=35836, npc=82975, item=116836, note="Use the fishing rod at 75.3,10.9", }, -- Fangler
+        [75606500]={ quest=36128, npc=80057, item=116806, }, -- Soulfang
+        [77006400]={ quest=35735, npc=82826, currency=824, note="In a cave, use the switch", }, -- Berserk T-300 Series Mark II
+        [80603040]={ quest=35923, npc=83603, item=118245, }, -- Hunter Blacktooth
+        [81206000]={ quest=35932, npc=83643, item=116796, }, -- Malroc Stonesunder 
+        [82607620]={ quest=34645, npc=79024, item=116805, }, -- Warmaster Blugthol
+        [84603660]={ quest=36159, npc=84263, item=118689, }, -- Graveltooth
+        [84605340]={ quest=35778, npc=82899, currency=824, }, -- Ancient Blademaster
+        [86007160]={ quest=35784, npc=82912, item=118687, }, -- Grizzlemaw
+        [87005500]={ quest=34862, npc=78161, item=116799, }, -- Hyperious
+        [89004120]={ quest=35623, npc=82486, item=118679, }, -- Explorer Nozzand 
+        [93202820]={ quest=35898, npc=83509, item=116916, }, -- Gorepetal
+        -- steamwheedle rares
+        [62601680]={ quest=37211, npc=86732, item=118655, }, -- Bergruu
+        [50204120]={ quest=37221, npc=86743, item=118656, }, -- Dekorhan
+        [63402960]={ quest=37225, npc=86750, item=118660, }, -- Thek'talon
+        [48202220]={ quest=37223, npc=86771, item=118658, }, -- Gagrog the Brutal
+        [41004400]={ quest=37226, npc=86835, item=118661, }, -- Xelganak
+        [51001600]={ quest=37210, npc=86774, item=118654, }, -- Aogexon
+        [60003800]={ quest=37222, npc=86729, item=118657, }, -- Direhoof
+        [34005100]={ quest=37224, npc=87666, item=118659, }, -- Mu'gra
+        [37003800]={ quest=37520, npc=88951, item=120172, }, -- Vileclaw
     },
     ["ShadowmoonValleyDR"] = {
         -- garrison-y
@@ -453,26 +568,26 @@ local points = {
     ["garrisonsmvalliance_tier1"] = {
         [49604380]={ quest=35530, currency=824, label="Lunarfall Egg", note="wagon", },
         [51800110]={ quest=35289, currency=824, label="Spark's Stolen Supplies", note="cave by lake", },
-        [42405436]={ quest=35381, currency=824, label="Pippers' Buried Supplies 1", },
-        [50704850]={ quest=35382, currency=824, label="Pippers' Buried Supplies 2", },
-        [30802830]={ quest=35383, currency=824, label="Pippers' Buried Supplies 3", },
-        [49197683]={ quest=35384, currency=824, label="Pippers' Buried Supplies 4", },
+        [42405436]={ quest=35381, currency=824, label="Pippers' Buried Supplies", },
+        [50704850]={ quest=35382, currency=824, label="Pippers' Buried Supplies", },
+        [30802830]={ quest=35383, currency=824, label="Pippers' Buried Supplies", },
+        [49197683]={ quest=35384, currency=824, label="Pippers' Buried Supplies", },
     },
     ["garrisonsmvalliance_tier2"] = {
         [37306590]={ quest=35530, currency=824, label="Lunarfall Egg, wagon", },
         [51800110]={ quest=35289, currency=824, label="Spark's Stolen Supplies", note="cave by lake", },
-        [41685803]={ quest=35381, currency=824, label="Pippers' Buried Supplies 1", },
-        [51874545]={ quest=35382, currency=824, label="Pippers' Buried Supplies 2", },
-        [34972345]={ quest=35383, currency=824, label="Pippers' Buried Supplies 3", },
-        [46637608]={ quest=35384, currency=824, label="Pippers' Buried Supplies 4", },
+        [41685803]={ quest=35381, currency=824, label="Pippers' Buried Supplies", },
+        [51874545]={ quest=35382, currency=824, label="Pippers' Buried Supplies", },
+        [34972345]={ quest=35383, currency=824, label="Pippers' Buried Supplies", },
+        [46637608]={ quest=35384, currency=824, label="Pippers' Buried Supplies", },
     },
     ["garrisonsmvalliance_tier3"] = {
         [61277261]={ quest=35530, currency=824, label="Lunarfall Egg, tent", },
         [51800110]={ quest=35289, currency=824, label="Spark's Stolen Supplies", note="cave by lake", },
-        [60575515]={ quest=35381, currency=824, label="Pippers' Buried Supplies 1", },
-        [37307491]={ quest=35382, currency=824, label="Pippers' Buried Supplies 2", },
-        [37864378]={ quest=35383, currency=824, label="Pippers' Buried Supplies 3", },
-        [61527154]={ quest=35384, currency=824, label="Pippers' Buried Supplies 4", },
+        [60575515]={ quest=35381, currency=824, label="Pippers' Buried Supplies", },
+        [37307491]={ quest=35382, currency=824, label="Pippers' Buried Supplies", },
+        [37864378]={ quest=35383, currency=824, label="Pippers' Buried Supplies", },
+        [61527154]={ quest=35384, currency=824, label="Pippers' Buried Supplies", },
     },
 }
 
