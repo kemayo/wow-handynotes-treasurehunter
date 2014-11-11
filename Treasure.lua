@@ -266,6 +266,7 @@ local points = {
         [16104980]={ quest=33942, label="Supply Dump", currency=824, },
         [21605070]={ quest=34931, label="Pale Loot Sack", currency=824, },
         [24001300]={ quest=34647, label="Snow-Covered Strongbox", currency=824, },
+        [26503640]={ quest=nil, label="Gorr'thogg's Personal Reserve", currency=824, },
         [34202350]={ quest=32803, label="Thunderlord Cache", currency=824, },
         [37205920]={ quest=34967, label="Raided Loot", currency=824, },
         [43705550]={ quest=34841, label="Forgotten Supplies", currency=824, },
