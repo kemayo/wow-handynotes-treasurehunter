@@ -118,6 +118,7 @@ local points = {
         [81007980]={ quest=36049, item=118255, note="Ogre Beads", "i605 Str Ring", },
         [81501300]={ quest=35953, item=116640, note="Adventurer's Staff", "Gold", },
         [82305660]={ quest=35765, label="Adventurer's Pack", note="Gold, random green", },
+        [85405340]={ quest=35696, label="Burning Blade Cache", note="In tower, jump from cliff", },
         [87107290]={ quest=36051, item=118054, note="Grizzlemaw's Bonepile", },
         -- rares
         [34607700]={ quest=34727, npc=79725, item=118244, }, -- Captain Ironbeard (also drops 116809)
