@@ -341,6 +341,7 @@ local points = {
     --[[
     ["BladespireFortress"] = {
         [37806900]={ quest=nil, item=113189, note="Doorog's Secret Stash", },
+        [76806280]={ quest=nil, currency=824, label="Ogre Booty", },
     },
     --]]
     ["Gorgrond"] = {
