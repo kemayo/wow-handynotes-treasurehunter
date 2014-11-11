@@ -604,6 +604,12 @@ local points = {
         [37864378]={ quest=35383, currency=824, label="Pippers' Buried Supplies", },
         [61527154]={ quest=35384, currency=824, label="Pippers' Buried Supplies", },
     },
+    --[[
+    -- TODO: confirm map name, probably different per-floor, this is the one just before the Foundry Terminus
+    ["BlackrockFoundry"] {
+        [51704500] = { quest=nil, currency=824, label="Iron Horde Chest", },
+    },
+    --]]
 }
 
 local cache_tooltip = CreateFrame("GameTooltip", "HNTreasureHunterTooltip")
