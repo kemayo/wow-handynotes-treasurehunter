@@ -94,6 +94,7 @@ local points = {
         [45806630]={ quest=36020, item=117981, note="Fragment of Oshu'gun", "i607 Intellect Shield", },
         [50006650]={ quest=35579, item=118264, note="Void-Infused Crystal", "i613 2H Strength Sword", },
         [52404440]={ quest=36073, item=118250, note="Warsong Helm", },
+        [53406430]={ quest=36088, label="Adventurer's Pouch", note="Random green, in the cave", }, -- todo: confirm location
         [57806220]={ quest=36115, item=118278, note="Pale Elixir", "Manareg Potion", },
         [58205260]={ quest=35694, item=118266, note="Golden Kaliri Egg", },
         [58305940]={ quest=36021, item=116688, note="Pokkar's Thirteenth Axe", "i605 1H Strength Axe", },
@@ -168,6 +169,12 @@ local points = {
         [34005100]={ quest=37224, npc=87666, item=118659, }, -- Mu'gra
         [37003800]={ quest=37520, npc=88951, item=120172, }, -- Vileclaw
     },
+    --[[
+    -- TODO: need the name
+    ["ACaveInNagrand"] = {
+        [66305730]={ quest=36088, label="Adventurer's Pouch", note="Random green", },
+    }
+    --]]
     ["ShadowmoonValleyDR"] = {
         -- garrison-y
         [27100260]={ quest=35280, currency=824, label="Stolen Treasure", },
