@@ -174,7 +174,7 @@ local points = {
     -- TODO: need the name
     ["ACaveInNagrand"] = {
         [66305730]={ quest=36088, label="Adventurer's Pouch", note="Random green", },
-    }
+    },
     --]]
     ["ShadowmoonValleyDR"] = {
         -- garrison-y
@@ -284,6 +284,7 @@ local points = {
         [24202720]={ quest=33501, item=63293, note="Spectator's Chest, booze", },
         [24204860]={ quest=34507, item=110689, note="Frozen Frostwolf Axe", },
         [25502040]={ quest=34648, item=111415, note="Gnawed Bone", },
+        [26703940]={ quest=nil, item=113189, note="Doorog's Secret Stash", },
         [27604280]={ quest=33500, item=43696, note="Slave's Stash, booze", },
         [38403780]={ quest=33502, item=112087, note="Obsidian Petroglyph", },
         [40902010]={ quest=34473, item=110536, note="Envoy's Satchel", },
@@ -336,6 +337,11 @@ local points = {
         [43002100]={ quest=37387, item=119356, npc=82614, }, -- Moltnoma
         [40601240]={ quest=34522, npc=79104, currency=823, }, -- Ug'lok the Frozen
     },
+    --[[
+    ["BladespireFortress"] = {
+        [37806900]={ quest=nil, item=113189, note="Doorog's Secret Stash", },
+    },
+    --]]
     ["Gorgrond"] = {
         -- treasures
         [39006810]={ quest=36631, label="Sasha's Secret Stash", note="Random green + gold", },
