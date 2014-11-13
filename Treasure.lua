@@ -19,6 +19,7 @@ local defaults = {
         icon_scale = 1.0,
         icon_alpha = 1.0,
         icon_item = true,
+        tooltip_item = true,
     },
 }
 
@@ -723,7 +724,12 @@ local function handle_tooltip(tooltip, point)
         if point.label then
             tooltip:AddLine(point.label)
         elseif point.item then
-            tooltip:SetHyperlink(("item:%d"):format(point.item))
+            if db.tooltip_item or IsLeftShiftKeyDown() then
+                tooltip:SetHyperlink(("item:%d"):format(point.item))
+            else
+                local link = select(2, GetItemInfo(point.item))
+                tooltip:AddLine(link)
+            end
         elseif point.npc then
             tooltip:SetHyperlink(("unit:Creature-0-0-0-0-%d"):format(point.npc))
         end
@@ -901,6 +907,11 @@ local options = {
             type = "toggle",
             name = "Item icons",
             desc = "Show the icons for items, if known; otherwise, the achievement icon will be used",
+        },
+        tooltip_item = {
+            type = "toggle",
+            name = "Item tooltips",
+            desc = "Show the full tooltips for items",
         },
         -- show_junk = {
         --     type = "toggle",
