@@ -632,7 +632,7 @@ local function mob_name(id)
     return name_cache[id]
 end
 
-local default_texture
+local default_texture, npc_texture
 local icon_cache = {}
 local trimmed_icon = function(texture)
     if not icon_cache[texture] then
@@ -692,9 +692,19 @@ local function work_out_texture(point)
             return trimmed_icon(texture)
         end
     end
-    -- if point.npc then
-
-    -- end
+    if point.npc then
+        if not npc_texture then
+            local left, right, top, bottom = GetObjectIconTextureCoords(41)
+            npc_texture = {
+                icon = [[Interface\MINIMAP\OBJECTICONS]],
+                tCoordLeft = left,
+                tCoordRight = right,
+                tCoordTop = top,
+                tCoordBottom = bottom,
+            }
+        end
+        return npc_texture
+    end
     return trimmed_icon(default_texture)
 end
 local get_point_info = function(point)
