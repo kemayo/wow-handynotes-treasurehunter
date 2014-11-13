@@ -930,8 +930,15 @@ function HL:OnInitialize()
     db = self.db.profile
     -- Initialize our database with HandyNotes
     HandyNotes:RegisterPluginDB("TreasureHunter", HLHandler, options)
+
+    -- watch for LOOT_CLOSED
+    self:RegisterEvent("LOOT_CLOSED")
 end
 
 function HL:Refresh()
     self:SendMessage("HandyNotes_NotifyUpdate", "TreasureHunter")
+end
+
+function HL:LOOT_CLOSED()
+    self:Refresh()
 end
