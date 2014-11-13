@@ -550,7 +550,7 @@ local points = {
         [44401200]={ quest=36377, npc=85206, item=118693, }, -- Rukhmar's Image
         [40605500]={ quest=36458, item=116913, note="Abandoned Mining Pick", },
         [58706030]={ quest=36340, item=116922, note="Ogron Plunder (Hobbit reference!)", },
-        [37305070]={ quest=36657, item=116887, note="Feed the dog Rooby Reat from the chef downstairs", },
+        [37305070]={ quest=36657, item=116887, note="Feed the dog 3x[Rooby Reat] from the chef downstairs", },
         [37705640]={ quest=36462, item=116020, note="Unlocks a chest in Admiral Taylor's Garrison Town Hall", },
         [59109060]={ quest=nil, item=116917, note="In the control room", }, -- Sailor Zazzuk's 180-Proof Rum
         -- rares
