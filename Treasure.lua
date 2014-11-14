@@ -585,32 +585,33 @@ local points = {
     ["garrisonsmvalliance_tier1"] = {
         [49604380]={ quest=35530, currency=824, label="Lunarfall Egg", note="wagon", },
         [51800110]={ quest=35289, currency=824, label="Spark's Stolen Supplies", note="cave by lake", },
-        [42405436]={ quest=35381, currency=824, label="Pippers' Buried Supplies", },
-        [50704850]={ quest=35382, currency=824, label="Pippers' Buried Supplies", },
-        [30802830]={ quest=35383, currency=824, label="Pippers' Buried Supplies", },
-        [49197683]={ quest=35384, currency=824, label="Pippers' Buried Supplies", },
+        [42405436]={ quest=35381, currency=824, label="Pippers' Buried Supplies", junk=true, },
+        [50704850]={ quest=35382, currency=824, label="Pippers' Buried Supplies", junk=true, },
+        [30802830]={ quest=35383, currency=824, label="Pippers' Buried Supplies", junk=true, },
+        [49197683]={ quest=35384, currency=824, label="Pippers' Buried Supplies", junk=true, },
     },
     ["garrisonsmvalliance_tier2"] = {
         [37306590]={ quest=35530, currency=824, label="Lunarfall Egg, wagon", },
         [51800110]={ quest=35289, currency=824, label="Spark's Stolen Supplies", note="cave by lake", },
-        [41685803]={ quest=35381, currency=824, label="Pippers' Buried Supplies", },
-        [51874545]={ quest=35382, currency=824, label="Pippers' Buried Supplies", },
-        [34972345]={ quest=35383, currency=824, label="Pippers' Buried Supplies", },
-        [46637608]={ quest=35384, currency=824, label="Pippers' Buried Supplies", },
+        [41685803]={ quest=35381, currency=824, label="Pippers' Buried Supplies", junk=true, },
+        [51874545]={ quest=35382, currency=824, label="Pippers' Buried Supplies", junk=true, },
+        [34972345]={ quest=35383, currency=824, label="Pippers' Buried Supplies", junk=true, },
+        [46637608]={ quest=35384, currency=824, label="Pippers' Buried Supplies", junk=true, },
     },
     ["garrisonsmvalliance_tier3"] = {
         [61277261]={ quest=35530, currency=824, label="Lunarfall Egg, tent", },
         [51800110]={ quest=35289, currency=824, label="Spark's Stolen Supplies", note="cave by lake", },
-        [60575515]={ quest=35381, currency=824, label="Pippers' Buried Supplies", },
-        [37307491]={ quest=35382, currency=824, label="Pippers' Buried Supplies", },
-        [37864378]={ quest=35383, currency=824, label="Pippers' Buried Supplies", },
-        [61527154]={ quest=35384, currency=824, label="Pippers' Buried Supplies", },
+        [60575515]={ quest=35381, currency=824, label="Pippers' Buried Supplies", junk=true, },
+        [37307491]={ quest=35382, currency=824, label="Pippers' Buried Supplies", junk=true, },
+        [37864378]={ quest=35383, currency=824, label="Pippers' Buried Supplies", junk=true, },
+        [61527154]={ quest=35384, currency=824, label="Pippers' Buried Supplies", junk=true, },
     },
     --[[
     -- TODO: confirm map name, probably different per-floor, this is the one just before the Foundry Terminus
     ["BlackrockFoundry"] {
         [51704500] = { quest=nil, currency=824, label="Iron Horde Chest", },
     },
+    ["TanaanJungleIntro"] = {},
     --]]
 }
 
