@@ -226,7 +226,7 @@ local points = {
         [21602100]={ quest=33640, item=108906, npc=75482, }, -- Veloss
         [27604360]={ quest=36880, item=118734, npc=86689, }, -- Sneevel
         [29600620]={ quest=35281, item=111666, npc=81406, }, -- Bahameye
-        [29603380]={ quest=33664, item=113082, npc=76380, }, -- Gorum
+        [29603380]={ quest=33664, item=113082, npc=76380, note="In the cave @ 25,33", }, -- Gorum
         [29605080]={ quest=37357, item=119369, npc=85451, }, -- Malgosh Shadowkeeper
         [31905720]={ quest=37359, item=119392, npc=85078, }, -- Voidreaver Urnae
         [32203500]={ quest=33039, item=109061, npc=72362, }, -- Ku'targ the Voidseer
@@ -261,6 +261,9 @@ local points = {
         [61606180]={ quest=35725, item=113557, npc=82207, }, -- Faebright
         [67806380]={ quest=35688, item=113556, npc=82676, }, -- Enavra
         [68208480]={ quest=37410, currency=823, npc=85568, }, -- Avalanche
+    },
+    ["BloodthornCave"] = {
+        [55544974]={ quest=33572, item=113373, note="Rotting Basket", level=15, },
     },
     ["FrostfireRidge"] = {
         -- garrison
@@ -584,7 +587,7 @@ local points = {
     -- these might /all/ be junk? don't know yet
     ["garrisonsmvalliance_tier1"] = {
         [49604380]={ quest=35530, currency=824, label="Lunarfall Egg", note="wagon", },
-        [51800110]={ quest=35289, currency=824, label="Spark's Stolen Supplies", note="cave by lake", },
+        [51800110]={ quest=35289, currency=824, label="Spark's Stolen Supplies", note="cave by lake", junk=true, },
         [42405436]={ quest=35381, currency=824, label="Pippers' Buried Supplies", junk=true, },
         [50704850]={ quest=35382, currency=824, label="Pippers' Buried Supplies", junk=true, },
         [30802830]={ quest=35383, currency=824, label="Pippers' Buried Supplies", junk=true, },
@@ -592,7 +595,7 @@ local points = {
     },
     ["garrisonsmvalliance_tier2"] = {
         [37306590]={ quest=35530, currency=824, label="Lunarfall Egg, wagon", },
-        [51800110]={ quest=35289, currency=824, label="Spark's Stolen Supplies", note="cave by lake", },
+        [51800110]={ quest=35289, currency=824, label="Spark's Stolen Supplies", note="cave by lake", junk=true, },
         [41685803]={ quest=35381, currency=824, label="Pippers' Buried Supplies", junk=true, },
         [51874545]={ quest=35382, currency=824, label="Pippers' Buried Supplies", junk=true, },
         [34972345]={ quest=35383, currency=824, label="Pippers' Buried Supplies", junk=true, },
@@ -600,7 +603,7 @@ local points = {
     },
     ["garrisonsmvalliance_tier3"] = {
         [61277261]={ quest=35530, currency=824, label="Lunarfall Egg, tent", },
-        [51800110]={ quest=35289, currency=824, label="Spark's Stolen Supplies", note="cave by lake", },
+        [51800110]={ quest=35289, currency=824, label="Spark's Stolen Supplies", note="cave by lake", junk=true, },
         [60575515]={ quest=35381, currency=824, label="Pippers' Buried Supplies", junk=true, },
         [37307491]={ quest=35382, currency=824, label="Pippers' Buried Supplies", junk=true, },
         [37864378]={ quest=35383, currency=824, label="Pippers' Buried Supplies", junk=true, },
@@ -877,6 +880,7 @@ do
         return nil, nil, nil, nil
     end
     function HLHandler:GetNodes(mapFile, minimap, level)
+        Debug("GetNodes", mapFile, minimap, level)
         currentLevel = level
         mapFile = string.gsub(mapFile, "_terrain%d+$", "")
         return iter, points[mapFile], nil
