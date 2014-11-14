@@ -218,7 +218,7 @@ local points = {
         [51803550]={ quest=33037, label="False-Bottomed Jar", note="Gold", junk=true, },
         [55004500]={ quest=35581, item=109124, note="Alchemist's Satchel", },
         [55307480]={ quest=35580, item=117550, note="Swamplighter Hive", toy=true, },
-        [55801990]={ quest=35600, item=118104, note="Strange Spore, on top of the mushroom", pet=true, },
+        [55801990]={ quest=35600, item=118104, note="Strange Spore, on top of the mushroom, go over the mountain", pet=true, },
         [58902200]={ quest=35603, item=113215, note="Mikkal's Chest, a sick burn from the NPC", },
         [66903350]={ quest=36507, item=116875, note="Orc Skeleton", },
         [67108430]={ quest=33565, item=44722, note="Scaly Rylak Egg, ah the memories", },
