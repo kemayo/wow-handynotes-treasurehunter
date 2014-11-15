@@ -186,7 +186,7 @@ local points = {
         [45802460]={ quest=33570, currency=824, label="Shadowmoon Exile Treasure", note="cave below Exile Rise", },
         [52902490]={ quest=37254, currency=824, label="Mushroom-Covered Chest", },
         [57904530]={ quest=33568, currency=824, label="Kaliri Egg", },
-        [28303930]={ quest=33571, currency=824, label="Shadowmoon Treasure", },
+        [28303930]={ quest=33571, currency=824, label="Shadowmoon Treasure", note="It's in the tent-y building", },
         [42106130]={ quest=33041, currency=824, label="Iron Horde Cargo Shipment", },
         [84504470]={ quest=33885, currency=824, label="Cargo of the Raven Queen", },
         -- treasures
@@ -195,7 +195,7 @@ local points = {
         [30004530]={ quest=35919, item=113563, note="Shadowmoon Sacrificial Dagger" },
         [31303910]={ quest=33886, item=109081, note="Ronokk's Belongings", },
         [33503970]={ quest=33569, item=113545, note="Reusable mana potion", },
-        [34204350]={ quest=33866, item=109124, note="Veema's Herb Bag", },
+        [34204350]={ quest=33866, item=109124, note="Veema's Herb Bag, underground", },
         [34404620]={ quest=33891, item=108901, note="Giant Moonwillow Cone", },
         [35904090]={ quest=33540, item=113546, note="Uzko's Knickknacks", },
         [36704450]={ quest=33573, item=113378, },
