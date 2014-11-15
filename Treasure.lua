@@ -186,7 +186,7 @@ local points = {
         [45802460]={ quest=33570, currency=824, label="Shadowmoon Exile Treasure", note="cave below Exile Rise", },
         [52902490]={ quest=37254, currency=824, label="Mushroom-Covered Chest", },
         [57904530]={ quest=33568, currency=824, label="Kaliri Egg", },
-        [28303930]={ quest=33571, currency=824, label="Shadowmoon Treasure", note="It's in the tent-y building", },
+        [28303930]={ quest=33571, currency=824, label="Shadowmoon Treasure", note="It's in the tent-y building. Currently bugged so it won't show as complete.", },
         [42106130]={ quest=33041, currency=824, label="Iron Horde Cargo Shipment", },
         [84504470]={ quest=33885, currency=824, label="Cargo of the Raven Queen", },
         -- treasures
@@ -760,7 +760,7 @@ local function handle_tooltip(tooltip, point)
             tooltip:AddDoubleLine(BATTLE_PET_SOURCE_6, name or point.achievement)
         end
         if point.note then
-            tooltip:AddLine(point.note)
+            tooltip:AddLine(point.note, nil, nil, nil, true)
         end
     else
         tooltip:SetText(UNKNOWN)
