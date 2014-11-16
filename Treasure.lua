@@ -435,7 +435,7 @@ local points = {
         [62404800]={ quest=34252, item=110506, note="Barrel of Fish", },
         [64607920]={ quest=34251, item=117571, note="Iron Box", },
         [64901330]={ quest=34232, item=116117, note="Rook's Tacklebox", },
-        [65501130]={ quest=34233, item=117568, note="Jug of Aged Ironwine", },
+        [65501130]={ quest=34233, item=117568, note="Jug of Aged Ironwine, cave entrance to the north", },
         [65508860]={ quest=34255, item=116129, note="Webbed Sac", },
         [65908520]={ quest=34276, label="Rusted Lockbox", note="Random green", },
         [66608690]={ quest=34239, item=117569, note="Curious Deathweb Egg", toy=true, },
