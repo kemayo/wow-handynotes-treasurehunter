@@ -358,7 +358,7 @@ local points = {
         [42408340]={ quest=36625, label="Discarded Pack", note="Gold", },
         [42604680]={ quest=35056, label="Horned Skull", currency=824, },
         [43109290]={ quest=34241, item=118227, note="Ockbar's Pack", },
-        [43606980]={ quest=36118, label="Pile of Rubble", note="Random green + gold", },
+        [43907050]={ quest=36118, label="Pile of Rubble", note="Random green + gold; behind the ruined ogre statue head", },
         [43704240]={ quest=36618, label="Iron Supply Chest", currency=824, },
         [44207420]={ quest=35709, label="Laughing Skull Cache", currency=824, },
         [45004260]={ quest=36634, item=118713, note="Sniper's Crossbow", },
