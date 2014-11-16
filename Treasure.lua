@@ -350,7 +350,7 @@ local points = {
     --]]
     ["Gorgrond"] = {
         -- treasures
-        [39006810]={ quest=36631, label="Sasha's Secret Stash", note="Random green + gold", },
+        [39006810]={ quest=36631, label="Sasha's Secret Stash", note="Random green + gold; top of the tower on a broken beam outside, you have to jump down", },
         [40007230]={ quest=36170, item=118715, note="Femur of Improbability", },
         [40407660]={ quest=36621, item=118710, note="Explorer Canister", currency=824, },
         [41705300]={ quest=36506, item=118702, note="Brokor's Sack", },
