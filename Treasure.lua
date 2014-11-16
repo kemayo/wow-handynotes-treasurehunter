@@ -360,7 +360,7 @@ local points = {
         [43109290]={ quest=34241, item=118227, note="Ockbar's Pack", },
         [43907050]={ quest=36118, label="Pile of Rubble", note="Random green + gold; behind the ruined ogre statue head", },
         [43704240]={ quest=36618, label="Iron Supply Chest", currency=824, },
-        [44207420]={ quest=35709, label="Laughing Skull Cache", currency=824, },
+        [44207420]={ quest=35709, label="Laughing Skull Cache", currency=824, note="Up a tree", },
         [45004260]={ quest=36634, item=118713, note="Sniper's Crossbow", },
         [45704970]={ quest=36610, item=118708, note="Suntouched Spear", },
         [46105000]={ quest=36651, label="Harvestable Precious Crystal", currency=824, },
