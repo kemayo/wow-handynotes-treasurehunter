@@ -369,7 +369,7 @@ local points = {
         [48904730]={ quest=36203, item=118716, note="Warm Goren Egg", toy=true, },
         [49304360]={ quest=36596, item=107645, note="Weapons Cache", currency=824, },
         [52506690]={ quest=36509, item=118717, note="Odd Skull", },
-        [53008000]={ quest=34940, item=118718, note="Strange Looking Dagger", },
+        [53008000]={ quest=34940, item=118718, note="Strange Looking Dagger; cave entrance at 51.3,77.6", },
         [53107440]={ quest=36654, item=118714, note="Remains of Balik Orecrusher", },
         [57006530]={ quest=37249, item=118106, note="Strange Spore; on mushrooms on the cliff", pet=true, junk=true, },
         [57805600]={ quest=36605, item=118703, note="Remains of Balldir Deeprock", },
