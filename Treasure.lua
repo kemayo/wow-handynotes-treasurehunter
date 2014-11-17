@@ -354,7 +354,7 @@ local points = {
         [40007230]={ quest=36170, item=118715, note="Femur of Improbability", },
         [40407660]={ quest=36621, item=118710, note="Explorer Canister", currency=824, },
         [41705300]={ quest=36506, item=118702, note="Brokor's Sack", },
-        [41807810]={ quest=36658, label="Evermorn Supply Cache", },
+        [41807810]={ quest=36658, label="Evermorn Supply Cache", note="Green and gold; behind a hut", },
         [42408340]={ quest=36625, label="Discarded Pack", note="Gold", },
         [42604680]={ quest=35056, label="Horned Skull", currency=824, },
         [43109290]={ quest=34241, item=118227, note="Ockbar's Pack", },
