@@ -373,7 +373,7 @@ local points = {
         [53107440]={ quest=36654, item=118714, note="Remains of Balik Orecrusher", },
         [57006530]={ quest=37249, item=118106, note="Strange Spore; on mushrooms on the cliff", pet=true, junk=true, },
         [57805600]={ quest=36605, item=118703, note="Remains of Balldir Deeprock", },
-        [59406370]={ quest=36628, item=118712, note="Vindicator's Hammer", },
+        [59406370]={ quest=36628, item=118712, note="Vindicator's Hammer; on a mushroom, climb up into Wildwood from 59.8,53.5 (yes, it's a long way), jump to the mushrooms at 61.9,60.0, and carry on across to the one with a nest on top", },
         [71906660]={ quest=nil, label="Sunken Treasure", currency=824, },
         -- rares
         [37608140]={ quest=36600, item=118231, npc=85970, }, -- Riptar
