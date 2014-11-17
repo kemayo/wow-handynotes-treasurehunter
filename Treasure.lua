@@ -500,7 +500,7 @@ local points = {
         -- archaeology
         [33302730]={ quest=36422, label="Sun-Touched Cache", currency=829, note="Needs archaeology", },
         [42701830]={ quest=36244, label="Misplaced Scrolls", note="Needs archaeology", currency=829, },
-        [43001640]={ quest=36245, label="Relics of the Outcasts", currency=829, note="Needs archaeology", },
+        [43001640]={ quest=36245, label="Relics of the Outcasts", currency=829, note="Needs archaeology; on top of the walls", },
         [43202720]={ quest=36355, label="Relics of the Outcasts", currency=829, note="Needs archaeology", },
         [46004410]={ quest=36354, label="Relics of the Outcasts", currency=829, note="Needs archaeology", },
         [51904890]={ quest=36360, label="Relics of the Outcasts", currency=829, note="Needs archaeology", },
