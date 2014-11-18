@@ -543,7 +543,7 @@ local points = {
         [71604850]={ quest=36450, item=109223, note="Sethekk Ritual Brew", },
         [41805050]={ quest=36451, item=116918, note="Garrison Workman's Hammer", },
         [56202880]={ quest=36362, label="Shattered Hand Cache", currency=824, },
-        [68408900]={ quest=36453, label="Coinbender's Payment", currency=824, },
+        [68408900]={ quest=36453, label="Coinbender's Payment", note="Gold", },
         [63606740]={ quest=36454, item=109130, note="Mysterious Mushrooms", },
         [66505650]={ quest=36455, label="Waterlogged Satchel", note="Random green", },
         [54403240]={ quest=36364, item=118695, note="Toxicfang Venom", currency=824, },
