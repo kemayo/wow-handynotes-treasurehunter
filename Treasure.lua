@@ -538,7 +538,7 @@ local points = {
         [46903400]={ quest=36446, label="Outcast's Pouch", note="Random green", },
         [47903070]={ quest=36361, item=116920, note="Shattered Hand Lockbox", },
         [42102170]={ quest=36447, label="Outcast's Belongings", note="Random green", },
-        [34102750]={ quest=36421, label="Sun-Touched Cache", currency=824, note="Needs archaeology?", },
+        [34102750]={ quest=36421, label="Sun-Touched Cache", currency=824, },
         [68203880]={ quest=36375, npc=85190, item=118692, }, -- Sethekk Idol
         [71604850]={ quest=36450, item=109223, note="Sethekk Ritual Brew", },
         [41805050]={ quest=36451, item=116918, note="Garrison Workman's Hammer", },
