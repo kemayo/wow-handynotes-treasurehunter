@@ -585,9 +585,9 @@ local points = {
         [71203380]={ quest=37392, npc=87027, currency=823, }, -- Shadow Hulk
         [74404280]={ quest=37390, npc=87019, currency=823, }, -- Glutonous Giant
     },
-    -- these might /all/ be junk? don't know yet
+    -- Garrisons!
     ["garrisonsmvalliance_tier1"] = {
-        [49604380]={ quest=35530, currency=824, label="Lunarfall Egg", note="wagon", faction="Alliance", },
+        [49604380]={ quest=35530, currency=824, label="Lunarfall Egg", note="wagon", faction="Alliance", junk=true, },
         [51800110]={ quest=35289, currency=824, label="Spark's Stolen Supplies", note="cave by lake", junk=true, },
         [42405436]={ quest=35381, currency=824, label="Pippers' Buried Supplies", junk=true, },
         [50704850]={ quest=35382, currency=824, label="Pippers' Buried Supplies", junk=true, },
@@ -609,6 +609,15 @@ local points = {
         [37307491]={ quest=35382, currency=824, label="Pippers' Buried Supplies", junk=true, },
         [37864378]={ quest=35383, currency=824, label="Pippers' Buried Supplies", junk=true, },
         [61527154]={ quest=35384, currency=824, label="Pippers' Buried Supplies", junk=true, },
+    },
+    ["garrisonffhorde_tier1"] = {
+        [72505620]={ quest=34937, label="Lady Sena's Other Materials Stash", currency=824, faction="Horde", },
+    },
+    ["garrisonffhorde_tier2"] = {
+        [72505620]={ quest=34937, label="Lady Sena's Other Materials Stash", currency=824, faction="Horde", },
+    },
+    ["garrisonffhorde_tier3"] = {
+        [72505620]={ quest=34937, label="Lady Sena's Other Materials Stash", currency=824, faction="Horde", },
     },
     --[[
     -- TODO: confirm map name, probably different per-floor, this is the one just before the Foundry Terminus
