@@ -527,6 +527,7 @@ local points = {
         [53305560]={ quest=36403, item=118267, note="Offering to the Raven Mother", },
         [61006380]={ quest=36410, item=118267, note="Offering to the Raven Mother", },
         -- treasures
+        [29504170]={ quest=35334, item=118207, pet=true, label="Egg of Varasha", note="In the cave", }
         [36801720]={ quest=36243, label="Outcast's Belongings", note="Random green", },
         [50402580]={ quest=36444, item=118691, note="Iron Horde Explosives", },
         [50702880]={ quest=36247, label="Lost Herb Satchel", note="Assorted herbs", },
