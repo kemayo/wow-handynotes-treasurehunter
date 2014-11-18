@@ -274,7 +274,7 @@ local points = {
         [34202350]={ quest=32803, label="Thunderlord Cache", currency=824, },
         [37205920]={ quest=34967, label="Raided Loot", currency=824, },
         [43705550]={ quest=34841, label="Forgotten Supplies", currency=824, },
-        [51002280]={ quest=34521, label="Glowing Obsidian Shard", currency=824, },
+        [51002280]={ quest=34521, label="Glowing Obsidian Shard", currency=824, note="May be missing?", },
         [56707180]={ quest=36863, label="Iron Horde Munitions", currency=824, },
         [64702570]={ quest=33946, label="Survivalist's Cache", currency=824, },
         [66702640]={ quest=33948, label="Goren Leftovers", currency=824, },
