@@ -182,7 +182,7 @@ local points = {
         [27100260]={ quest=35280, currency=824, label="Stolen Treasure", },
         [26500570]={ quest=34174, currency=824, label="Fantastic Fish", },
         [28800710]={ quest=35279, currency=824, label="Sunken Treasure", },
-        [30301990]={ quest=35530, currency=824, label="Lunarfall Egg", note="Moves to the garrison once built", },
+        [30301990]={ quest=35530, currency=824, label="Lunarfall Egg", note="Moves to the garrison once built", faction="Alliance", },
         [45802460]={ quest=33570, currency=824, label="Shadowmoon Exile Treasure", note="cave below Exile Rise", },
         [52902490]={ quest=37254, currency=824, label="Mushroom-Covered Chest", },
         [57904530]={ quest=33568, currency=824, label="Kaliri Egg", },
@@ -280,7 +280,7 @@ local points = {
         [66702640]={ quest=33948, label="Goren Leftovers", currency=824, },
         [68204580]={ quest=33947, label="Grimfrost Treasure", currency=824, },
         [69006910]={ quest=33017, label="Iron Horde Supplies", currency=824, },
-        [74505620]={ quest=34937, label="Lady Sena's Other Materials Stash", currency=824, },
+        [74505620]={ quest=34937, label="Lady Sena's Other Materials Stash", currency=824, faction="Horde", },
         -- treasures
         [09804540]={ quest=34641, item=111407, note="Sealed Jug", },
         [19201200]={ quest=34642, item=111408, note="Lucky Coin", },
@@ -429,9 +429,10 @@ local points = {
         [54002760]={ quest=34290, item=116402, note="Ketya's Stash", pet=true, },
         [54105630]={ quest=35162, item=112699, note="Teroclaw Nest", pet=true, },
         [55206680]={ quest=34253, item=116118, note="Draenei Weapons", currency=824, },
+        [57207540]={ quest=34134, item=117563, note="Rescue 4 draenei trapped in spider webs, then Isaari's Cache will spawm here", faction="Alliance", },
         [57402670]={ quest=34238, item=116120, note="Foreman's Lunchbox", },
         [58901200]={ quest=33933, item=108743, note="Deceptia's Smoldering Boots", toy=true, },
-        [61107170]={ quest=34116, label="Norana's Cache", },
+        [61107170]={ quest=34116, item=117563, label="Rescue 4 adventurers trapped in spider webs, then Norana's Cache will spawn here", faction="Horde", },
         [62003240]={ quest=34236, item=116131, note="Amethyl Crystal", currency=824, },
         [62404800]={ quest=34252, item=110506, note="Barrel of Fish", },
         [64607920]={ quest=34251, item=117571, note="Iron Box", },
@@ -483,7 +484,6 @@ local points = {
         [53802580]={ quest=34135, npc=77529, item=112263, }, -- Yazheera the Incinerator
         [53909100]={ quest=34668, npc=79485, item=116110, }, -- Talonpriest Zorkra
         [56606360]={ quest=35219, npc=78710, item=116122, toy=true, }, -- Kharazos the Triumphant, Galzomar, Sikthiss
-        [57207540]={ quest=34134, npc=77453, item=117563, }, -- Isaari
         [59008800]={ quest=34171, npc=77634, item=116126, note="Kill the hatchlings to summon", }, -- Taladorantula
         [59505960]={ quest=34196, npc=77741, item=116112, }, -- Ra'kahn
         [62004600]={ quest=34185, npc=77715, item=116124, }, -- Hammertooth
@@ -587,7 +587,7 @@ local points = {
     },
     -- these might /all/ be junk? don't know yet
     ["garrisonsmvalliance_tier1"] = {
-        [49604380]={ quest=35530, currency=824, label="Lunarfall Egg", note="wagon", },
+        [49604380]={ quest=35530, currency=824, label="Lunarfall Egg", note="wagon", faction="Alliance", },
         [51800110]={ quest=35289, currency=824, label="Spark's Stolen Supplies", note="cave by lake", junk=true, },
         [42405436]={ quest=35381, currency=824, label="Pippers' Buried Supplies", junk=true, },
         [50704850]={ quest=35382, currency=824, label="Pippers' Buried Supplies", junk=true, },
@@ -725,7 +725,7 @@ local get_point_info = function(point)
         elseif point.junk then
             category = "junk"
         end
-        return label, icon, category, point.quest
+        return label, icon, category, point.quest, point.faction
     end
 end
 local get_point_info_by_coord = function(mapFile, coord)
@@ -858,6 +858,7 @@ end
 
 do
     -- This is a custom iterator we use to iterate over every node in a given zone
+    local player_faction = UnitFactionGroup("player")
     local currentLevel
     local function iter(t, prestate)
         if not t then return nil end
@@ -865,12 +866,13 @@ do
         while state do -- Have we reached the end of this zone?
             if value then
                 if not value.level or value.level == currentLevel then
-                    local label, icon, category, quest = get_point_info(value)
+                    local label, icon, category, quest, faction = get_point_info(value)
                     -- Debug("iter step", state, icon, db.icon_scale, db.icon_alpha, category, quest)
                     if (
                         (category ~= "junk" or db.show_junk)
                         and (category ~= "npc" or db.show_npcs)
                         and (db.found or not (quest and IsQuestFlaggedCompleted(quest)))
+                        and (not faction or faction == player_faction)
                     ) then
                         return state, nil, icon, db.icon_scale, db.icon_alpha
                     end
