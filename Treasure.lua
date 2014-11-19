@@ -417,7 +417,7 @@ local points = {
         [33307670]={ quest=34259, label="Bonechewer Remnants", currency=824, },
         [35509660]={ quest=34249, label="Farmer's Bounty", currency=824, },
         [36509610]={ quest=34182, item=117567, note="Aarko's Family Treasure", },
-        [37607490]={ quest=nil, item=112371, note="Bonechewer Spear", }, -- questionable?
+        [37607490]={ quest=34148, item=112371, note="Bonechewer Spear; sticking out of Viperlash, cave entrance @ 36,75", },
         [38201250]={ quest=34258, label="Light of the Sea", currency=824, },
         [38408450]={ quest=34257, item=116119, note="Treasure of Ango'rosh", },
         [39307770]={ quest=35162, item=112699, note="Teroclaw Nest", pet=true, },
