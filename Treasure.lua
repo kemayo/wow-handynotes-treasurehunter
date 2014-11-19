@@ -10,7 +10,7 @@ local function Debug(...) if debugf then debugf:AddMessage(string.join(", ", tos
 
 ---------------------------------------------------------
 -- Our db upvalue and db defaults
-local db
+local db, hidden
 local defaults = {
     profile = {
         show_junk = true,
@@ -21,6 +21,11 @@ local defaults = {
         icon_alpha = 1.0,
         icon_item = true,
         tooltip_item = true,
+    },
+    char = {
+        hidden = {
+            ['*'] = {},
+        },
     },
 }
 
@@ -834,8 +839,19 @@ do
                 info.func = createWaypoint
                 info.arg1 = currentZone
                 info.arg2 = currentCoord
-                UIDropDownMenu_AddButton(info, level);
+                UIDropDownMenu_AddButton(info, level)
             end
+
+            -- Hide menu item
+            info.text         = "Hide node"
+            info.icon         = nil
+            info.func         = function()
+                hidden[currentZone][currentCoord] = true
+                HL:Refresh()
+            end
+            info.arg1         = nil
+            info.notCheckable = 1
+            UIDropDownMenu_AddButton(info, level)
 
             -- Close menu item
             info.text         = "Close"
@@ -843,7 +859,7 @@ do
             info.func         = function() CloseDropDownMenus() end
             info.arg1         = nil
             info.notCheckable = 1
-            UIDropDownMenu_AddButton(info, level);
+            UIDropDownMenu_AddButton(info, level)
         end
     end
     local HL_Dropdown = CreateFrame("Frame", "HandyNotes_TreasureHunterDropdownMenu")
@@ -870,9 +886,12 @@ end
 do
     -- This is a custom iterator we use to iterate over every node in a given zone
     local player_faction = UnitFactionGroup("player")
-    local currentLevel
-    local function should_show_point(point)
+    local currentLevel, currentZone
+    local function should_show_point(coord, point)
         if point.level and point.level ~= currentLevel then
+            return false
+        end
+        if hidden[currentZone] and hidden[currentZone][coord] then
             return false
         end
         if point.junk and not db.show_junk then
@@ -896,7 +915,7 @@ do
         if not t then return nil end
         local state, value = next(t, prestate)
         while state do -- Have we reached the end of this zone?
-            if value and should_show_point(value) then
+            if value and should_show_point(state, value) then
             -- Debug("iter step", state, icon, db.icon_scale, db.icon_alpha, category, quest)
                 local label, icon = get_point_info(value)
                 return state, nil, icon, db.icon_scale, db.icon_alpha
@@ -909,6 +928,7 @@ do
         Debug("GetNodes", mapFile, minimap, level)
         currentLevel = level
         mapFile = string.gsub(mapFile, "_terrain%d+$", "")
+        currentZone = mapFile
         return iter, points[mapFile], nil
     end
 end
@@ -925,54 +945,85 @@ local options = {
         HL:SendMessage("HandyNotes_NotifyUpdate", "TreasureHunter")
     end,
     args = {
-        desc = {
-            name = "These settings control the look and feel of the icon.",
-            type = "description",
-            order = 0,
+        icon = {
+            type = "group",
+            name = "Icon settings",
+            inline = true,
+            args = {
+                desc = {
+                    name = "These settings control the look and feel of the icon.",
+                    type = "description",
+                    order = 0,
+                },
+                icon_scale = {
+                    type = "range",
+                    name = "Icon Scale",
+                    desc = "The scale of the icons",
+                    min = 0.25, max = 2, step = 0.01,
+                    order = 20,
+                },
+                icon_alpha = {
+                    type = "range",
+                    name = "Icon Alpha",
+                    desc = "The alpha transparency of the icons",
+                    min = 0, max = 1, step = 0.01,
+                    order = 30,
+                },
+            },
         },
-        icon_scale = {
-            type = "range",
-            name = "Icon Scale",
-            desc = "The scale of the icons",
-            min = 0.25, max = 2, step = 0.01,
-            order = 20,
-        },
-        icon_alpha = {
-            type = "range",
-            name = "Icon Alpha",
-            desc = "The alpha transparency of the icons",
-            min = 0, max = 1, step = 0.01,
-            order = 30,
-        },
-        icon_item = {
-            type = "toggle",
-            name = "Item icons",
-            desc = "Show the icons for items, if known; otherwise, the achievement icon will be used",
-        },
-        tooltip_item = {
-            type = "toggle",
-            name = "Item tooltips",
-            desc = "Show the full tooltips for items",
-        },
-        -- show_junk = {
-        --     type = "toggle",
-        --     name = "Junk",
-        --     desc = "Show items which don't count for any achievement",
-        -- },
-        found = {
-            type = "toggle",
-            name = "Show found",
-            desc = "Show waypoints for items you've already found?",
-        },
-        show_npcs = {
-            type = "toggle",
-            name = "Show NPCs",
-            desc = "Show rare NPCs to be killed, generally for items or achievements",
-        },
-        repeatable = {
-            type = "toggle",
-            name = "Show Repeatable items",
-            desc = "Show items which are repeatable? This generally means ones which have a daily tracking quest attached",
+        display = {
+            type = "group",
+            name = "What to display",
+            inline = true,
+            args = {
+                icon_item = {
+                    type = "toggle",
+                    name = "Use item icons",
+                    desc = "Show the icons for items, if known; otherwise, the achievement icon will be used",
+                    order = 0,
+                },
+                tooltip_item = {
+                    type = "toggle",
+                    name = "Use item tooltips",
+                    desc = "Show the full tooltips for items",
+                    order = 10,
+                },
+                -- show_junk = {
+                --     type = "toggle",
+                --     name = "Junk",
+                --     desc = "Show items which don't count for any achievement",
+                -- },
+                found = {
+                    type = "toggle",
+                    name = "Show found",
+                    desc = "Show waypoints for items you've already found?",
+                    order = 20,
+                },
+                show_npcs = {
+                    type = "toggle",
+                    name = "Show NPCs",
+                    desc = "Show rare NPCs to be killed, generally for items or achievements",
+                    order = 30,
+                },
+                repeatable = {
+                    type = "toggle",
+                    name = "Show repeatable",
+                    desc = "Show items which are repeatable? This generally means ones which have a daily tracking quest attached",
+                    order = 40,
+                },
+                unhide = {
+                    type = "execute",
+                    name = "Reset hidden nodes",
+                    desc = "Show all nodes that you manually hid by right-clicking on them and choosing \"hide\".",
+                    func = function()
+                        for map,coords in pairs(hidden) do
+                            wipe(coords)
+                        end
+                        HL:Refresh()
+                    end,
+                    order = 50,
+                },
+            },
         },
     },
 }
@@ -985,6 +1036,7 @@ function HL:OnInitialize()
     -- Set up our database
     self.db = LibStub("AceDB-3.0"):New("HandyNotes_TreasureHunterDB", defaults)
     db = self.db.profile
+    hidden = self.db.char.hidden
     -- Initialize our database with HandyNotes
     HandyNotes:RegisterPluginDB("TreasureHunter", HLHandler, options)
 
