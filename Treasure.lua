@@ -16,6 +16,7 @@ local defaults = {
         show_junk = true,
         show_npcs = true,
         found = false,
+        repeatable = true,
         icon_scale = 1.0,
         icon_alpha = 1.0,
         icon_item = true,
@@ -509,12 +510,12 @@ local points = {
         [60205390]={ quest=36359, label="Relics of the Outcasts", currency=829, note="Needs archaeology", },
         [67403980]={ quest=36356, label="Relics of the Outcasts", currency=829, note="Needs archaeology", },
         -- shrines
-        [43802470]={ quest=36397, item=115463, note="Take to a Shrine of Terrok", },
-        [43901500]={ quest=36395, item=115463, note="Take to a Shrine of Terrok", },
-        [48906250]={ quest=36399, item=115463, note="Take to a Shrine of Terrok", },
-        [53108450]={ quest=nil, item=115463, note="Take to a Shrine of Terrok", },
-        [55602200]={ quest=36400, item=115463, note="Take to a Shrine of Terrok", },
-        [69204330]={ quest=36398, item=115463, note="Take to a Shrine of Terrok", },
+        [43802470]={ quest=36397, item=115463, note="Take to a Shrine of Terrok", repeatable=true, },
+        [43901500]={ quest=36395, item=115463, note="Take to a Shrine of Terrok", repeatable=true, },
+        [48906250]={ quest=36399, item=115463, note="Take to a Shrine of Terrok", repeatable=true, },
+        [53108450]={ quest=nil, item=115463, note="Take to a Shrine of Terrok", repeatable=true, },
+        [55602200]={ quest=36400, item=115463, note="Take to a Shrine of Terrok", repeatable=true, },
+        [69204330]={ quest=36398, item=115463, note="Take to a Shrine of Terrok", repeatable=true, },
         [42402670]={ quest=36388, item=118242, note="Gift of Anzu", note="Drink Elixir of Shadow Sight", },
         [46904050]={ quest=36389, item=118238, note="Gift of Anzu", note="Drink Elixir of Shadow Sight", },
         [48604450]={ quest=36386, item=118237, note="Gift of Anzu", note="Drink Elixir of Shadow Sight", },
@@ -870,23 +871,35 @@ do
     -- This is a custom iterator we use to iterate over every node in a given zone
     local player_faction = UnitFactionGroup("player")
     local currentLevel
+    local function should_show_point(point)
+        if point.level and point.level ~= currentLevel then
+            return false
+        end
+        if point.junk and not db.show_junk then
+            return false
+        end
+        if point.faction and point.faction ~= player_faction then
+            return false
+        end
+        if (not db.found) and point.quest and IsQuestFlaggedCompleted(point.quest) then
+            return false
+        end
+        if (not db.repeatable) and point.repeatable then
+            return false
+        end
+        if point.npc and not db.show_npcs then
+            return false
+        end
+        return true
+    end
     local function iter(t, prestate)
         if not t then return nil end
         local state, value = next(t, prestate)
         while state do -- Have we reached the end of this zone?
-            if value then
-                if not value.level or value.level == currentLevel then
-                    local label, icon, category, quest, faction = get_point_info(value)
-                    -- Debug("iter step", state, icon, db.icon_scale, db.icon_alpha, category, quest)
-                    if (
-                        (category ~= "junk" or db.show_junk)
-                        and (category ~= "npc" or db.show_npcs)
-                        and (db.found or not (quest and IsQuestFlaggedCompleted(quest)))
-                        and (not faction or faction == player_faction)
-                    ) then
-                        return state, nil, icon, db.icon_scale, db.icon_alpha
-                    end
-                end
+            if value and should_show_point(value) then
+            -- Debug("iter step", state, icon, db.icon_scale, db.icon_alpha, category, quest)
+                local label, icon = get_point_info(value)
+                return state, nil, icon, db.icon_scale, db.icon_alpha
             end
             state, value = next(t, state) -- Get next data
         end
@@ -955,6 +968,11 @@ local options = {
             type = "toggle",
             name = "Show NPCs",
             desc = "Show rare NPCs to be killed, generally for items or achievements",
+        },
+        repeatable = {
+            type = "toggle",
+            name = "Show Repeatable items",
+            desc = "Show items which are repeatable? This generally means ones which have a daily tracking quest attached",
         },
     },
 }
