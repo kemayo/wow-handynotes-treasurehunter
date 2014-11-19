@@ -423,7 +423,7 @@ local points = {
         [39307770]={ quest=35162, item=112699, note="Teroclaw Nest", pet=true, },
         [39505520]={ quest=34254, item=117570, note="Soulbinder's Reliquary", },
         [39807670]={ quest=35162, item=112699, note="Teroclaw Nest", pet=true, },
-        [40608950]={ quest=34140, label="Yuuri's Gift", currency=824, },
+        [40608950]={ quest=34140, label="Yuuri's Gift", note="You have to complete Nightmare in the Tomb first", currency=824, faction="Alliance", },
         [47009170]={ quest=34256, item=116128, note="Relic of Telmor", },
         [52502950]={ quest=34235, item=116132, note="Luminous Shell", },
         [54002760]={ quest=34290, item=116402, note="Ketya's Stash", pet=true, },
