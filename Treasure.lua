@@ -572,7 +572,7 @@ local points = {
         [38402780]={ quest=36470, npc=85504, item=118107, pet=true, }, -- Rotcap
         [46402860]={ quest=36267, npc=84807, item=118198, }, -- Durkath Steelmaw
         [46802300]={ quest=35599, npc=80614, item=116839, }, -- Blade-Dancer Aeryx
-        [51800720]={ quest=37394, npc=83990, note="No loot?", }, -- Solar Magnifier
+        [51800720]={ quest=37394, npc=83990, item=119407, }, -- Solar Magnifier
         [52003540]={ quest=36478, npc=79938, item=118201, }, -- Shadowbark
         [52805480]={ quest=36472, npc=85520, item=116857, }, -- Swarmleaf
         [53208900]={ quest=36396, npc=84417, item=118206, }, -- Mutafen
