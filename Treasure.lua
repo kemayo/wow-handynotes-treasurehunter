@@ -551,7 +551,7 @@ local points = {
         [41805050]={ quest=36451, item=116918, note="Garrison Workman's Hammer", },
         [56202880]={ quest=36362, label="Shattered Hand Cache", currency=824, },
         [68408900]={ quest=36453, label="Coinbender's Payment", note="Gold", },
-        [63606740]={ quest=36454, item=109130, note="Mysterious Mushrooms", },
+        [63606740]={ quest=36454, label="Mysterious Mushrooms", note="Herbs", },
         [66505650]={ quest=36455, label="Waterlogged Satchel", note="Random green", },
         [54403240]={ quest=36364, item=118695, note="Toxicfang Venom", currency=824, },
         [59708130]={ quest=36365, label="Spray-O-Matic 5000 XT", currency=824, },
