@@ -417,6 +417,8 @@ local points = {
         [70803400]={ quest=37374, item=119367, npc=88582, currency=823, achievement=9678, }, -- Swift Onyx Flayer
         [72803580]={ quest=37373, npc=88580, achievement=9678, }, -- Firestarter Grash
         [76004200]={ quest=37405, npc=80371, currency=823, }, -- Typhon
+        -- followers
+        [44908690]={ quest=36037, npc=83820, follower=193, note="He'll look hostile; fight the things that are attacking him", }, -- Tormmok
     },
     ["Talador"] = {
         -- treasures
@@ -653,7 +655,7 @@ local function mob_name(id)
     return name_cache[id]
 end
 
-local default_texture, npc_texture
+local default_texture, npc_texture, follower_texture
 local icon_cache = {}
 local trimmed_icon = function(texture)
     if not icon_cache[texture] then
@@ -713,25 +715,48 @@ local function work_out_texture(point)
             return trimmed_icon(texture)
         end
     end
+    if point.follower then
+        if not follower_texture then
+            local left, right, top, bottom = GetObjectIconTextureCoords(44)
+            follower_texture = {
+                icon = [[Interface\MINIMAP\OBJECTICONS]],
+                tCoordLeft = left + 0.018,
+                tCoordRight = right - 0.018,
+                tCoordTop = top + 0.018,
+                tCoordBottom = bottom - 0.018,
+                r = 0,
+                g = 1,
+                b = 0,
+            }
+        end
+        return follower_texture
+    end
     if point.npc then
         if not npc_texture then
             local left, right, top, bottom = GetObjectIconTextureCoords(41)
             npc_texture = {
                 icon = [[Interface\MINIMAP\OBJECTICONS]],
-                tCoordLeft = left,
-                tCoordRight = right,
-                tCoordTop = top,
-                tCoordBottom = bottom,
+                tCoordLeft = left + 0.018,
+                tCoordRight = right - 0.018,
+                tCoordTop = top + 0.018,
+                tCoordBottom = bottom - 0.018,
             }
         end
         return npc_texture
     end
-    return trimmed_icon(default_texture)
+    if not default_texture then
+        local left, right, top, bottom = GetObjectIconTextureCoords(40)
+        default_texture = {
+            icon = [[Interface\MINIMAP\OBJECTICONS]],
+            tCoordLeft = left + 0.018,
+            tCoordRight = right - 0.018,
+            tCoordTop = top + 0.018,
+            tCoordBottom = bottom - 0.018,
+        }
+    end
+    return default_texture
 end
 local get_point_info = function(point)
-    if not default_texture then
-        default_texture = select(10, GetAchievementInfo(9726))
-    end
     if point then
         local label = work_out_label(point)
         local icon = work_out_texture(point)
@@ -760,6 +785,16 @@ local function handle_tooltip(tooltip, point)
             else
                 local link = select(2, GetItemInfo(point.item))
                 tooltip:AddLine(link)
+            end
+        elseif point.follower then
+            local follower = C_Garrison.GetFollowerInfo(point.follower)
+            if follower then
+                local quality = BAG_ITEM_QUALITY_COLORS[follower.quality]
+                tooltip:AddLine(follower.name, quality.r, quality.g, quality.b)
+                tooltip:AddDoubleLine(follower.className, UNIT_LEVEL_TEMPLATE:format(follower.level))
+                tooltip:AddLine(REWARD_FOLLOWER, 0, 1, 0)
+            else
+                tooltip:AddLine(UNKNOWN, 1, 0, 0)
             end
         elseif point.npc then
             tooltip:SetHyperlink(("unit:Creature-0-0-0-0-%d"):format(point.npc))
