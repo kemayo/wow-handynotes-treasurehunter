@@ -348,12 +348,10 @@ local points = {
         [43002100]={ quest=37387, item=119356, npc=82614, }, -- Moltnoma
         [40601240]={ quest=34522, npc=79104, currency=823, }, -- Ug'lok the Frozen
     },
-    --[[
     ["BladespireFortress"] = {
         [37806900]={ quest=nil, item=113189, note="Doorog's Secret Stash", },
         [76806280]={ quest=nil, currency=824, label="Ogre Booty", },
     },
-    --]]
     ["Gorgrond"] = {
         -- treasures
         [39006810]={ quest=36631, label="Sasha's Secret Stash", note="Random green + gold; top of the tower on a broken beam outside, you have to jump down", },
