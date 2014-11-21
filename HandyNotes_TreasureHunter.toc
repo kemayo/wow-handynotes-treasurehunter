@@ -9,4 +9,6 @@
 ## SavedVariables: HandyNotes_TreasureHunterDB
 ## RequiredDeps: HandyNotes
 
+handler.lua
+config.lua
 Treasure.lua
