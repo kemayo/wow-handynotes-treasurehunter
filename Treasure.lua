@@ -228,6 +228,8 @@ ns.points = {
         [61606180]={ quest=35725, item=113557, npc=82207, }, -- Faebright
         [67806380]={ quest=35688, item=113556, npc=82676, }, -- Enavra
         [68208480]={ quest=37410, currency=823, npc=85568, }, -- Avalanche
+        -- followers
+        [42804040]={ quest=35614, follower=179, npc=74741, faction="Alliance", note="Do the crystal defense event here to get him", }, -- Artificer Romuul
     },
     ["BloodthornCave"] = {
         [55544974]={ quest=33572, item=113373, note="Rotting Basket", level=15, },

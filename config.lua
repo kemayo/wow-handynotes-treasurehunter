@@ -130,7 +130,7 @@ ns.should_show_point = function(coord, point, currentZone, currentLevel)
     if (not ns.db.repeatable) and point.repeatable then
         return false
     end
-    if point.npc and not ns.db.show_npcs then
+    if point.npc and not point.follower and not ns.db.show_npcs then
         return false
     end
     return true
