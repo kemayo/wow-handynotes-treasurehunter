@@ -24,9 +24,9 @@ ns.points = {
         [87602030]={ quest=35662, label="Steamwheedle Supplies", note="Use a glider", currency=824, },
         [88204260]={ quest=35616, label="Steamwheedle Supplies", note="Use a glider", currency=824, },
         -- abu'gar
-        [38404940]={ quest=36072, item=114245, note="Abu'Gar's Favorite Lure", },
-        [65906120]={ quest=35711, item=114242, note="Abu'gar's Vitality", },
-        [85403870]={ quest=36089, item=114243, note="Abu'gar's Missing Reel", },
+        [38404940]={ quest=36711, item=114245, note="Abu'Gar's Favorite Lure, won't show complete until you get Abu'Gar", }, -- 36072
+        [65906120]={ quest=36711, item=114242, note="Abu'gar's Vitality, won't show complete until you get Abu'Gar", }, -- 35711
+        [85403870]={ quest=36711, item=114243, note="Abu'gar's Missing Reel, won't show complete until you get Abu'Gar", }, -- 36089
         -- glider-required
         [70501390]={ quest=35643, label="Mountain Climber's Pack", note="Use a glider", currency=824, },
         [73007040]={ quest=35678, label="Warsong Lockbox", note="Use a glider", currency=824, },
@@ -138,6 +138,10 @@ ns.points = {
     -- TODO: need the name
     ["ACaveInNagrand"] = {
         [66305730]={ quest=36088, label="Adventurer's Pouch", note="Random green", },
+    },
+    -- "Vault of the Titan"
+    ["StonecragGorge"] = {
+    
     },
     --]]
     ["ShadowmoonValleyDR"] = {
