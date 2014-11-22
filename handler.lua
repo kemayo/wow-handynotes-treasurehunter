@@ -301,7 +301,6 @@ end
 
 do
     -- This is a custom iterator we use to iterate over every node in a given zone
-    local player_faction = UnitFactionGroup("player")
     local currentLevel, currentZone
     local function iter(t, prestate)
         if not t then return nil end

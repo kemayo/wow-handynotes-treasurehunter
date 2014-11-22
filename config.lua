@@ -110,6 +110,7 @@ ns.options = {
     },
 }
 
+local player_faction = UnitFactionGroup("player")
 ns.should_show_point = function(coord, point, currentZone, currentLevel)
     if point.level and point.level ~= currentLevel then
         return false
