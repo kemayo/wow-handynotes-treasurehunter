@@ -133,6 +133,8 @@ ns.points = {
         [60003800]={ quest=37222, npc=86729, item=118657, }, -- Direhoof
         [34005100]={ quest=37224, npc=87666, item=118659, }, -- Mu'gra
         [37003800]={ quest=37520, npc=88951, item=120172, }, -- Vileclaw
+        -- followers
+        [67205600]={ quest=36711, npc=82746, follower=209, note="Rebuild his fishing rod by gathering the pieces @ 38.4,49.3, 65.8,61.1, 85.4,38.7", }, -- Abu'gar
     },
     --[[
     -- TODO: need the name
