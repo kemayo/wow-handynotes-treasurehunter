@@ -567,7 +567,7 @@ ns.points = {
         [49197683]={ quest=35384, currency=824, label="Pippers' Buried Supplies", junk=true, },
     },
     ["garrisonsmvalliance_tier2"] = {
-        [37306590]={ quest=35530, currency=824, label="Lunarfall Egg, wagon", },
+        [37006590]={ quest=35530, currency=824, label="Lunarfall Egg, wagon", },
         [51800110]={ quest=35289, currency=824, label="Spark's Stolen Supplies", note="cave by lake", junk=true, },
         [41685803]={ quest=35381, currency=824, label="Pippers' Buried Supplies", junk=true, },
         [51874545]={ quest=35382, currency=824, label="Pippers' Buried Supplies", junk=true, },
