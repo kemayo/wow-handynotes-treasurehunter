@@ -412,7 +412,7 @@ ns.points = {
         [65508860]={ quest=34255, item=116129, note="Webbed Sac", },
         [65908520]={ quest=34276, label="Rusted Lockbox", note="Random green", },
         [66608690]={ quest=34239, item=117569, note="Curious Deathweb Egg", toy=true, },
-        [69905610]={ quest=34101, item=109192, note="Lightbearer", },
+        [68785621]={ quest=34101, item=109192, note="Lightbearer", },
         [70100700]={ quest=36937, label="Burning Blade Cache", currency=823, },
         [70803200]={ quest=35162, item=112699, note="Teroclaw Nest", pet=true, },
         [70903550]={ quest=35162, item=112699, note="Teroclaw Nest", pet=true, },
