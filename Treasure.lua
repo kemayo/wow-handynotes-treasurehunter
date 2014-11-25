@@ -268,7 +268,7 @@ ns.points = {
         [42703170]={ quest=33940, item=112187, note="Crag-Leaper's Cache", },
         [57105210]={ quest=34476, item=111554, note="Frozen Orc Skeleton", },
         [63401480]={ quest=33525, npc=75081, note=UNKNOWN, }, -- Young Orc Woman
-        [64406580]={ quest=33505, item=117564, note="Wiggling Egg", pet=true, },
+        [64406580]={ quest=33505, item=117564, note="Wiggling Egg; rylak nests on the roof", pet=true, },
         -- rares
         [67407820]={ quest=34477, item=112086, npc=78621, }, -- Cyclonic Fury
         [41206820]={ quest=34843, item=111953, npc=80242, }, -- Chillfang
