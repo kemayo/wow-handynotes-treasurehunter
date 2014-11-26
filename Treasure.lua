@@ -267,6 +267,7 @@ ns.points = {
         [42401970]={ quest=34520, item=120341, note="Burning Pearl", },
         [42703170]={ quest=33940, item=112187, note="Crag-Leaper's Cache", },
         [57105210]={ quest=34476, item=111554, note="Frozen Orc Skeleton", },
+        [61804250]={ quest=33511, npc=72156, item=112110, note="Interrupt the ritual, then feed him ogres", },
         [63401480]={ quest=33525, npc=75081, note=UNKNOWN, }, -- Young Orc Woman
         [64406580]={ quest=33505, item=117564, note="Wiggling Egg; rylak nests on the roof", pet=true, },
         -- rares
