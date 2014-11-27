@@ -467,6 +467,8 @@ ns.points = {
         [69603340]={ quest=34205, npc=77776, item=112261, }, -- Wandering Vindicator
         [78005040]={ quest=34167, npc=77626, item=112369, }, -- Hen-Mother Hami
         [86403040]={ quest=34859, npc=79334, item=116077, }, -- No'losh
+        -- followers
+        [62755038]={ quest=nil, follower=171, note="Complete the quests starting with Clear!", }, -- Pleasure-Bot 8000 (actually a different quest for alliance and horde)
     },
     ["SpiresOfArak"] = {
         -- archaeology

@@ -124,8 +124,13 @@ ns.should_show_point = function(coord, point, currentZone, currentLevel)
     if point.faction and point.faction ~= player_faction then
         return false
     end
-    if (not ns.db.found) and point.quest and IsQuestFlaggedCompleted(point.quest) then
-        return false
+    if (not ns.db.found) then
+        if point.quest and IsQuestFlaggedCompleted(point.quest) then
+            return false
+        end
+        if point.follower and C_Garrison.IsFollowerCollected(point.follower) then
+            return false
+        end
     end
     if (not ns.db.repeatable) and point.repeatable then
         return false
