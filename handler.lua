@@ -233,49 +233,54 @@ local function createWaypoint(button, mapFile, coord)
     end
 end
 
+local function hideNode(button, mapFile, coord)
+    ns.hidden[mapFile][coord] = true
+    HL:Refresh()
+end
+
+local function closeAllDropdowns()
+    CloseDropDownMenus(1)
+end
+
 do
     local currentZone, currentCoord
     local function generateMenu(button, level)
         if (not level) then return end
-        for k in pairs(info) do info[k] = nil end
+        wipe(info)
         if (level == 1) then
             -- Create the title of the menu
             info.isTitle      = 1
             info.text         = "HandyNotes - " .. myname:gsub("HandyNotes_", "")
             info.notCheckable = 1
             UIDropDownMenu_AddButton(info, level)
+            wipe(info)
 
             if TomTom then
                 -- Waypoint menu item
-                info.disabled     = nil
-                info.isTitle      = nil
-                info.notCheckable = nil
                 info.text = "Create waypoint"
-                info.icon = nil
+                info.notCheckable = 1
                 info.func = createWaypoint
                 info.arg1 = currentZone
                 info.arg2 = currentCoord
                 UIDropDownMenu_AddButton(info, level)
+                wipe(info)
             end
 
             -- Hide menu item
             info.text         = "Hide node"
-            info.icon         = nil
-            info.func         = function()
-                ns.hidden[currentZone][currentCoord] = true
-                HL:Refresh()
-            end
-            info.arg1         = nil
             info.notCheckable = 1
+            info.func         = hideNode
+            info.arg1         = currentZone
+            info.arg2         = currentCoord
             UIDropDownMenu_AddButton(info, level)
+            wipe(info)
 
             -- Close menu item
             info.text         = "Close"
-            info.icon         = nil
-            info.func         = function() CloseDropDownMenus() end
-            info.arg1         = nil
+            info.func         = closeAllDropdowns
             info.notCheckable = 1
             UIDropDownMenu_AddButton(info, level)
+            wipe(info)
         end
     end
     local HL_Dropdown = CreateFrame("Frame", myname.."DropdownMenu")
