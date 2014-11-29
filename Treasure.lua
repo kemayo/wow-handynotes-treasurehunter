@@ -89,7 +89,7 @@ ns.points = {
         [38001960]={ quest=37397, npc=87846, achievement=9571, }, -- Pit Slayer
         [38602240]={ quest=37395, npc=87788, item=119405, achievement=9571, }, -- Durg Spinecrusher
         [40001600]={ quest=37395, npc=87837, achievement=9571, }, -- Bonebreaker
-        [42207860]={ quest=34725, npc=80122, currency=824, note="In a cave", }, -- Gaz'orda
+        [42207860]={ quest=34725, npc=80122, item=116798, currency=824, note="In a cave", }, -- Gaz'orda
         [42804920]={ quest=35875, npc=83409, item=116765, }, -- Ophiis
         [43003640]={ quest=37400, npc=87234, item=119380, achievement=9541, }, -- Brutag Grimblade
         [43803440]={ quest=37473, npc=87239, achievement=9541, }, -- Krahl Deadeye
