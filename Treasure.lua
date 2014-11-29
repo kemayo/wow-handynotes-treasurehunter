@@ -427,7 +427,7 @@ ns.points = {
         [75704140]={ quest=34261, label="Keluu's Belongings", note="Gold", },
         [75804480]={ quest=34250, item=116128, note="Relic of Aruuna", },
         [77005000]={ quest=34248, item=116116, note="Charred Sword", },
-        [78201480]={ quest=34263, item=117572, note="Pure Crystal Dust", },
+        [78201480]={ quest=34263, item=117572, note="Pure Crystal Dust; upper level of the mine", },
         [81803500]={ quest=34260, item=109118, note="Aruuna Mining Cart", },
         -- rares
         [22207400]={ quest=36919, npc=85572, note="In a crate, no loot", }, -- Grrbrrgle
