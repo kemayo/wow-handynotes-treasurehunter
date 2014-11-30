@@ -478,7 +478,7 @@ ns.points = {
         [43202720]={ quest=36355, label="Relics of the Outcasts", currency=829, note="Needs archaeology; climb the ropes", },
         [46004410]={ quest=36354, label="Relics of the Outcasts", currency=829, note="Needs archaeology; climb the tree, jump to the rope", },
         [51904890]={ quest=36360, label="Relics of the Outcasts", currency=829, note="Needs archaeology", },
-        [52404280]={ quest=36416, label="Misplaced Scroll", currency=829, note="Needs archaeology", },
+        [52404280]={ quest=36416, label="Misplaced Scroll", currency=829, note="Needs archaeology; start climbing the mountain at 53.6, 47.7", },
         [56304530]={ quest=36433, label="Smuggled Apexis Artifacts", currency=829, note="Needs archaeology; climb  the mushrooms up the tree", },
         [60205390]={ quest=36359, label="Relics of the Outcasts", currency=829, note="Needs archaeology", },
         [67403980]={ quest=36356, label="Relics of the Outcasts", currency=829, note="Needs archaeology", },
