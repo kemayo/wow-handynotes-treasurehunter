@@ -134,6 +134,7 @@ ns.points = {
         [34005100]={ quest=37224, npc=87666, item=118659, }, -- Mu'gra
         [37003800]={ quest=37520, npc=88951, item=120172, }, -- Vileclaw
         -- followers
+        [46401600]={ quest=34466, follower=190, note="Mysterious Staff; collect all the Mysterious items across Draenor", }, -- Archmage Vargoth
         [67205600]={ quest=36711, npc=82746, follower=209, note="Rebuild his fishing rod by gathering the pieces @ 38.4,49.3, 65.8,61.1, 85.4,38.7", }, -- Abu'gar
     },
     --[[
@@ -324,6 +325,8 @@ ns.points = {
         [48202340]={ quest=37386, item=119390, npc=82616, }, -- Jabberjaw
         [43002100]={ quest=37387, item=119356, npc=82614, }, -- Moltnoma
         [40601240]={ quest=34522, npc=79104, currency=823, }, -- Ug'lok the Frozen
+        -- followers
+        [68001900]={ quest=34464, follower=190, note="Mysterious Boots; collect all the Mysterious items across Draenor", }, -- Archmage Vargoth
     },
     ["BladespireFortress"] = {
         [44806480]={ quest=35570, label="Ogre Booty", note="Gold", level=1, },
@@ -402,6 +405,7 @@ ns.points = {
         [72803580]={ quest=37373, npc=88580, achievement=9678, }, -- Firestarter Grash
         [76004200]={ quest=37405, npc=80371, currency=823, }, -- Typhon
         -- followers
+        [39703990]={ quest=34463, follower=190, note="Mysterious Ring; collect all the Mysterious items across Draenor", }, -- Archmage Vargoth
         [44908690]={ quest=36037, npc=83820, follower=193, note="He'll look hostile; fight the things that are attacking him", }, -- Tormmok
     },
     ["Talador"] = {
@@ -488,6 +492,7 @@ ns.points = {
         [78005040]={ quest=34167, npc=77626, item=112369, }, -- Hen-Mother Hami
         [86403040]={ quest=34859, npc=79334, item=116077, }, -- No'losh
         -- followers
+        [45303700]={ quest=34465, follower=190, note="Mysterious Hat; collect all the Mysterious items across Draenor", }, -- Archmage Vargoth
         [62755038]={ quest=nil, follower=171, note="Complete the quests starting with Clear!", }, -- Pleasure-Bot 8000 (actually a different quest for alliance and horde)
     },
     ["SpiresOfArak"] = {
