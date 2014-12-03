@@ -291,7 +291,7 @@ ns.points = {
         [54606940]={ quest=34131, item=111484, npc=76914, }, -- Coldtusk
         [71404680]={ quest=33504, item=107661, npc=74971, }, -- Firefury Giant
         [47005520]={ quest=34839, item=111955, npc=80235, }, -- Gurun
-        [50201860]={ quest=33531, npc=75120, note=UNKNOWN, }, -- Clumsy Cragmaul Brute
+        [50201860]={ quest=33531, item=112096, npc=75120, note="...and a peeled banana", }, -- Clumsy Cragmaul Brute
         [84404880]={ quest=nil, npc=84384, note=UNKNOWN, }, -- Taskmaster Kullah
         [85005220]={ quest=37556, npc=87600, currency=823, }, -- Jaluk the Pacifist
         [88605740]={ quest=37525, npc=84378, currency=823, }, -- Ak'ox the Slaughterer
