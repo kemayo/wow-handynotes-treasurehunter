@@ -262,6 +262,7 @@ ns.points = {
         [25502040]={ quest=34648, item=111415, note="Gnawed Bone", },
         [26703940]={ quest=nil, item=113189, note="Doorog's Secret Stash", },
         [27604280]={ quest=33500, item=43696, note="Slave's Stash, booze", },
+        [30305120]={ quest=33438, item=107662, note="Time-Warped Tower; loot all the frozen ogres", }, -- note: other ogres are 33497, 33439, and 33440
         [38403780]={ quest=33502, item=112087, note="Obsidian Petroglyph", },
         [40902010]={ quest=34473, item=110536, note="Envoy's Satchel", },
         [42401970]={ quest=34520, item=120341, note="Burning Pearl", },
