@@ -258,7 +258,7 @@ ns.points = {
         [21900960]={ quest=33926, item=108739, note="Lagoon Pool", toy=true, },
         [23102500]={ quest=33916, item=108735, note="Arena Master's War Horn", toy=true, },
         [24202720]={ quest=33501, item=63293, note="Spectator's Chest; booze, jump from the tower, entrance @ 25,30", },
-        [24204860]={ quest=34507, item=110689, note="Frozen Frostwolf Axe", },
+        [24204860]={ quest=34507, item=110689, note="Frozen Frostwolf Axe; cave at 25,51", },
         [25502040]={ quest=34648, item=111415, note="Gnawed Bone", },
         [26703940]={ quest=nil, item=113189, note="Doorog's Secret Stash", },
         [27604280]={ quest=33500, item=43696, note="Slave's Stash, booze", },
