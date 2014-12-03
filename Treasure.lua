@@ -266,9 +266,10 @@ ns.points = {
         [40902010]={ quest=34473, item=110536, note="Envoy's Satchel", },
         [42401970]={ quest=34520, item=120341, note="Burning Pearl", },
         [42703170]={ quest=33940, item=112187, note="Crag-Leaper's Cache", },
+        [54803540]={ quest=33525, item=107273, note="Combine with Frostwolf First-Fang @ 63,48", }, -- Young Orc Traveler
         [57105210]={ quest=34476, item=111554, note="Frozen Orc Skeleton", },
         [61804250]={ quest=33511, npc=72156, item=112110, note="Interrupt the ritual, then feed him ogres", },
-        [63401480]={ quest=33525, npc=75081, note=UNKNOWN, }, -- Young Orc Woman
+        [63401480]={ quest=33525, item=107272, npc=75081, note="Combine with Snow Hare's Foot @ 54,35", }, -- Young Orc Woman
         [64406580]={ quest=33505, item=117564, note="Wiggling Egg; rylak nests on the roof", pet=true, },
         -- bladespire...
         [26503640]={ quest=35367, label="Gorr'thogg's Personal Reserve", currency=824, },
