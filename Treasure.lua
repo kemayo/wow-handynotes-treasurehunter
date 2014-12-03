@@ -241,7 +241,6 @@ ns.points = {
         [16104980]={ quest=33942, label="Supply Dump", currency=824, },
         [21605070]={ quest=34931, label="Pale Loot Sack", currency=824, },
         [24001300]={ quest=34647, label="Snow-Covered Strongbox", currency=824, },
-        [26503640]={ quest=nil, label="Gorr'thogg's Personal Reserve", currency=824, },
         [34202350]={ quest=32803, label="Thunderlord Cache", currency=824, },
         [37205920]={ quest=34967, label="Raided Loot", currency=824, },
         [43705550]={ quest=34841, label="Forgotten Supplies", currency=824, },
@@ -260,7 +259,6 @@ ns.points = {
         [24202720]={ quest=33501, item=63293, note="Spectator's Chest; booze, jump from the tower, entrance @ 25,30", },
         [24204860]={ quest=34507, item=110689, note="Frozen Frostwolf Axe; cave at 25,51", },
         [25502040]={ quest=34648, item=111415, note="Gnawed Bone", },
-        [26703940]={ quest=nil, item=113189, note="Doorog's Secret Stash", },
         [27604280]={ quest=33500, item=43696, note="Slave's Stash, booze", },
         [30305120]={ quest=33438, item=107662, note="Time-Warped Tower; loot all the frozen ogres", }, -- note: other ogres are 33497, 33439, and 33440
         [38403780]={ quest=33502, item=112087, note="Obsidian Petroglyph", },
@@ -271,6 +269,18 @@ ns.points = {
         [61804250]={ quest=33511, npc=72156, item=112110, note="Interrupt the ritual, then feed him ogres", },
         [63401480]={ quest=33525, npc=75081, note=UNKNOWN, }, -- Young Orc Woman
         [64406580]={ quest=33505, item=117564, note="Wiggling Egg; rylak nests on the roof", pet=true, },
+        -- bladespire...
+        [26503640]={ quest=35367, label="Gorr'thogg's Personal Reserve", currency=824, },
+        [26703940]={ quest=35370, item=113189, note="Doorog's Secret Stash", },
+        [26603520]={ quest=35347, currency=824, label="Ogre Booty", },
+        [27173763]={ quest=35373, label="Ogre Booty", note="Gold", },
+        [27283876]={ quest=35570, label="Ogre Booty", note="Gold", },
+        [27603382]={ quest=35371, label="Ogre Booty", note="Gold", },
+        [28093409]={ quest=35567, currency=824, label="Ogre Booty", },
+        [28093409]={ quest=35568, currency=824, label="Ogre Booty", },
+        [28093409]={ quest=35569, currency=824, label="Ogre Booty", },
+        [28293440]={ quest=35368, label="Ogre Booty", note="Gold", },
+        [28293440]={ quest=35369, label="Ogre Booty", note="Gold", },
         -- rares
         [67407820]={ quest=34477, item=112086, npc=78621, }, -- Cyclonic Fury
         [41206820]={ quest=34843, item=111953, npc=80242, }, -- Chillfang
@@ -316,8 +326,17 @@ ns.points = {
         [40601240]={ quest=34522, npc=79104, currency=823, }, -- Ug'lok the Frozen
     },
     ["BladespireFortress"] = {
-        [37806900]={ quest=nil, item=113189, note="Doorog's Secret Stash", },
-        [76806280]={ quest=nil, currency=824, label="Ogre Booty", },
+        [44806480]={ quest=35570, label="Ogre Booty", note="Gold", level=1, },
+        [48506720]={ quest=35369, label="Ogre Booty", note="Gold; up some crates", level=1, },
+        [53702880]={ quest=35368, label="Ogre Booty", note="Gold; up some crates", level=1, },
+        [36502900]={ quest=35347, currency=824, label="Ogre Booty", level=2, },
+        [37806900]={ quest=35370, item=113189, note="Doorog's Secret Stash; second floor, outside", level=2, },
+        [46401640]={ quest=35371, label="Ogre Booty", note="Gold; up some crates; may hit an invisible ceiling, it's reachable if you work at it", level=2, },
+        [51101770]={ quest=35567, currency=824, label="Ogre Booty", level=2, },
+        [52605300]={ quest=35373, label="Ogre Booty", note="Gold; up some crates", level=2, },
+        [70806800]={ quest=35569, currency=824, label="Ogre Booty", note="In the vault", level=2, },
+        [76606330]={ quest=35568, currency=824, label="Ogre Booty", note="In the vault", level=2, },
+        [31706640]={ quest=35367, item=113108, note="Gorr'thogg's Personal Reserve", level=3, },
     },
     ["Gorgrond"] = {
         -- treasures
