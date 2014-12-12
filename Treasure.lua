@@ -557,7 +557,7 @@ ns.points = {
         [58706030]={ quest=36340, item=116922, note="Ogron Plunder (Hobbit reference!)", },
         [37305070]={ quest=36657, item=116887, note="Feed the dog 3x[Rooby Reat] from the chef downstairs", },
         [37705640]={ quest=36462, item=116020, note="Unlocks a chest in Admiral Taylor's Garrison Town Hall @ 36.2,54.4", },
-        [59109060]={ quest=nil, item=116917, note="In the control room", }, -- Sailor Zazzuk's 180-Proof Rum
+        [59109060]={ quest=36366, item=116917, note="In the control room", }, -- Sailor Zazzuk's 180-Proof Rum
         -- rares
         [25202420]={ quest=36943, npc=86978, item=118696, currency=824, }, -- Gaze, not certain about item-drop
         [33005900]={ quest=36305, npc=84951, item=116836, }, -- Gobblefin
