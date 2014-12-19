@@ -468,7 +468,7 @@ ns.points = {
         [38001460]={ quest=37343, npc=82922, item=119435, achievement=9633, }, -- Xothear the Destroyer (also drops 119371)
         [39004960]={ quest=37349, npc=82998, item=119353, }, -- Matron of Sin
         [41004200]={ quest=37347, npc=82930, currency=823, }, -- Shadowflame Terrorwalker
-        [41805940]={ quest=34671, npc=79543, item=112370, }, -- Shirzir
+        [41506020]={ quest=34671, npc=79543, item=112370, }, -- Shirzir
         [44003800]={ quest=37339, npc=87597, achievement=9633, }, -- Bombardier Gu'gok
         [46002740]={ quest=37337, npc=88071, currency=823, achievement=9633, }, -- War Council: Strategist Ankor, Archmagus Tekar, Soulbinder Naylana
         [46005500]={ quest=34145, npc=77614, item=113288, }, -- Frenzied Golem (also drops 113287)
@@ -495,6 +495,9 @@ ns.points = {
         -- followers
         [45303700]={ quest=34465, follower=190, note="Mysterious Hat; collect all the Mysterious items across Draenor", }, -- Archmage Vargoth
         [62755038]={ quest=nil, follower=171, note="Complete the quests starting with Clear!", }, -- Pleasure-Bot 8000 (actually a different quest for alliance and horde)
+    },
+    ["TombofSouls"] = {
+        [67602320]={ quest=34671, npc=79543, item=112370, }, -- Shirzir
     },
     ["SpiresOfArak"] = {
         -- archaeology
