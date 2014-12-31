@@ -397,12 +397,12 @@ ns.points = {
         [57603580]={ quest=37370, item=119406, npc=82058, currency=823, achievement=9678, }, -- Depthroot
         [58006360]={ quest=35153, item=113453, npc=80785, }, -- Fungal Praetorian
         [58604120]={ quest=37371, npc=86268, currency=823, achievement=9678, }, -- Alkali
+        [59603180]={ quest=37374, item=119367, npc=88582, currency=823, achievement=9678, }, -- Swift Onyx Flayer
         [59604300]={ quest=37375, item=119414, npc=88583, currency=823, achievement=9678, }, -- Grove Warden Yal
         [61803930]={ quest=37376, item=119391, npc=88586, currency=823, achievement=9678, }, -- Mogamago
         [63803160]={ quest=37372, npc=86266, achievement=9678, }, -- Venolasix
         [64006180]={ quest=36794, item=118213, npc=86410, }, -- Sylldross
         [69204460]={ quest=37369, item=119432, npc=86257, toy=true, achievement=9678, repeatable=true, note="Repeatable until you know the toy he drops", }, -- Basten
-        [70803400]={ quest=37374, item=119367, npc=88582, currency=823, achievement=9678, }, -- Swift Onyx Flayer
         [72803580]={ quest=37373, npc=88580, achievement=9678, }, -- Firestarter Grash
         [76004200]={ quest=37405, npc=80371, currency=823, }, -- Typhon
         -- followers
