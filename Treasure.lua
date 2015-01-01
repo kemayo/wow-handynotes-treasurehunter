@@ -403,7 +403,7 @@ ns.points = {
         [63803160]={ quest=37372, npc=86266, achievement=9678, }, -- Venolasix
         [64006180]={ quest=36794, item=118213, npc=86410, }, -- Sylldross
         [69204460]={ quest=37369, item=119432, npc=86257, toy=true, achievement=9678, repeatable=true, note="Repeatable until you know the toy he drops", }, -- Basten
-        [72803580]={ quest=37373, npc=88580, achievement=9678, }, -- Firestarter Grash
+        [72803580]={ quest=37373, item=119381, npc=88580, achievement=9678, }, -- Firestarter Grash
         [76004200]={ quest=37405, npc=80371, currency=823, }, -- Typhon
         -- followers
         [39703990]={ quest=34463, follower=190, note="Mysterious Ring; collect all the Mysterious items across Draenor", }, -- Archmage Vargoth
