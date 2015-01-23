@@ -327,7 +327,9 @@ ns.points = {
         [43002100]={ quest=37387, item=119356, npc=82614, }, -- Moltnoma
         [40601240]={ quest=34522, npc=79104, currency=823, }, -- Ug'lok the Frozen
         -- followers
+        [39602800]={ quest=34733, followed=32, note="Rescue Dagg from the other cage first, then find him outside your garrison", }, -- Dagg
         [68001900]={ quest=34464, follower=190, note="Mysterious Boots; collect all the Mysterious items across Draenor", }, -- Archmage Vargoth
+        [65906080]={ quest=34733, followed=32, note="Rescue Dagg from the cage, then go to his other location", }, -- Dagg
     },
     ["BladespireFortress"] = {
         [44806480]={ quest=35570, label="Ogre Booty", note="Gold", level=1, },
