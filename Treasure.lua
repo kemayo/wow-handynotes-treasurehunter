@@ -134,6 +134,7 @@ ns.points = {
         [34005100]={ quest=37224, npc=87666, item=118659, }, -- Mu'gra
         [37003800]={ quest=37520, npc=88951, item=120172, }, -- Vileclaw
         -- followers
+        [40307610]={ quest=35596, follower=170, note="Kill Bolkar nearby to get the key", }, -- Goldmane
         [46401600]={ quest=34466, follower=190, note="Mysterious Staff; collect all the Mysterious items across Draenor", }, -- Archmage Vargoth
         [67205600]={ quest=36711, npc=82746, follower=209, note="Rebuild his fishing rod by gathering the pieces @ 38.4,49.3, 65.8,61.1, 85.4,38.7", }, -- Abu'gar
     },
