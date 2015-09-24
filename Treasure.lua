@@ -163,7 +163,7 @@ ns.points = {
         -- treasures
         [20303060]={ quest=33575, item=108904, note="Demonic Cache", },
         [22803390]={ quest=33572, item=113373, note="Rotting Basket", },
-        [30004530]={ quest=35919, item=113563, note="Shadowmoon Sacrificial Dagger" },
+        [30004530]={ quest=35919, item=113563, note="Shadowmoon Sacrificial Dagger", },
         [31303910]={ quest=33886, item=109081, note="Ronokk's Belongings", },
         [33503970]={ quest=33569, item=113545, note="Reusable mana potion", },
         [34204350]={ quest=33866, item=109124, note="Veema's Herb Bag, underground", },
@@ -429,7 +429,7 @@ ns.points = {
         [54002760]={ quest=34290, item=116402, note="Ketya's Stash", pet=true, },
         [54105630]={ quest=35162, item=112699, note="Teroclaw Nest", pet=true, },
         [55206680]={ quest=34253, item=116118, note="Draenei Weapons", currency=824, },
-        [57207540]={ quest=34134, item=117563, note="Rescue 4 draenei trapped in spider webs, then Isaari's Cache will spawm here", faction="Alliance", },
+        [57207540]={ quest=34134, item=117563, note="Rescue 4 draenei trapped in spider webs, then Isaari's Cache will spawm here", faction="Alliance", junk=true, },
         [57402670]={ quest=34238, item=116120, note="Foreman's Lunchbox", },
         [58901200]={ quest=33933, item=108743, note="Deceptia's Smoldering Boots", toy=true, },
         [61107170]={ quest=34116, item=117563, label="Rescue 4 adventurers trapped in spider webs, then Norana's Cache will spawn here", faction="Horde", },
@@ -628,11 +628,14 @@ ns.points = {
     ["garrisonffhorde_tier3"] = {
         [72505620]={ quest=34937, label="Lady Sena's Other Materials Stash", currency=824, faction="Horde", },
     },
-    --[[
-    -- TODO: confirm map name, probably different per-floor, this is the one just before the Foundry Terminus
-    ["BlackrockFoundry"] {
-        [51704500] = { quest=nil, currency=824, label="Iron Horde Chest", },
+    ["FoundryRaid"] = {
+        [59305720] = { quest=34405, item=109118, label="Iron Horde Chest", junk=true, level=2, },
     },
-    ["TanaanJungleIntro"] = {},
-    --]]
+    -- ["TanaanJungleIntro"] = {},
+    ["TanaanJungle"] = {
+        [14905440] = { quest=38754, item=127325, note="In the tower, on an orc hanging from a chain" },
+        [42803530] = { quest=38822, item=127859, note="Top floor", toy=true, },
+        [42903490] = { quest=nil, currency=824, note="Suspiciously Glowing Chest. Second floor", repeatable=true, },
+        [43203830] = { quest=38821, item=127348, note="In the building" },
+    },
 }
