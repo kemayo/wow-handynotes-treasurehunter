@@ -264,6 +264,7 @@ ns.points = {
         [27604280]={ quest=33500, item=43696, note="Slave's Stash, booze", },
         [30305120]={ quest=33438, item=107662, note="Time-Warped Tower; loot all the frozen ogres", }, -- note: other ogres are 33497, 33439, and 33440
         [38403780]={ quest=33502, item=112087, note="Obsidian Petroglyph", },
+        [39701710]={ quest=33532, item=120945, currency=823, note="In the tower, behind some rocks", }, -- Cragmaul Cache
         [40902010]={ quest=34473, item=110536, note="Envoy's Satchel", },
         [42401970]={ quest=34520, item=120341, note="Burning Pearl", },
         [42703170]={ quest=33940, item=112187, note="Crag-Leaper's Cache", },
@@ -633,11 +634,64 @@ ns.points = {
     },
     -- ["TanaanJungleIntro"] = {},
     ["TanaanJungle"] = {
-        [34703464] = { quest=38742, item=127669, note="Bottom of the cave. Watch out for fall damage.", }, -- Mad Chief
-        [14905440] = { quest=38754, item=127325, note="In the tower, on an orc hanging from a chain" },
-        [42803530] = { quest=38822, item=127859, note="Top floor", toy=true, },
-        [42903490] = { quest=nil, currency=824, note="Suspiciously Glowing Chest. Second floor", repeatable=true, },
-        [43203830] = { quest=38821, item=127348, note="In the building" },
+        -- [42903490] = { quest=nil, currency=824, item=128346, note="Suspiciously Glowing Chest. Second floor", repeatable=true, },
+        -- [35604620] = { quest=nil, currency=824, item=128346, note="Suspiciously Glowing Chest, in the cave", repeatable=true, },
+        -- [49104660] = { quest=nil, currency=824, item=128346, note="Suspiciously Glowing Chest, on the pile", repeatable=true, },
+        -- [22104980] = { quest=nil, currency=824, item=128346, note="Suspiciously Glowing Chest, on the ridge", repeatable=true, },
+        -- [27506940] = { quest=nil, item=128346, currency=824, repeatable=true, }, -- draenic chest
+        -- [21403570] = { quest=nil, item=128346, currency=824, repeatable=true, },
+        [14905440] = { quest=38754, item=127325, achievement=10262, note="In the tower, on an orc hanging from a chain" }, -- weeping wolf axe
+        [15904970] = { quest=38208, item=127324, achievement=10262, note="Back of cave", }, -- weathered axe
+        [16005940] = { quest=38757, item=128220, achievement=10262, note="Second floor of the tower", }, -- grannok's eye
+        [17005300] = { quest=38283, item=128346, achievement=10262, npc=91382, label="Small chest next to the body", }, -- deserter
+        [17405700] = { quest=38755, item=128346, achievement=10262, currency=824, note="In the hut", }, -- spoils
+        [19304100] = { quest=38320, item=127338, achievement=10262, note="Bottom of the lake", }, -- blade of Kra'nak
+        [22004780] = { quest=38678, item=128346, achievement=10262, currency=824, note="In the hut", }, -- warchest
+        [25305030] = { quest=38735, item=128222, achievement=10262, note="Top of tower, use rope to get up", }, -- enchanted spyglass
+        [26506290] = { quest=38741, currency=823, achievement=10262, note="Top of tower, use rope to get up", }, -- bleeding hollow chest
+        [26804410] = { quest=38683, item=127709, achievement=10262, }, -- "Looted Bleeding Hollow Treasure
+        [28702330] = { quest=38334, item=127668, achievement=10262, }, -- "Jewel of Hellfire
+        [28803460] = { quest=38863, item=823, achievement=10262, }, -- "Partially Mined Apexis Crystal
+        [30307190] = { quest=38629, item=127389, achievement=10262, }, -- polished crystal
+        [31403110] = { quest=38732, item=127413, achievement=10262, }, -- "Jeweled Arakkoa Effigy
+        [32407040] = { quest=38426, item=127670, achievement=10262, toy=true, }, -- sargerei tome
+        [33907810] = { quest=38760, item=128346, achievement=10262, }, -- captain booty 1
+        [34407830] = { quest=38762, item=128346, achievement=10262, }, -- captain booty 3
+        [34703464] = { quest=38742, item=127669, achievement=10262, note="Bottom of the cave. Watch out for fall damage.", }, -- Mad Chief
+        [34707710] = { quest=38761, item=128346, achievement=10262, }, -- captain booty 2
+        [35907860] = { quest=38758, item=824, achievement=10262, }, -- "Ironbeards Treasure
+        [36304350] = { quest=37956, item=127397, achievement=10262, }, -- "Strange Sapphire
+        [37004620] = { quest=38640, item=824, achievement=10262, }, -- "Pale Removal Equipment
+        [37808070] = { quest=38788, item=127770, achievement=10262, }, -- brazier
+        [40607980] = { quest=38638, item=127333, achievement=10262, }, -- snake flute
+        [40807550] = { quest=38639, item=127766, achievement=10262, toy=true, }, -- perfect blossom
+        [41607330] = { quest=38657, item=127339, achievement=10262, }, -- forgotten champion sword
+        [42803530] = { quest=38822, item=127859, achievement=10262, note="Top floor", toy=true, },
+        [43203830] = { quest=38821, item=127348, achievement=10262, note="In the building" },
+        [46207280] = { quest=38739, item=128320, achievement=10262, }, -- "Mysterious Corrupted Obelisk
+        [46804220] = { quest=38776, item=127328, achievement=10262, }, -- blade
+        [46903660] = { quest=38771, item=127347, achievement=10262, }, -- book
+        [46904440] = { quest=38773, item=128218, achievement=10262, }, -- fel satchel
+        [47907040] = { quest=38705, item=127329, achievement=10262, }, -- Crystalized Essence of Elements
+        [48507520] = { quest=38814, item=127337, achievement=10262, }, -- "Looted Mystical Staff
+        [49907680] = { quest=38809, item=128223, achievement=10262, }, -- "Bleeding Hollow Mushroom Stash
+        [49907960] = { quest=38703, item=127354, achievement=10262, }, -- "Scouts Belongings
+        [49908120] = { quest=38702, item=127312, achievement=10262, }, -- "Discarded Helm
+        [50806490] = { quest=38731, item=127412, achievement=10262, }, -- overgrown relic
+        [51603270] = { quest=39075, item=823, achievement=10262, }, -- "Fel-Tainted Apexis Formation
+        [51702430] = { quest=38686, item=127341, achievement=10262, }, -- "Rune Etched Femur
+        [54806930] = { quest=38593, item=127334, achievement=10262, note="Climb the vine bridge, spear in the side", }, -- spear
+        [54909070] = { quest=39470, item=824, achievement=10262, }, -- "Dead Mans Chest
+        [56906510] = { quest=38591, item=127408, achievement=10262, }, -- broken selfie sack
+        [58502500] = { quest=38679, item=115804, achievement=10262, }, -- Jewel of the Fallen Star
+        [61207580] = { quest=38601, item=824, achievement=10262, }, -- "Blackfang Isle Cache
+        [62107070] = { quest=38602, item=128217, achievement=10262, }, -- "Crystalized Fel Spike
+        [62602050] = { quest=38682, item=127401, achievement=10262, }, -- "Censer of Torment
+        [63402810] = { quest=38740, item=128309, achievement=10262, }, -- "Forgotten Shard of the Cipher
+        [64704280] = { quest=38701, item=127396, achievement=10262, toy=true, }, -- "Loose Soil
+        [65908500] = { quest=39469, item=128386, achievement=10262, }, -- "Bejeweled Egg
+        [69705600] = { quest=38704, item=824, achievement=10262, }, -- "Forgotten Iron Horde Supplies
+        [73604320] = { quest=38779, note="First floor of north-east tower", achievement=10262, }, -- Stashed Bleeding Hollow Loot
     },
     ["AshranAllianceFactionHub"] = {
         [45307020] = { follower=467, faction="Alliance", note="Outside the town hall", }, -- Fen Tao
