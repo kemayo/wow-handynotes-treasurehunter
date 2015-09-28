@@ -50,7 +50,7 @@ ns.points = {
         [73006220]={ quest=35590, label="Goblin Pack", currency=824, },
         [73107550]={ quest=35673, label="Appropriated Warsong Supplies", currency=824, },
         [77101660]={ quest=36174, label="Bounty of the Elements", currency=824, note="Cave, use the Elemental Stones for access", },
-        [88913310]={ quest=36857, label="Smuggler's Cache", note="In a cave, dodge the tripwires", currency=824, },
+        [89103310]={ quest=36857, label="Smuggler's Cache", note="In a cave, dodge the tripwires", currency=824, },
         [89406580]={ quest=35976, label="Warsong Supplies", currency=824, },
         -- treasures
         [38305880]={ quest=36109, label="Goldtoe's Plunder", npc=84068, item=114054, note="Gold, parrot has the key", },
