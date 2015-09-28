@@ -639,4 +639,7 @@ ns.points = {
         [42903490] = { quest=nil, currency=824, note="Suspiciously Glowing Chest. Second floor", repeatable=true, },
         [43203830] = { quest=38821, item=127348, note="In the building" },
     },
+    ["AshranAllianceFactionHub"] = {
+        [45307020] = { follower=467, faction="Alliance", note="Outside the town hall", }, -- Fen Tao
+    },
 }
