@@ -633,6 +633,7 @@ ns.points = {
     },
     -- ["TanaanJungleIntro"] = {},
     ["TanaanJungle"] = {
+        [34703464] = { quest=38742, item=127669, note="Bottom of the cave. Watch out for fall damage.", }, -- Mad Chief
         [14905440] = { quest=38754, item=127325, note="In the tower, on an orc hanging from a chain" },
         [42803530] = { quest=38822, item=127859, note="Top floor", toy=true, },
         [42903490] = { quest=nil, currency=824, note="Suspiciously Glowing Chest. Second floor", repeatable=true, },
