@@ -651,7 +651,7 @@ ns.points = {
         [26506290] = { quest=38741, currency=823, achievement=10262, note="Top of tower, use rope to get up", }, -- bleeding hollow chest
         [26804410] = { quest=38683, item=127709, achievement=10262, }, -- "Looted Bleeding Hollow Treasure
         [28702330] = { quest=38334, item=127668, achievement=10262, }, -- "Jewel of Hellfire
-        [28803460] = { quest=38863, item=823, achievement=10262, }, -- "Partially Mined Apexis Crystal
+        [28803460] = { quest=38863, currency=823, achievement=10262, }, -- "Partially Mined Apexis Crystal
         [30307190] = { quest=38629, item=127389, achievement=10262, }, -- polished crystal
         [31403110] = { quest=38732, item=127413, achievement=10262, }, -- "Jeweled Arakkoa Effigy
         [32407040] = { quest=38426, item=127670, achievement=10262, toy=true, }, -- sargerei tome
@@ -659,9 +659,9 @@ ns.points = {
         [34407830] = { quest=38762, item=128346, achievement=10262, }, -- captain booty 3
         [34703464] = { quest=38742, item=127669, achievement=10262, note="Bottom of the cave. Watch out for fall damage.", }, -- Mad Chief
         [34707710] = { quest=38761, item=128346, achievement=10262, }, -- captain booty 2
-        [35907860] = { quest=38758, item=824, achievement=10262, }, -- "Ironbeards Treasure
+        [35907860] = { quest=38758, currency=824, achievement=10262, }, -- "Ironbeards Treasure
         [36304350] = { quest=37956, item=127397, achievement=10262, }, -- "Strange Sapphire
-        [37004620] = { quest=38640, item=824, achievement=10262, }, -- "Pale Removal Equipment
+        [37004620] = { quest=38640, currency=824, achievement=10262, }, -- "Pale Removal Equipment
         [37808070] = { quest=38788, item=127770, achievement=10262, }, -- brazier
         [40607980] = { quest=38638, item=127333, achievement=10262, }, -- snake flute
         [40807550] = { quest=38639, item=127766, achievement=10262, toy=true, }, -- perfect blossom
@@ -678,19 +678,19 @@ ns.points = {
         [49907960] = { quest=38703, item=127354, achievement=10262, }, -- "Scouts Belongings
         [49908120] = { quest=38702, item=127312, achievement=10262, }, -- "Discarded Helm
         [50806490] = { quest=38731, item=127412, achievement=10262, }, -- overgrown relic
-        [51603270] = { quest=39075, item=823, achievement=10262, }, -- "Fel-Tainted Apexis Formation
+        [51603270] = { quest=39075, currency=823, achievement=10262, }, -- "Fel-Tainted Apexis Formation
         [51702430] = { quest=38686, item=127341, achievement=10262, }, -- "Rune Etched Femur
         [54806930] = { quest=38593, item=127334, achievement=10262, note="Climb the vine bridge, spear in the side", }, -- spear
-        [54909070] = { quest=39470, item=824, achievement=10262, }, -- "Dead Mans Chest
+        [54909070] = { quest=39470, currency=824, achievement=10262, }, -- "Dead Mans Chest
         [56906510] = { quest=38591, item=127408, achievement=10262, }, -- broken selfie sack
         [58502500] = { quest=38679, item=115804, achievement=10262, }, -- Jewel of the Fallen Star
-        [61207580] = { quest=38601, item=824, achievement=10262, }, -- "Blackfang Isle Cache
+        [61207580] = { quest=38601, currency=824, achievement=10262, }, -- "Blackfang Isle Cache
         [62107070] = { quest=38602, item=128217, achievement=10262, }, -- "Crystalized Fel Spike
         [62602050] = { quest=38682, item=127401, achievement=10262, }, -- "Censer of Torment
         [63402810] = { quest=38740, item=128309, achievement=10262, }, -- "Forgotten Shard of the Cipher
         [64704280] = { quest=38701, item=127396, achievement=10262, toy=true, }, -- "Loose Soil
         [65908500] = { quest=39469, item=128386, achievement=10262, }, -- "Bejeweled Egg
-        [69705600] = { quest=38704, item=824, achievement=10262, }, -- "Forgotten Iron Horde Supplies
+        [69705600] = { quest=38704, currency=824, achievement=10262, }, -- "Forgotten Iron Horde Supplies
         [73604320] = { quest=38779, note="First floor of north-east tower", achievement=10262, }, -- Stashed Bleeding Hollow Loot
     },
     ["AshranAllianceFactionHub"] = {
