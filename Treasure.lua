@@ -137,6 +137,8 @@ ns.points = {
         [40307610]={ quest=35596, follower=170, note="Kill Bolkar nearby to get the key", }, -- Goldmane
         [46401600]={ quest=34466, follower=190, note="Mysterious Staff; collect all the Mysterious items across Draenor", }, -- Archmage Vargoth
         [67205600]={ quest=36711, npc=82746, follower=209, note="Rebuild his fishing rod by gathering the pieces @ 38.4,49.3, 65.8,61.1, 85.4,38.7", }, -- Abu'gar
+        -- pepe!
+        [80105040]={ quest=39265, item=127865, achievement=10053, }, -- Viking Pepe
     },
     --[[
     -- TODO: need the name
@@ -412,6 +414,8 @@ ns.points = {
         -- followers
         [39703990]={ quest=34463, follower=190, note="Mysterious Ring; collect all the Mysterious items across Draenor", }, -- Archmage Vargoth
         [44908690]={ quest=36037, npc=83820, follower=193, note="He'll look hostile; fight the things that are attacking him", }, -- Tormmok
+        -- pepe!
+        [47504130]={ quest=39267, item=127867, achievement=10053, }, -- Ninja Pepe
     },
     ["Talador"] = {
         -- treasures
@@ -499,6 +503,8 @@ ns.points = {
         -- followers
         [45303700]={ quest=34465, follower=190, note="Mysterious Hat; collect all the Mysterious items across Draenor", }, -- Archmage Vargoth
         [62755038]={ quest=nil, follower=171, note="Complete the quests starting with Clear!", }, -- Pleasure-Bot 8000 (actually a different quest for alliance and horde)
+        -- pepe!
+        [51006330]={ quest=39266, item=127869, achievement=10053, }, -- Knight Pepe
     },
     ["TombofSouls"] = {
         [67602320]={ quest=34671, npc=79543, item=112370, }, -- Shirzir
@@ -594,6 +600,8 @@ ns.points = {
         [74404280]={ quest=37390, npc=87019, currency=823, }, -- Glutonous Giant
         -- followers
         [55306850]={ quest=37168, follower=219, note="Follow the trail up the hill to 64.9,65.4, find him in the cave", }, -- Leorajh
+        -- pepe!
+        [54108360]={ quest=39268, item=127870, achievement=10053, }, -- Pirate Pepe
     },
     -- Garrisons!
     ["garrisonsmvalliance_tier1"] = {
