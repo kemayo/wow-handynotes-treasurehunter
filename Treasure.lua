@@ -37,7 +37,7 @@ ns.points = {
         [88901820]={ quest=35660, label="Fungus-Covered Chest", note="Use a glider", currency=824, },
         -- generic garrison supplies
         [37707060]={ quest=34760, label="Treasure of Kull'krosh", currency=824, },
-        [40406860]={ quest=37435, label="Spirit Coffer", currency=824, },
+        [40406860]={ quest=37435, label="Spirit Coffer", currency=824, junk=true, },
         [43305750]={ quest=35987, label="Genedar Debris", currency=824, },
         [44606750]={ quest=36002, label="Genedar Debris", currency=824, },
         [47207430]={ quest=35576, label="Goblin Pack", currency=824, },
