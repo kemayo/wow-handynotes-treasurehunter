@@ -1,3 +1,7 @@
+### Changed in v11
+
+* Added: Ancestral Greataxe
+
 ### Changed in v10
 
 * The Pepes for I Found Pepe are now listed

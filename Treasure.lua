@@ -189,6 +189,7 @@ ns.points = {
         [49303750]={ quest=33867, item=109739, note="Astrologer's Box", toy=true, },
         [51107910]={ quest=33574, item=113375, note="Vindicator's Cache", toy=true, },
         [51803550]={ quest=33037, label="False-Bottomed Jar", note="Gold", junk=true, },
+        [52804840]={ quest=35584, item=113560, note="Ancestral Greataxe, against the grave", },
         [55004500]={ quest=35581, item=109124, note="Alchemist's Satchel", },
         [55307480]={ quest=35580, item=117550, note="Swamplighter Hive", toy=true, },
         [55801990]={ quest=35600, item=118104, note="Strange Spore, on top of the mushroom, go over the mountain", pet=true, },
