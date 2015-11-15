@@ -1,1 +1,4 @@
 package-as: HandyNotes_TreasureHunter
+manual-changelog:
+    filename: CHANGELOG.md
+    markup-type: markdown

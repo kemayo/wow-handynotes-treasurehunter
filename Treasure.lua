@@ -115,13 +115,13 @@ ns.points = {
         [75606500]={ quest=36128, npc=80057, item=116806, }, -- Soulfang
         [77006400]={ quest=35735, npc=82826, currency=824, note="In a cave, use the switch", }, -- Berserk T-300 Series Mark II
         [80603040]={ quest=35923, npc=83603, item=118245, }, -- Hunter Blacktooth
-        [81206000]={ quest=35932, npc=83643, item=116796, }, -- Malroc Stonesunder 
+        [81206000]={ quest=35932, npc=83643, item=116796, }, -- Malroc Stonesunder
         [82607620]={ quest=34645, npc=79024, item=116805, }, -- Warmaster Blugthol
         [84603660]={ quest=36159, npc=84263, item=118689, }, -- Graveltooth
         [84605340]={ quest=35778, npc=82899, currency=824, }, -- Ancient Blademaster
         [86007160]={ quest=35784, npc=82912, item=118687, }, -- Grizzlemaw
         [87005500]={ quest=34862, npc=78161, item=116799, }, -- Hyperious
-        [89004120]={ quest=35623, npc=82486, item=118679, }, -- Explorer Nozzand 
+        [89004120]={ quest=35623, npc=82486, item=118679, }, -- Explorer Nozzand
         [93202820]={ quest=35898, npc=83509, item=116916, }, -- Gorepetal
         -- steamwheedle rares
         [62601680]={ quest=37211, npc=86732, item=118655, }, -- Bergruu
@@ -147,7 +147,7 @@ ns.points = {
     },
     -- "Vault of the Titan"
     ["StonecragGorge"] = {
-    
+
     },
     --]]
     ["ShadowmoonValleyDR"] = {
@@ -213,7 +213,7 @@ ns.points = {
         [42804100]={ quest=33038, item=113553, npc=75434, }, -- Windfang Matriarch
         [43807740]={ quest=33383, item=117551, npc=81639, }, -- Brambleking Fili
         [44005760]={ quest=33642, item=119449, npc=75071, }, -- Mother Om'ra, hunter quest
-        [44802080]={ quest=35906, item=113561, npc=77310, }, -- Mad King Sporeon 
+        [44802080]={ quest=35906, item=113561, npc=77310, }, -- Mad King Sporeon
         [46007160]={ quest=37351, currency=823, npc=84911, }, -- Demidos
         [48007760]={ quest=37355, item=119360, npc=85121, }, -- Lady Temptessa
         [48208100]={ quest=37354, currency=823, npc=85029, }, -- Shadowspeaker Niir
@@ -331,9 +331,9 @@ ns.points = {
         [43002100]={ quest=37387, item=119356, npc=82614, }, -- Moltnoma
         [40601240]={ quest=34522, npc=79104, currency=823, }, -- Ug'lok the Frozen
         -- followers
-        [39602800]={ quest=34733, followed=32, note="Rescue Dagg from the other cage first, then find him outside your garrison", }, -- Dagg
+        [39602800]={ quest=34733, follower=32, note="Rescue Dagg from the other cage first, then find him outside your garrison", }, -- Dagg
         [68001900]={ quest=34464, follower=190, note="Mysterious Boots; collect all the Mysterious items across Draenor", }, -- Archmage Vargoth
-        [65906080]={ quest=34733, followed=32, note="Rescue Dagg from the cage, then go to his other location", }, -- Dagg
+        [65906080]={ quest=34733, follower=32, note="Rescue Dagg from the cage, then go to his other location", }, -- Dagg
     },
     ["BladespireFortress"] = {
         [44806480]={ quest=35570, label="Ogre Booty", note="Gold", level=1, },
@@ -414,6 +414,7 @@ ns.points = {
         -- followers
         [39703990]={ quest=34463, follower=190, note="Mysterious Ring; collect all the Mysterious items across Draenor", }, -- Archmage Vargoth
         [44908690]={ quest=36037, npc=83820, follower=193, note="He'll look hostile; fight the things that are attacking him", }, -- Tormmok
+        [42809090]={ quest=34279, npc=78030, follower=189, note="Follow the path up and fight him", }, -- Blook
         -- pepe!
         [47504130]={ quest=39267, item=127867, achievement=10053, }, -- Ninja Pepe
     },
@@ -503,6 +504,9 @@ ns.points = {
         -- followers
         [45303700]={ quest=34465, follower=190, note="Mysterious Hat; collect all the Mysterious items across Draenor", }, -- Archmage Vargoth
         [62755038]={ quest=nil, follower=171, note="Complete the quests starting with Clear!", }, -- Pleasure-Bot 8000 (actually a different quest for alliance and horde)
+        [57405120]={ quest=36519, follower=207, note="Complete her quest", faction="Alliance", }, -- Defender Illona
+        [58005300]={ quest=36518, follower=207, note="Complete her quest", faction="Horde", }, -- Aeda Brightdawn
+        [56802600]={ quest=36522, follower=208, note="Complete his quest", }, -- Ahm
         -- pepe!
         [51006330]={ quest=39266, item=127869, achievement=10053, }, -- Knight Pepe
     },
