@@ -1,5 +1,15 @@
 local myname, ns = ...
 
+ns.map_questids = {
+    ["ShadowmoonValleyDR"] = 36464,
+    ["FrostfireRidge"] = 34557,
+    ["Gorgrond"] = 36465,
+    ["Talador"] = 36466,
+    ["SpiresOfArak"] = 36467,
+    ["NagrandDraenor"] = 36468,
+    ["TanaanJungle"] = 39463,
+}
+
 ns.points = {
     --[[ structure:
     [mapFile] = { -- "_terrain1" etc will be stripped from attempts to fetch this
