@@ -525,17 +525,17 @@ ns.points = {
         [67602320]={ quest=34671, npc=79543, item=112370, }, -- Shirzir
     },
     ["SpiresOfArak"] = {
-        -- archaeology
-        [33302730]={ quest=36422, label="Sun-Touched Cache", currency=829, note="Needs archaeology", },
-        [42701830]={ quest=36244, label="Misplaced Scrolls", note="Needs archaeology", currency=829, },
-        [43001640]={ quest=36245, label="Relics of the Outcasts", currency=829, note="Needs archaeology; on top of the walls", },
-        [43202720]={ quest=36355, label="Relics of the Outcasts", currency=829, note="Needs archaeology; climb the ropes", },
-        [46004410]={ quest=36354, label="Relics of the Outcasts", currency=829, note="Needs archaeology; climb the tree, jump to the rope", },
-        [51904890]={ quest=36360, label="Relics of the Outcasts", currency=829, note="Needs archaeology", },
-        [52404280]={ quest=36416, label="Misplaced Scroll", currency=829, note="Needs archaeology; start climbing the mountain at 53.6, 47.7", },
-        [56304530]={ quest=36433, label="Smuggled Apexis Artifacts", currency=829, note="Needs archaeology; climb  the mushrooms up the tree", },
-        [60205390]={ quest=36359, label="Relics of the Outcasts", currency=829, note="Needs archaeology", },
-        [67403980]={ quest=36356, label="Relics of the Outcasts", currency=829, note="Needs archaeology", },
+        -- archeology
+        [33302730]={ quest=36422, label="Sun-Touched Cache", currency=829, note="Needs archeology", },
+        [42701830]={ quest=36244, label="Misplaced Scrolls", note="Needs archeology", currency=829, },
+        [43001640]={ quest=36245, label="Relics of the Outcasts", currency=829, note="Needs archeology; on top of the walls", },
+        [43202720]={ quest=36355, label="Relics of the Outcasts", currency=829, note="Needs archeology; climb the ropes", },
+        [46004410]={ quest=36354, label="Relics of the Outcasts", currency=829, note="Needs archeology; climb the tree, jump to the rope", },
+        [51904890]={ quest=36360, label="Relics of the Outcasts", currency=829, note="Needs archeology", },
+        [52404280]={ quest=36416, label="Misplaced Scroll", currency=829, note="Needs archeology; start climbing the mountain at 53.6, 47.7", },
+        [56304530]={ quest=36433, label="Smuggled Apexis Artifacts", currency=829, note="Needs archeology; climb  the mushrooms up the tree", },
+        [60205390]={ quest=36359, label="Relics of the Outcasts", currency=829, note="Needs archeology", },
+        [67403980]={ quest=36356, label="Relics of the Outcasts", currency=829, note="Needs archeology", },
         -- shrines
         [43802470]={ quest=36397, item=115463, note="Take to a Shrine of Terrok", repeatable=true, },
         [43901500]={ quest=36395, item=115463, note="Take to a Shrine of Terrok", repeatable=true, },
@@ -672,51 +672,54 @@ ns.points = {
         [22004780] = { quest=38678, item=128346, achievement=10262, currency=824, note="In the hut", }, -- warchest
         [25305030] = { quest=38735, item=128222, achievement=10262, note="Top of tower, use rope to get up", }, -- enchanted spyglass
         [26506290] = { quest=38741, currency=823, achievement=10262, note="Top of tower, use rope to get up", }, -- bleeding hollow chest
-        [26804410] = { quest=38683, item=127709, achievement=10262, }, -- "Looted Bleeding Hollow Treasure
-        [28702330] = { quest=38334, item=127668, achievement=10262, }, -- "Jewel of Hellfire
-        [28803460] = { quest=38863, currency=823, achievement=10262, }, -- "Partially Mined Apexis Crystal
+        [26804410] = { quest=38683, item=127709, achievement=10262, }, -- Looted Bleeding Hollow Treasure
+        [28702330] = { quest=38334, item=127668, achievement=10262, }, -- Jewel of Hellfire
+        [28803460] = { quest=38863, currency=823, achievement=10262, }, -- Partially Mined Apexis Crystal
         [30307190] = { quest=38629, item=127389, achievement=10262, }, -- polished crystal
-        [31403110] = { quest=38732, item=127413, achievement=10262, }, -- "Jeweled Arakkoa Effigy
+        [31403110] = { quest=38732, item=127413, achievement=10262, }, -- Jeweled Arakkoa Effigy
         [32407040] = { quest=38426, item=127670, achievement=10262, toy=true, }, -- sargerei tome
         [33907810] = { quest=38760, item=128346, achievement=10262, }, -- captain booty 1
         [34407830] = { quest=38762, item=128346, achievement=10262, }, -- captain booty 3
         [34703464] = { quest=38742, item=127669, achievement=10262, note="Bottom of the cave. Watch out for fall damage.", }, -- Mad Chief
         [34707710] = { quest=38761, item=128346, achievement=10262, }, -- captain booty 2
-        [35907860] = { quest=38758, currency=824, achievement=10262, }, -- "Ironbeards Treasure
-        [36304350] = { quest=37956, item=127397, achievement=10262, }, -- "Strange Sapphire
-        [37004620] = { quest=38640, currency=824, achievement=10262, }, -- "Pale Removal Equipment
+        [35907860] = { quest=38758, currency=824, achievement=10262, }, -- Ironbeard's Treasure
+        [36304350] = { quest=37956, item=127397, achievement=10262, }, -- Strange Sapphire
+        [37004620] = { quest=38640, currency=824, achievement=10262, }, -- Pale Removal Equipment
         [37808070] = { quest=38788, item=127770, achievement=10262, }, -- brazier
         [40607980] = { quest=38638, item=127333, achievement=10262, }, -- snake flute
         [40807550] = { quest=38639, item=127766, achievement=10262, toy=true, }, -- perfect blossom
         [41607330] = { quest=38657, item=127339, achievement=10262, }, -- forgotten champion sword
         [42803530] = { quest=38822, item=127859, achievement=10262, note="Top floor", toy=true, },
         [43203830] = { quest=38821, item=127348, achievement=10262, note="In the building" },
-        [46207280] = { quest=38739, item=128320, achievement=10262, }, -- "Mysterious Corrupted Obelisk
+        [46207280] = { quest=38739, item=128320, achievement=10262, }, -- Mysterious Corrupted Obelisk
         [46804220] = { quest=38776, item=127328, achievement=10262, }, -- blade
         [46903660] = { quest=38771, item=127347, achievement=10262, }, -- book
         [46904440] = { quest=38773, item=128218, achievement=10262, }, -- fel satchel
         [47907040] = { quest=38705, item=127329, achievement=10262, }, -- Crystalized Essence of Elements
-        [48507520] = { quest=38814, item=127337, achievement=10262, }, -- "Looted Mystical Staff
-        [49907680] = { quest=38809, item=128223, achievement=10262, }, -- "Bleeding Hollow Mushroom Stash
-        [49907960] = { quest=38703, item=127354, achievement=10262, }, -- "Scouts Belongings
-        [49908120] = { quest=38702, item=127312, achievement=10262, }, -- "Discarded Helm
+        [48507520] = { quest=38814, item=127337, achievement=10262, }, -- Looted Mystical Staff
+        [49907680] = { quest=38809, item=128223, achievement=10262, }, -- Bleeding Hollow Mushroom Stash
+        [49907960] = { quest=38703, item=127354, achievement=10262, }, -- Scouts Belongings
+        [49908120] = { quest=38702, item=127312, achievement=10262, }, -- Discarded Helm
         [50806490] = { quest=38731, item=127412, achievement=10262, }, -- overgrown relic
-        [51603270] = { quest=39075, currency=823, achievement=10262, }, -- "Fel-Tainted Apexis Formation
-        [51702430] = { quest=38686, item=127341, achievement=10262, }, -- "Rune Etched Femur
+        [51603270] = { quest=39075, currency=823, achievement=10262, }, -- Fel-Tainted Apexis Formation
+        [51702430] = { quest=38686, item=127341, achievement=10262, }, -- Rune Etched Femur
         [54806930] = { quest=38593, item=127334, achievement=10262, note="Climb the vine bridge, spear in the side", }, -- spear
-        [54909070] = { quest=39470, currency=824, achievement=10262, }, -- "Dead Mans Chest
+        [54909070] = { quest=39470, currency=824, achievement=10262, }, -- Dead Mans Chest
         [56906510] = { quest=38591, item=127408, achievement=10262, }, -- broken selfie sack
         [58502500] = { quest=38679, item=115804, achievement=10262, }, -- Jewel of the Fallen Star
-        [61207580] = { quest=38601, currency=824, achievement=10262, }, -- "Blackfang Isle Cache
-        [62107070] = { quest=38602, item=128217, achievement=10262, }, -- "Crystalized Fel Spike
-        [62602050] = { quest=38682, item=127401, achievement=10262, }, -- "Censer of Torment
-        [63402810] = { quest=38740, item=128309, achievement=10262, }, -- "Forgotten Shard of the Cipher
-        [64704280] = { quest=38701, item=127396, achievement=10262, toy=true, }, -- "Loose Soil
-        [65908500] = { quest=39469, item=128386, achievement=10262, }, -- "Bejeweled Egg
-        [69705600] = { quest=38704, currency=824, achievement=10262, }, -- "Forgotten Iron Horde Supplies
+        [61207580] = { quest=38601, currency=824, achievement=10262, }, -- Blackfang Isle Cache
+        [62107070] = { quest=38602, item=128217, achievement=10262, }, -- Crystalized Fel Spike
+        [62602050] = { quest=38682, item=127401, achievement=10262, }, -- Censer of Torment
+        [63402810] = { quest=38740, item=128309, achievement=10262, }, -- Forgotten Shard of the Cipher
+        [64704280] = { quest=38701, item=127396, achievement=10262, toy=true, }, -- Loose Soil
+        [65908500] = { quest=39469, item=128386, achievement=10262, }, -- Bejeweled Egg
+        [69705600] = { quest=38704, currency=824, achievement=10262, }, -- Forgotten Iron Horde Supplies
         [73604320] = { quest=38779, note="First floor of north-east tower", achievement=10262, }, -- Stashed Bleeding Hollow Loot
     },
     ["AshranAllianceFactionHub"] = {
         [45307020] = { follower=467, faction="Alliance", note="Outside the town hall", }, -- Fen Tao
+    },
+    ["AshranHordeFactionHub"] = {
+        [47004500] = { follower=467, faction="Horde", note="Outside the inn", }, -- Fen Tao
     },
 }
