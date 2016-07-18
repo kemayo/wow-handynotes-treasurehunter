@@ -346,7 +346,7 @@ end
 
 function HL:OnEnable()
     -- Temporary for the Legion pre-patch:
-    if not GetAddOnInfo("HandyNotes_LegionTreasures") then
+    if select(5, GetAddOnInfo("HandyNotes_LegionTreasures")) == 'MISSING' then
         local myfullname = GetAddOnMetadata(myname, "Title")
         print("|cFF33FF99".. myfullname .. "|r: During the Legion pre-patch, the |cffA330C9Demon Hunter|r starting zone treasures will be included in this addon. Go get |cFF33FF99HandyNotes_LegionTreasures|r on curse.com or wowace.com for all the new Legion zones.")
 
