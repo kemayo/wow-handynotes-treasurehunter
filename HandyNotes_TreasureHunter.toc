@@ -1,4 +1,4 @@
-## Interface: 60200
+## Interface: 70000
 ## Title: HandyNotes_TreasureHunter
 ## Notes: Where the Treasure Hunter objects are in Draenor
 ## Author: Kemayo
