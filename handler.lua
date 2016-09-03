@@ -339,6 +339,7 @@ function HL:OnInitialize()
 
     -- watch for LOOT_CLOSED
     self:RegisterEvent("LOOT_CLOSED")
+    self:RegisterEvent("GARRISON_FOLLOWER_ADDED")
 end
 
 function HL:OnEnable()
@@ -366,5 +367,8 @@ function HL:Refresh()
 end
 
 function HL:LOOT_CLOSED()
+    self:Refresh()
+end
+function HL:GARRISON_FOLLOWER_ADDED()
     self:Refresh()
 end
