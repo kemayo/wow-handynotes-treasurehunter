@@ -78,6 +78,19 @@ local function work_out_label(point)
     return UNKNOWN
 end
 local function work_out_texture(point)
+    if point.atlas then
+        if not icon_cache[point.atlas] then
+            local texture, _, _, left, right, top, bottom = GetAtlasInfo(point.atlas)
+            icon_cache[point.atlas] = {
+                icon = texture,
+                tCoordLeft = left,
+                tCoordRight = right,
+                tCoordTop = top,
+                tCoordBottom = bottom,
+            }
+        end
+        return icon_cache[point.atlas]
+    end
     if point.item and ns.db.icon_item then
         local texture = select(10, GetItemInfo(point.item))
         if texture then
