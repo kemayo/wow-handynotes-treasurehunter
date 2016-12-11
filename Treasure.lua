@@ -605,7 +605,7 @@ ns.points = {
         [59708130]={ quest=36365, label="Spray-O-Matic 5000 XT", currency=824, },
         [60908460]={ quest=36456, label="Shredder Parts", currency=824, },
         [55509080]={ quest=36366, label="Campaign Contributions", note="Gold", },
-        [50502210]={ quest=36401, item=116919, note="Fractured Sunstone; may be bugged and show as incomplete", },
+        [50502210]={ quest=36246, item=116919, note="Hidden in the water", }, -- Fractured Sunstone
         [44401200]={ quest=36377, npc=85206, item=118693, }, -- Rukhmar's Image
         [40605500]={ quest=36458, item=116913, note="Abandoned Mining Pick", },
         [58706030]={ quest=36340, item=116922, note="Ogron Plunder (Hobbit reference!)", },
