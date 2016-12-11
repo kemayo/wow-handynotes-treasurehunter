@@ -538,7 +538,7 @@ ns.points = {
         [62755038]={ quest=nil, follower=171, note="Complete the quests starting with Clear!", }, -- Pleasure-Bot 8000 (actually a different quest for alliance and horde)
         [57405120]={ quest=36519, follower=207, note="Complete her quest", faction="Alliance", }, -- Defender Illona
         [58005300]={ quest=36518, follower=207, note="Complete her quest", faction="Horde", }, -- Aeda Brightdawn
-        [56802600]={ quest=36522, follower=208, note="Complete his quest", }, -- Ahm
+        [56802600]={ quest=36522, follower=208, note="Complete his quest. Find him again outside your garrison.", }, -- Ahm
         -- pepe!
         [51006330]={ quest=39266, item=127869, achievement=10053, }, -- Knight Pepe
         -- Voidtalon
