@@ -640,7 +640,7 @@ ns.points = {
         [71203380]={ quest=37392, npc=87027, currency=823, }, -- Shadow Hulk
         [74404280]={ quest=37390, npc=87019, currency=823, }, -- Glutonous Giant
         -- followers
-        [55306850]={ quest=37168, follower=219, note="Follow the trail up the hill to 64.9,65.4, find him in the cave", }, -- Leorajh
+        [55306850]={ quest=37168, follower=219, note="Follow the trail up the hill to 54.9,65.4, find him in the cave", }, -- Leorajh
         -- pepe!
         [54108360]={ quest=39268, item=127870, achievement=10053, }, -- Pirate Pepe
         -- Voidtalon
