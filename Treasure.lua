@@ -179,6 +179,7 @@ ns.points = {
         -- treasures
         [20303060]={ quest=33575, item=108904, note="Demonic Cache", },
         [22803390]={ quest=33572, item=113373, note="Rotting Basket", },
+        [29803750]={ quest=36879, label="Dusty Lockbox", note="On top of the standing stones; some random greens", },
         [30004530]={ quest=35919, item=113563, note="Shadowmoon Sacrificial Dagger", },
         [31303910]={ quest=33886, item=109081, note="Ronokk's Belongings", },
         [33503970]={ quest=33569, item=113545, note="Reusable mana potion", },
