@@ -118,10 +118,7 @@ ns.options = {
 }
 
 local player_faction = UnitFactionGroup("player")
-ns.should_show_point = function(coord, point, currentZone, currentLevel)
-    if point.level and point.level ~= currentLevel then
-        return false
-    end
+ns.should_show_point = function(coord, point, currentZone)
     if ns.hidden[currentZone] and ns.hidden[currentZone][coord] then
         return false
     end
@@ -129,6 +126,9 @@ ns.should_show_point = function(coord, point, currentZone, currentLevel)
         return false
     end
     if point.faction and point.faction ~= player_faction then
+        return false
+    end
+    if point.art and point.art ~= C_Map.GetMapArtID(currentZone) then
         return false
     end
     if ns.db.hide_if_map and ns.map_questids[currentZone] and not (point.junk or point.npc or point.follower) and IsQuestFlaggedCompleted(ns.map_questids[currentZone]) then
