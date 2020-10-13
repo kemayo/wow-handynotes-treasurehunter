@@ -15,7 +15,6 @@ local HandyNotes = HandyNotes
 local GetItemInfo = GetItemInfo
 local GetAchievementInfo = GetAchievementInfo
 local GetAchievementCriteriaInfo = GetAchievementCriteriaInfo
-local GetCurrencyInfo = GetCurrencyInfo
 
 local cache_tooltip = CreateFrame("GameTooltip", "HNTreasureHunterTooltip")
 cache_tooltip:AddFontStrings(
@@ -48,6 +47,14 @@ local trimmed_icon = function(texture)
         }
     end
     return icon_cache[texture]
+end
+local atlas_texture = function(atlas, scale)
+    atlas = C_Texture.GetAtlasInfo(atlas)
+    return {
+        icon = atlas.file,
+        tCoordLeft = atlas.leftTexCoord, tCoordRight = atlas.rightTexCoord, tCoordTop = atlas.topTexCoord, tCoordBottom = atlas.bottomTexCoord,
+        scale = scale or 1,
+    }
 end
 local function work_out_label(point)
     local fallback
@@ -83,9 +90,9 @@ local function work_out_label(point)
         fallback = 'item:'..point.item
     end
     if point.currency then
-        local name, _, texture = GetCurrencyInfo(point.currency)
-        if name then
-            return name
+        local info = C_CurrencyInfo.GetCurrencyInfo(point.currency)
+        if info then
+            return info.name
         end
     end
     return fallback or UNKNOWN
@@ -93,14 +100,7 @@ end
 local function work_out_texture(point)
     if point.atlas then
         if not icon_cache[point.atlas] then
-            local texture, _, _, left, right, top, bottom = GetAtlasInfo(point.atlas)
-            icon_cache[point.atlas] = {
-                icon = texture,
-                tCoordLeft = left,
-                tCoordRight = right,
-                tCoordTop = top,
-                tCoordBottom = bottom,
-            }
+            icon_cache[point.atlas] = atlas_texture(point.atlas)
         end
         return icon_cache[point.atlas]
     end
@@ -111,9 +111,9 @@ local function work_out_texture(point)
         end
     end
     if point.currency then
-        local texture = select(3, GetCurrencyInfo(point.currency))
-        if texture then
-            return trimmed_icon(texture)
+        local info = C_CurrencyInfo.GetCurrencyInfo(point.currency)
+        if info then
+            return trimmed_icon(info.iconFileID)
         end
     end
     if point.achievement then
@@ -124,39 +124,18 @@ local function work_out_texture(point)
     end
     if point.follower then
         if not follower_texture then
-            local texture, _, _, left, right, top, bottom = GetAtlasInfo("GreenCross")
-            follower_texture = {
-                icon = texture,
-                tCoordLeft = left,
-                tCoordRight = right,
-                tCoordTop = top,
-                tCoordBottom = bottom,
-            }
+            follower_texture = atlas_texture("GreenCross")
         end
         return follower_texture
     end
     if point.npc then
         if not npc_texture then
-            local texture, _, _, left, right, top, bottom = GetAtlasInfo("DungeonSkull")
-            npc_texture = {
-                icon = texture,
-                tCoordLeft = left,
-                tCoordRight = right,
-                tCoordTop = top,
-                tCoordBottom = bottom,
-            }
+            npc_texture = atlas_texture("DungeonSkull")
         end
         return npc_texture
     end
     if not default_texture then
-        local texture, _, _, left, right, top, bottom = GetAtlasInfo("VignetteLoot")
-        default_texture = {
-            icon = texture,
-            tCoordLeft = left,
-            tCoordRight = right,
-            tCoordTop = top,
-            tCoordBottom = bottom,
-        }
+        default_texture = atlas_texture("VignetteLoot")
     end
     return default_texture
 end
@@ -193,8 +172,8 @@ local function handle_tooltip(tooltip, point)
             end
         end
         if point.currency then
-            local name = GetCurrencyInfo(point.currency)
-            tooltip:AddDoubleLine(CURRENCY, name or point.currency)
+            local info = C_CurrencyInfo.GetCurrencyInfo(point.currency)
+            tooltip:AddDoubleLine(CURRENCY, info and info.name or point.currency)
         end
         if point.achievement then
             local _, name, _, complete = GetAchievementInfo(point.achievement)

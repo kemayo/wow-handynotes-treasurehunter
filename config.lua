@@ -131,11 +131,11 @@ ns.should_show_point = function(coord, point, currentZone)
     if point.art and point.art ~= C_Map.GetMapArtID(currentZone) then
         return false
     end
-    if ns.db.hide_if_map and ns.map_questids[currentZone] and not (point.junk or point.npc or point.follower) and IsQuestFlaggedCompleted(ns.map_questids[currentZone]) then
+    if ns.db.hide_if_map and ns.map_questids[currentZone] and not (point.junk or point.npc or point.follower) and C_QuestLog.IsQuestFlaggedCompleted(ns.map_questids[currentZone]) then
         return false
     end
     if (not ns.db.found) then
-        if point.quest and IsQuestFlaggedCompleted(point.quest) then
+        if point.quest and C_QuestLog.IsQuestFlaggedCompleted(point.quest) then
             return false
         end
         if point.follower and C_Garrison.IsFollowerCollected(point.follower) then
