@@ -171,7 +171,7 @@ ns.points = {
         -- garrison-y
         [27100260]={ quest=35280, currency=824, label="Stolen Treasure", },
         [26500570]={ quest=34174, currency=824, label="Fantastic Fish", },
-        [28800710]={ quest=35279, currency=824, label="Sunken Treasure", },
+        -- [28800710]={ quest=35279, currency=824, label="Sunken Treasure", }, -- bugged for years
         [30301990]={ quest=35530, currency=824, label="Lunarfall Egg", note="Moves to the garrison once built", faction="Alliance", },
         [45802460]={ quest=33570, currency=824, label="Shadowmoon Exile Treasure", note="cave below Exile Rise", },
         [52902490]={ quest=37254, currency=824, label="Mushroom-Covered Chest", },
