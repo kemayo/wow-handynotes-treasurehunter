@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in v19
+
+* Update for 9.0.2
+
 ## Changed in v18
 
 * After many years, hide the bugged Sunken Treasure in Shadowmoon Valley
