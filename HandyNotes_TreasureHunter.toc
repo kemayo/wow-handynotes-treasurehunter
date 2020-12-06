@@ -13,3 +13,4 @@
 handler.lua
 config.lua
 Treasure.lua
+Rares.lua
