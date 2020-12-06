@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in v21
+
+* Cleaned up some data, filled out Tanaan Jungle rares better
+
 ## Changed in v20
 
 * Pick up fixes and improvements from [HandyNotes: Shadowlands Treasures](https://www.curseforge.com/wow/addons/handynotes-shadowlands-treasures)
