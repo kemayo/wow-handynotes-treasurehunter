@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v22
+
+* Added a bunch of missing drops
+* Cleaned up some overly long labels
+
 ## Changed in v21
 
 * Cleaned up some data, filled out Tanaan Jungle rares better
