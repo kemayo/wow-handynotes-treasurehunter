@@ -326,8 +326,8 @@ ns.RegisterPoints(550, { -- NagrandDraenor
     [26033460]={ quest=40075, npc=98198, loot={129216}, }, -- Rukdug
     -- steamwheedle rares
     [62601680]={ quest=37211, npc=86732, loot={118655}, }, -- Bergruu
-    [50204120]={ quest=37221, npc=86743, loot={118656}, }, -- Dekorhan
-    [63402960]={ quest=37225, npc=86750, loot={118660}, }, -- Thek'talon
+    [64203040]={ quest=37221, npc=86743, loot={118656}, }, -- Dekorhan
+    [60802780]={ quest=37225, npc=86750, loot={118660}, }, -- Thek'talon
     [48202220]={ quest=37223, npc=86771, loot={118658}, }, -- Gagrog the Brutal
     [41004400]={ quest=37226, npc=86835, loot={118661}, }, -- Xelganak
     [51001600]={ quest=37210, npc=86774, loot={118654}, }, -- Aogexon
