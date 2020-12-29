@@ -12,5 +12,17 @@
 
 handler.lua
 config.lua
-Treasure.lua
-Rares.lua
+
+zones\Draenor.lua
+zones\Ashran.lua
+zones\FrostfireRidge.lua
+zones\Gorgrond.lua
+zones\Nagrand.lua
+zones\ShadowmoonValley.lua
+zones\SpiresOfArak.lua
+zones\Talador.lua
+zones\TanaanJungle.lua
+
+features\Garrisons.lua
+features\Mounts.lua
+features\Pepe.lua
