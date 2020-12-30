@@ -96,7 +96,7 @@ ns.RegisterPoints(525, { -- FrostfireRidge
     [50405240]={ quest=34825, loot={111948}, npc=80190, }, -- Gruuk
     [76406340]={ quest=34132, loot={112094}, npc=77526, }, -- Scout Goreseeker
     [25405500]={ quest=34129, loot={112066}, npc=77513, }, -- Coldstomp the Griever
-    [27405000]={ quest=34497, loot={111476}, npc=78867, toy=true, }, -- Breathless
+    [27405000]={ quest=34497, loot={{111476,toy=true}}, npc=78867, }, -- Breathless
     [40404700]={ quest=33014, loot={111490}, npc=72294, }, -- Cindermaw
     [66403140]={ quest=33843, loot={111533}, npc=74613, }, -- Broodmother Reeg'ak
     [36803400]={ quest=33938, loot={111576}, npc=76918, }, -- Primalist Mur'og
@@ -119,11 +119,11 @@ ns.RegisterPoints(525, { -- FrostfireRidge
     [70002700]={ quest=37381, loot={119376}, npc=87351, }, -- Mother of Goren
     [72203300]={ quest=34361, loot={111534}, npc=78265, }, -- The Bone Crawler
     [68801940]={ quest=37382, loot={119415}, npc=87348, }, -- Hoarfrost
-    [72203600]={ quest=37380, loot={119349,119180}, npc=87352, toy=true, note="Flees" }, -- Gibblette the Cowardly
+    [72203600]={ quest=37380, loot={119349,{119180,toy=true}}, npc=87352, note="Flees" }, -- Gibblette the Cowardly
     [70003600]={ quest=33562, loot={111545}, npc=72364, currency=824, }, -- Gorg'ak the Lava Guzzler
     [70603900]={ quest=37379, loot={119416}, npc=87356, currency=823, }, -- Vrok the Ancient
     [72402420]={ quest=37378, loot={119416}, npc=87357, currency=823, }, -- Valkor
-    [43600940]={ quest=37384, loot={119163,119379}, toy=true, npc=82618, }, -- Tor'goroth
+    [43600940]={ quest=37384, loot={{119163,toy=true},119379}, npc=82618, }, -- Tor'goroth
     [38201600]={ quest=37383, loot={119399}, npc=82620, }, -- Son of Goramal
     [45001500]={ quest=37385, loot={119362}, npc=82617, }, -- Slogtusk the Corpse-Eater
     [48202340]={ quest=37386, loot={119390}, npc=82616, }, -- Jabberjaw

@@ -76,12 +76,12 @@ ns.RegisterPoints(542, { -- SpiresOfArak
 
 ns.RegisterPoints(542, { -- SpiresOfArak
     [25202420]={ quest=36943, npc=86978, loot={118696}, currency=824, }, -- Gaze, not certain about item-drop
-    [29404140]={ quest=35334, npc=82050, loot={118207},}, -- Varasha
+    [29404140]={ quest=35334, npc=82050, loot={{118207,pet=1541}},}, -- Varasha
     [33005900]={ quest=36305, npc=84951, loot={116836}, }, -- Gobblefin
     [33402200]={ quest=36265, npc=84805, loot={116858}, }, -- Stonespite
     [36003900]={ quest=37464, npc=83746, loot={116771},}, -- Rukhmar
     [36405240]={ quest=36129, npc=82247, loot={116837}, }, -- Nas Dunberlin
-    [38402780]={ quest=36470, npc=85504, loot={118107}, pet=true, }, -- Rotcap
+    [38402780]={ quest=36470, npc=85504, loot={{118107,pet=1540}}, }, -- Rotcap
     [46402860]={ quest=36267, npc=84807, loot={118198}, }, -- Durkath Steelmaw
     [46802300]={ quest=35599, npc=80614, loot={116839}, }, -- Blade-Dancer Aeryx
     [51800720]={ quest=37394, npc=83990, loot={119407}, }, -- Solar Magnifier

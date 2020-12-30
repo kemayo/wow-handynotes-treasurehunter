@@ -106,7 +106,7 @@ ns.RegisterPoints(550, { -- NagrandDraenor
     -- [45003640]={ quest=37472, npc=87344, achievement=9541, }, -- Gortag Steelgrip
     [45801520]={ quest=36229, npc=84435, loot={118690}, }, -- Mr. Pinchy Sr.
     [45803480]={ quest=37399, npc=86959, loot={119355}, achievement=9541, }, -- Karosh Blackwind
-    [47607080]={ quest=35865, npc=83401, loot={116815}, pet=true, }, -- Netherspawn
+    [47607080]={ quest=35865, npc=83401, loot={{116815,pet=1524}}, }, -- Netherspawn
     [52009000]={ quest=37408, npc=80370, note="No loot", }, -- Lernaea
     [52205580]={ quest=35715, npc=82764, loot={118246}, }, -- Gar'lua
     [54806120]={ quest=35931, npc=83634, loot={116797}, }, -- Scout Pokhar
@@ -126,7 +126,7 @@ ns.RegisterPoints(550, { -- NagrandDraenor
     [77006400]={ quest=35735, npc=82826, loot={116823}, note="In a cave, use the switch", }, -- Berserk T-300 Series Mark II
     [80603040]={ quest=35923, npc=83603, loot={118245}, }, -- Hunter Blacktooth
     [81206000]={ quest=35932, npc=83643, loot={116796}, }, -- Malroc Stonesunder
-    [81406040]={ npc=81330, loot={120276},}, -- Warleader Tome
+    [81406040]={ npc=81330, loot={{120276,toy=true}},}, -- Warleader Tome
     [82607620]={ quest=34645, npc=79024, loot={116805}, }, -- Warmaster Blugthol
     [84603660]={ quest=36159, npc=84263, loot={118689}, }, -- Graveltooth
     [84605340]={ quest=35778, npc=82899, loot={116832}, }, -- Ancient Blademaster
@@ -134,9 +134,9 @@ ns.RegisterPoints(550, { -- NagrandDraenor
     [87005500]={ quest=34862, npc=78161, loot={116799}, }, -- Hyperious
     [89004120]={ quest=35623, npc=82486, loot={118679}, }, -- Explorer Nozzand
     [93202820]={ quest=35898, npc=83509, loot={116916}, }, -- Gorepetal
-    [28182969]={ quest=40073, npc=98199, loot={129217}, }, -- Pugg
-    [23783851]={ quest=40074, npc=98200, loot={129218}, }, -- Guk
-    [26033460]={ quest=40075, npc=98198, loot={129216}, }, -- Rukdug
+    [28182969]={ quest=40073, npc=98199, loot={{129217,pet=1766}}, }, -- Pugg
+    [23783851]={ quest=40074, npc=98200, loot={{129218,pet=1765}}, }, -- Guk
+    [26033460]={ quest=40075, npc=98198, loot={{129216,pet=1764}}, }, -- Rukdug
     -- steamwheedle rares
     [62601680]={ quest=37211, npc=86732, loot={118655}, }, -- Bergruu
     [64203040]={ quest=37221, npc=86743, loot={118656}, }, -- Dekorhan

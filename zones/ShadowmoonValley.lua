@@ -76,7 +76,7 @@ ns.RegisterPoints(539, { -- ShadowmoonValleyDR
     [32203500]={ quest=33039, loot={109061}, npc=72362, }, -- Ku'targ the Voidseer
     [32604140]={ quest=35847, loot={109074}, npc=83385, }, -- Voidseer Kalurg
     [37203640]={ quest=33061, loot={109060}, npc=77140, }, -- Amaukwa
-    [37404880]={ quest=35558, loot={113631}, toy=true, npc=79524, }, -- Hypnocroak
+    [37404880]={ quest=35558, loot={{113631,toy=true}}, npc=79524, }, -- Hypnocroak
     [37601460]={ quest=33055, loot={108907}, npc=72537, }, -- Leaf-Reader Kurri
     [38607020]={ quest=35523, loot={113559}, npc=82362, }, -- Morva Soultwister
     [40804440]={ quest=33043, loot={109078}, npc=74206, }, -- Killmaw
@@ -85,7 +85,7 @@ ns.RegisterPoints(539, { -- ShadowmoonValleyDR
     [43807740]={ quest=33383, loot={117551}, npc=81639, }, -- Brambleking Fili
     [44005760]={ quest=33642, loot={119449}, npc=75071, }, -- Mother Om'ra, hunter quest
     [44802080]={ quest=35906, loot={113561}, npc=77310, }, -- Mad King Sporeon
-    [46007160]={ quest=37351, loot={119431}, currency=823, npc=84911, }, -- Demidos
+    [46007160]={ quest=37351, loot={{119431,pet=1601}}, currency=823, npc=84911, }, -- Demidos
     [48007760]={ quest=37355, loot={119360}, npc=85121, }, -- Lady Temptessa
     [48208100]={ quest=37354, loot={119396}, npc=85029, }, -- Shadowspeaker Niir
     [48602260]={ quest=35553, loot={113542}, npc=82374, }, -- Rai'vosh, reusable slow-fall Item
@@ -100,7 +100,7 @@ ns.RegisterPoints(539, { -- ShadowmoonValleyDR
     [54607060]={ quest=33643, loot={108957}, npc=75492, }, -- Venomshade
     [57404840]={ quest=35909, loot={113571}, npc=83553, }, -- Insha'tar
     [58408680]={ quest=37409, loot={119364}, npc=85555, note="in a cave @ 59,89", }, -- Nagidna
-    [61005520]={ quest=35732, loot={113543}, npc=82415, }, -- Shinri
+    [61005520]={ quest=35732, loot={{113543,toy=113543}}, npc=82415, }, -- Shinri
     [61408880]={ quest=37411, loot={119411}, npc=85837, }, -- Slivermaw
     [61606180]={ quest=35725, loot={113557}, npc=82207, }, -- Faebright
     [67806380]={ quest=35688, loot={113556}, npc=82676, }, -- Enavra

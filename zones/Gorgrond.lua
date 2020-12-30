@@ -48,8 +48,8 @@ ns.RegisterPoints(597, { -- Blackrock Foundry
 ns.RegisterPoints(543, { -- Gorgrond
     [37608140]={ quest=36600, loot={118231}, npc=85970, }, -- Riptar
     [38206620]={ quest=35910, loot={118224}, npc=79629, }, -- Stomper Kreego
-    [40007900]={ quest=35335, loot={118222}, npc=82085, toy=true, }, -- Bashiok
-    [40205960]={ quest=36394, loot={114227}, npc=80725, toy=true, }, -- Sulfurious
+    [40007900]={ quest=35335, loot={{118222, toy=true}}, npc=82085, }, -- Bashiok
+    [40205960]={ quest=36394, loot={{114227, toy=true}}, npc=80725, }, -- Sulfurious
     [41804540]={ quest=36391, loot={118230}, npc=81038, }, -- Gelgor of the Blue Flame
     [44609220]={ quest=36656, loot={118223}, npc=86137, }, -- Sunclaw
     [46003360]={ quest=37368, loot={119228}, npc=86579, achievement=9655,  }, -- Blademaster Ro'gor
@@ -62,7 +62,7 @@ ns.RegisterPoints(543, { -- Gorgrond
     [48202100]={ quest=37362, loot={119224}, npc=86566, achievement=9655, }, -- Defector Dazgo
     [49003380]={ quest=37363, loot={119230}, npc=86562, achievement=9655, }, -- Maniacal Madgard
     [50002380]={ quest=37366, loot={119225}, npc=86571, achievement=9655, }, -- Durp the Hated
-    [50605320]={ quest=36178, loot={118709}, npc=84406, pet=true, }, -- Mandrakor
+    [50605320]={ quest=36178, loot={{118709, pet=1564}}, npc=84406, }, -- Mandrakor
     [52207020]={ quest=35908, loot={118209}, npc=83522, }, -- Hive Queen Skrikka
     [52805360]={ quest=37413, loot={119397}, npc=78269, currency=823, }, -- Gnarljaw
     [53404460]={ quest=35503, loot={118212}, npc=82311, }, -- Char the Burning

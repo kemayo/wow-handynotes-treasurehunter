@@ -66,15 +66,15 @@ ns.RegisterPoints(534, { -- TanaanJungle
 })
 
 -- Rares
-
 ns.RegisterPoints(534, { -- TanaanJungle
-    [15006300]={ quest=39288, criteria=28221, npc=95044, loot={116658,116669,116780,128315,128025},}, -- Terrorfist
-    [23004020]={ quest=39287, criteria=28220, npc=95053, loot={116658,116669,116780,128315,128025},}, -- Deathtalon
-    [32407380]={ quest=39290, criteria=28219, npc=95054, loot={116658,116669,116780,128315,128025},}, -- Vengeance
-    [46805260]={ quest=39289, criteria=28218, npc=95056, loot={116658,116669,116780,128315,128025},}, -- Doomroller
+    [15006300]={ quest=39288, criteria=28221, npc=95044, }, -- Terrorfist
+    [23004020]={ quest=39287, criteria=28220, npc=95053, }, -- Deathtalon
+    [32407380]={ quest=39290, criteria=28219, npc=95054, }, -- Vengeance
+    [46805260]={ quest=39289, criteria=28218, npc=95056, }, -- Doomroller
 }, {
     achievement=10061,
     atlas="VignetteKillElite", scale=1.2,
+    loot={{116658,mount=611},{116669,mount=622},{116780,mount=643},128315,128025},
 })
 
 ns.RegisterPoints(534, { -- TanaanJungle
