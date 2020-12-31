@@ -295,8 +295,18 @@ end
 local function PlayerHasPet(petid)
     return (C_PetJournal.GetNumCollectedInfo(petid) > 0)
 end
+ns.itemRestricted = function(item)
+    if type(item) ~= "table" then return false end
+    if item.covenant and item.covenant ~= C_Covenants.GetActiveCovenantID() then
+        return true
+    end
+    if item.class and ns.playerClass ~= item.class then
+        return true
+    end
+    return false
+end
 ns.itemIsKnowable = function(item)
-    return type(item) == "table" and (item.toy or item.mount or item.pet)
+    return type(item) == "table" and (item.toy or item.mount or item.pet or item.quest) and not ns.itemRestricted(item)
 end
 ns.itemIsKnown = function(item)
     -- returns true/false/nil for yes/no/not-knowable
@@ -307,6 +317,7 @@ ns.itemIsKnown = function(item)
         if item.toy then return PlayerHasToy(item[1]) end
         if item.mount then return PlayerHasMount(item.mount) end
         if item.pet then return PlayerHasPet(item.pet) end
+        if item.quest then return C_QuestLog.IsQuestFlaggedCompleted(item.quest) or C_QuestLog.IsOnQuest(item.quest) end
     end
 end
 local hasKnowableLoot = testMaker(ns.itemIsKnowable, doTestAny)
