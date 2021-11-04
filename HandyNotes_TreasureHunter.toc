@@ -1,4 +1,4 @@
-## Interface: 90100
+## Interface: 90105
 ## Title: HandyNotes_TreasureHunter (Draenor Treasures)
 ## Notes: Where the Treasure Hunter objects are in Draenor
 ## Author: Kemayo
