@@ -11,8 +11,9 @@
 ## SavedVariables: HandyNotes_TreasureHunterDB
 ## RequiredDeps: HandyNotes
 
-handler.lua
-config.lua
+handler\handler.xml
+
+treasurehunter.lua
 
 zones\Draenor.lua
 zones\Ashran.lua
