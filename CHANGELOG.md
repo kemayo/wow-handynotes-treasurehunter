@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in v27
+
+* Updated for 9.2.7
+
 ## Changed in v26
 
 * Updated for 9.2.5, fixing transmog errors
