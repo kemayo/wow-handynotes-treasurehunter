@@ -33,3 +33,4 @@ zones\TanaanJungle.lua
 features\Garrisons.lua
 features\Mounts.lua
 features\Pepe.lua
+features\EverShiftingMirror.lua
