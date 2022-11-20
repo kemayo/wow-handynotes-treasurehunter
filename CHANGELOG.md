@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v31
+
+* Add the portals for the Ever-Shifting Mirror toy
+* Fix an error that occurred with the "groups" item in the dropdown menu
+
 ## Changed in v30
 
 * Updated for 10.0.2
