@@ -25,7 +25,7 @@ frame:RegisterUnitEvent("UNIT_SPELLCAST_SUCCEEDED", "player")
 
 local mirror = {
     active=ns.conditions.AuraActive(TIME_LOST), -- time-lost mirror aura
-    hide_before=ns.conditions.Toy(129929),
+    requires=ns.conditions.Toy(129929),
     spell=TIME_LOST,
     atlas="MagePortalAlliance", -- legioninvasion-map-icon-portal-large?
     scale=1.2,
