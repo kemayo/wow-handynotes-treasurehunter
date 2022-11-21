@@ -60,7 +60,7 @@ ns.RegisterPoints(535, {
 local voidtalon = {
     quest=37864,
     loot={{121815,mount=682,}},
-    atlas="vehicle-templeofkotmogu-purpleball", scale=1.2,
+    atlas="vehicle-templeofkotmogu-purpleball", scale=1.2, minimap=true,
     note="Rarely spawning Edge of Reality portal",
 }
 ns.RegisterPoints(525, { -- FrostfireRidge
