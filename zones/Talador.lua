@@ -46,12 +46,14 @@ ns.RegisterPoints(535, { -- Talador
 }, {
     achievement=9728,
     hide_quest=36466,
+    minimap=true,
 })
 ns.RegisterPoints(537, { -- TombofSouls
     [67602320]={quest=34671, npc=79543, loot={112370}}, -- Shirzir
 }, {
     achievement=9728,
     hide_quest=36466,
+    minimap=true,
 })
 
 ns.RegisterPoints(535, { -- Talador
@@ -63,6 +65,8 @@ ns.RegisterPoints(535, { -- Talador
     [57405120]={quest=36519, faction="Alliance", follower=207, note="Complete her quest"}, -- Defender Illona
     [58005300]={quest=36518, faction="Horde", follower=207, note="Complete her quest"}, -- Aeda Brightdawn
     [56802600]={quest=36522, follower=208, note="Complete his quest. Find him again outside your garrison."}, -- Ahm
+}, {
+    minimap=true,
 })
 
 -- Rares

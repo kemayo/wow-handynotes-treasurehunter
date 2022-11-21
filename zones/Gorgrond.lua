@@ -29,6 +29,7 @@ ns.RegisterPoints(543, { -- Gorgrond
 }, {
     achievement=9728,
     hide_quest=36465,
+    minimap=true,
 })
 
 ns.RegisterPoints(543, { -- Gorgrond
