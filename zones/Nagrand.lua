@@ -118,7 +118,16 @@ ns.RegisterPoints(550, { -- NagrandDraenor
     [77006400]={quest=35735, npc=82826, loot={116823}, note="In a cave, use the switch"}, -- Berserk T-300 Series Mark II
     [80603040]={quest=35923, npc=83603, loot={118245}}, -- Hunter Blacktooth
     [81206000]={quest=35932, npc=83643, loot={116796}}, -- Malroc Stonesunder
-    [81406040]={npc=81330, loot={{120276, toy=true}}}, -- Warleader Tome
+    [81406040]={ -- Warleader Tome
+        npc=81330, loot={{120276, toy=true}},
+        route={
+            81406040, 79606620, 77406780, 71806800, 67007300, 63607220, 59806700, 60406100, 60005700, 56805300,
+            53405200, 51404970, 50204480, 48804160, 43204180, 40803860, 44403100, 45602140, 50001900, 55202280,
+            63802400, 62603040, 63603480, 70403900, 76804260, 82104990, 80905550,
+            loop=true, r=0.8, g=0, b=0.8,
+        },
+        note="Spawns here, and patrols clockwise around the entire zone with a dozen adds"
+    },
     [82607620]={quest=34645, npc=79024, loot={116805}}, -- Warmaster Blugthol
     [84603660]={quest=36159, npc=84263, loot={118689}}, -- Graveltooth
     [84605340]={quest=35778, npc=82899, loot={116832}}, -- Ancient Blademaster
