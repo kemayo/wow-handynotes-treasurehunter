@@ -107,7 +107,7 @@ ns.RegisterPoints(535, { -- Talador
     achievement=9633, -- Cut off the Head
 })
 ns.RegisterPoints(535, { -- Talador
-    [31404750]={criteria=26476, quest=37344, npc=87668, loot={119375, {119170, pet=1576}}, note="3 people needed to stand on the symbols"}, -- Orumo the Observer
+    [31404750]={criteria=26476, quest=37344, npc=87668, loot={119375, {119170, pet=1576}}, note="5 people needed to stand on the symbols. You *can* solo it by repeatedly teleporting off the symbols and running back to activate another"}, -- Orumo the Observer
     [30502640]={criteria=26477, quest=37345, npc=82920, loot={119388}}, -- Lord Korinak
     [33803780]={criteria=26478, quest=37346, npc=82942, loot={119352}}, -- Lady Demlash
     [37203760]={criteria=26480, quest=37348, npc=82988, loot={119394}}, -- Kurlosh Doomfang
