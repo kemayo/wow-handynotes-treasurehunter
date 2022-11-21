@@ -1,5 +1,12 @@
 # Changelog
 
+## Changed in v32
+
+* Don't show the Ever-Shifting Mirror portals for people who don't have the toy
+* The labels on the portals were inverted
+* Fix a coordinate in the note for the Snow Hare's Foot in Frostfire
+* Use Blizzard waypoints if TomTom isn't available
+
 ## Changed in v31
 
 * Add the portals for the Ever-Shifting Mirror toy
