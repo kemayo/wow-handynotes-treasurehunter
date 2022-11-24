@@ -16,6 +16,12 @@ jobs:
           submodules: recursive
           fetch-depth: 0 # reads history for commit changelog
 
+      - uses: kemayo/actions-recent-changelog@v1
+        if: startsWith(github.ref, 'refs/tags')
+        with:
+          input: CHANGELOG.md
+          output: RECENT_CHANGES.md
+
       - name: Create Package
         uses: BigWigsMods/packager@master
         env:
