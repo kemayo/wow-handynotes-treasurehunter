@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in v35
+
+* Updated for 11.0.0
+
 ## Changed in v34
 
 * Updated for 10.2.0
