@@ -1,4 +1,4 @@
-## Interface: 100200
+## Interface: 110002
 ## Title: HandyNotes: Warlords of Draenor (Treasure Hunter + Rares)
 ## Notes: Where the Treasure Hunter objects and rares are in Draenor
 ## Author: Kemayo
