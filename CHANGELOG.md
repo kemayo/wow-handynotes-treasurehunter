@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v39
+
+* Updated for 11.1.0
+* Bring in systems improvements from [my War Within plugin](https://www.curseforge.com/wow/addons/handynotes-war-within)
+
 ## Changed in v37
 
 * Bring in systems improvements from [my War Within plugin](https://www.curseforge.com/wow/addons/handynotes-war-within), notably:
