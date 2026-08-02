@@ -34,7 +34,7 @@ ns.RegisterPoints(525, { -- FrostfireRidge
     [61804250]={quest=33511, npc=72156, loot={112110}, note="Interrupt the ritual, then feed him ogres"},
     [64406580]={quest=33505, loot={{117564, pet=1471}}, label="Wiggling Egg", note="rylak nests on the roof"},
     -- paired treasure
-    [54803540]={quest=33525, npc=75072, loot={107273, 112206}, route={54803540, 63401480}, atlas="VignetteLoot", note="Combine with Frostwolf First-Fang @ 63,14"}, -- Young Orc Traveler
+    [54803540]={quest=33525, npc=75072, loot={107273, 112206}, routes={{54803540, 63401480}}, atlas="VignetteLoot", note="Combine with Frostwolf First-Fang @ 63,14"}, -- Young Orc Traveler
     [63401480]={quest=33525, npc=75081, loot={107272, 112206}, route=54803540, atlas="VignetteLoot", note="Combine with Snow Hare's Foot @ 54,35"}, -- Young Orc Woman
     -- bladespire...
     [26503640]={quest=35367, currency=824, label="Gorr'thogg's Personal Reserve"},

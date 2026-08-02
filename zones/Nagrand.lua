@@ -123,12 +123,12 @@ ns.RegisterPoints(550, { -- NagrandDraenor
     [81206000]={quest=35932, npc=83643, loot={116796}}, -- Malroc Stonesunder
     [81406040]={ -- Warleader Tome
         npc=81330, loot={{120276, toy=true}},
-        route={
+        routes={{
             81406040, 79606620, 77406780, 71806800, 67007300, 63607220, 59806700, 60406100, 60005700, 56805300,
             53405200, 51404970, 50204480, 48804160, 43204180, 40803860, 44403100, 45602140, 50001900, 55202280,
             58902420, 62702060, 64102550, 62603040, 63603480, 67804020, 71903870, 76804260, 82104990, 80905550,
             loop=true, r=0.8, g=0, b=0.8,
-        },
+        }},
         note="Spawns here, and patrols clockwise around the entire zone with a dozen adds"
     },
     [82607620]={quest=34645, npc=79024, loot={116805}}, -- Warmaster Blugthol
