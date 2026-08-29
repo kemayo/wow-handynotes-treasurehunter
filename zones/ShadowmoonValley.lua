@@ -2,16 +2,16 @@ local myname, ns = ...
 
 ns.RegisterPoints(539, { -- ShadowmoonValleyDR
     -- garrison-y
-    [27100260]={ quest=35280, currency=824, label="Stolen Treasure", },
-    [26500570]={ quest=34174, currency=824, label="Fantastic Fish", },
-    -- [28800710]={ quest=35279, currency=824, label="Sunken Treasure", }, -- bugged for years
-    [30301990]={ quest=35530, currency=824, label="Lunarfall Egg", note="Moves to the garrison once built", faction="Alliance", },
-    [45802460]={ quest=33570, currency=824, label="Shadowmoon Exile Treasure", note="cave below Exile Rise", },
-    [52902490]={ quest=37254, currency=824, label="Mushroom-Covered Chest", },
-    [57904530]={ quest=33568, currency=824, label="Kaliri Egg", },
-    [28303930]={ quest=33883, currency=824, label="Shadowmoon Treasure", },
-    [42106130]={ quest=33041, currency=824, label="Iron Horde Cargo Shipment", },
-    [84504470]={ quest=33885, currency=824, label="Cargo of the Raven Queen", },
+    [27100260]={ quest=35280, loot={ns.rewards.Currency(824)}, label="Stolen Treasure", },
+    [26500570]={ quest=34174, loot={ns.rewards.Currency(824)}, label="Fantastic Fish", },
+    -- [28800710]={ quest=35279, loot={ns.rewards.Currency(824)}, label="Sunken Treasure", }, -- bugged for years
+    [30301990]={ quest=35530, loot={ns.rewards.Currency(824)}, label="Lunarfall Egg", note="Moves to the garrison once built", faction="Alliance", },
+    [45802460]={ quest=33570, loot={ns.rewards.Currency(824)}, label="Shadowmoon Exile Treasure", note="cave below Exile Rise", },
+    [52902490]={ quest=37254, loot={ns.rewards.Currency(824)}, label="Mushroom-Covered Chest", },
+    [57904530]={ quest=33568, loot={ns.rewards.Currency(824)}, label="Kaliri Egg", },
+    [28303930]={ quest=33883, loot={ns.rewards.Currency(824)}, label="Shadowmoon Treasure", },
+    [42106130]={ quest=33041, loot={ns.rewards.Currency(824)}, label="Iron Horde Cargo Shipment", },
+    [84504470]={ quest=33885, loot={ns.rewards.Currency(824)}, label="Cargo of the Raven Queen", },
     -- treasures
     [20303060]={quest=33575, loot={108904}, label="Demonic Cache"},
     [22803390]={quest=33572, loot={113373}, label="Rotting Basket"},
@@ -89,7 +89,7 @@ ns.RegisterPoints(539, { -- ShadowmoonValleyDR
     [43807740]={quest=33383, npc=81639, loot={117551}}, -- Brambleking Fili
     [44005760]={quest=33642, npc=75071, loot={119449}}, -- Mother Om'ra, hunter quest
     [44802080]={quest=35906, npc=77310, loot={113561}}, -- Mad King Sporeon
-    [46007160]={quest=37351, npc=84911, loot={{119431, pet=1601}}, currency=823, achievement=9437}, -- Demidos
+    [46007160]={quest=37351, npc=84911, loot={{119431, pet=1601}, ns.rewards.Currency(823)}, achievement=9437}, -- Demidos
     [48007760]={quest=37355, npc=85121, loot={119360}}, -- Lady Temptessa
     [48208100]={quest=37354, npc=85029, loot={119396}}, -- Shadowspeaker Niir
     [48602260]={quest=35553, npc=82374, loot={{113542, toy=true}}}, -- Rai'vosh, reusable slow-fall Item

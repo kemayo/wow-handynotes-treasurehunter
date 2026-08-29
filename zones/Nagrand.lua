@@ -2,37 +2,37 @@ local myname, ns = ...
 
 ns.RegisterPoints(550, { -- NagrandDraenor
     -- steamwheedle supplies
-    [50108220]={quest=35577, currency=824, label="Steamwheedle Supplies", note="Use a glider"},
-    [52708010]={quest=35583, currency=824, label="Steamwheedle Supplies", note="Use a glider"},
-    [64601760]={quest=35648, currency=824, label="Steamwheedle Supplies", note="Use a glider"},
-    [70601860]={quest=35646, currency=824, label="Steamwheedle Supplies", note="Use a glider"},
-    [77805190]={quest=35591, currency=824, label="Steamwheedle Supplies", note="Use a glider"},
-    [87602030]={quest=35662, currency=824, label="Steamwheedle Supplies", note="Use a glider"},
-    [88204260]={quest=35616, currency=824, label="Steamwheedle Supplies", note="Use a glider"},
+    [50108220]={quest=35577, loot={ns.rewards.Currency(824)}, label="Steamwheedle Supplies", note="Use a glider"},
+    [52708010]={quest=35583, loot={ns.rewards.Currency(824)}, label="Steamwheedle Supplies", note="Use a glider"},
+    [64601760]={quest=35648, loot={ns.rewards.Currency(824)}, label="Steamwheedle Supplies", note="Use a glider"},
+    [70601860]={quest=35646, loot={ns.rewards.Currency(824)}, label="Steamwheedle Supplies", note="Use a glider"},
+    [77805190]={quest=35591, loot={ns.rewards.Currency(824)}, label="Steamwheedle Supplies", note="Use a glider"},
+    [87602030]={quest=35662, loot={ns.rewards.Currency(824)}, label="Steamwheedle Supplies", note="Use a glider"},
+    [88204260]={quest=35616, loot={ns.rewards.Currency(824)}, label="Steamwheedle Supplies", note="Use a glider"},
     -- glider-required
-    [70501390]={quest=35643, currency=824, label="Mountain Climber's Pack", note="Use a glider"},
-    [73007040]={quest=35678, currency=824, label="Warsong Lockbox", note="Use a glider"},
+    [70501390]={quest=35643, loot={ns.rewards.Currency(824)}, label="Mountain Climber's Pack", note="Use a glider"},
+    [73007040]={quest=35678, loot={ns.rewards.Currency(824)}, label="Warsong Lockbox", note="Use a glider"},
     [76107000]={quest=35682, loot={118678}, label="Warsong Spear, use a glider"},
-    [80606060]={quest=35593, currency=824, label="Warsong Spoils", note="Use a glider"},
+    [80606060]={quest=35593, loot={ns.rewards.Currency(824)}, label="Warsong Spoils", note="Use a glider"},
     [81103720]={quest=35661, loot={118262}, label="Brilliant Dreampetal, use a glider"},
-    [87504500]={quest=35622, currency=824, label="Hidden Stash", note="Use a glider"},
-    [88901820]={quest=35660, currency=824, label="Fungus-Covered Chest", note="Use a glider"},
+    [87504500]={quest=35622, loot={ns.rewards.Currency(824)}, label="Hidden Stash", note="Use a glider"},
+    [88901820]={quest=35660, loot={ns.rewards.Currency(824)}, label="Fungus-Covered Chest", note="Use a glider"},
     -- generic garrison supplies
-    [37707060]={quest=34760, currency=824, label="Treasure of Kull'krosh"},
-    [43305750]={quest=35987, currency=824, label="Genedar Debris"},
-    [44606750]={quest=36002, currency=824, label="Genedar Debris"},
-    [47207430]={quest=35576, currency=824, label="Goblin Pack"},
-    [48006010]={quest=35999, currency=824, label="Genedar Debris"},
-    [48607270]={quest=36008, currency=824, label="Genedar Debris"},
-    [51706030]={quest=35695, currency=824, label="Warsong Cache"},
-    [55306820]={quest=36011, currency=824, label="Genedar Debris"},
-    [56607290]={quest=36050, currency=824, label="Adventurer's Pouch"},
-    [73001090]={quest=35951, currency=824, label="A Pile of Dirt", note="Jump down"},
-    [73006220]={quest=35590, currency=824, label="Goblin Pack"},
-    [73107550]={quest=35673, currency=824, label="Appropriated Warsong Supplies"},
-    [77101660]={quest=36174, currency=824, label="Bounty of the Elements", note="Cave, use the Elemental Stones for access"},
-    [89103310]={quest=36857, currency=824, label="Smuggler's Cache", note="In a cave, dodge the tripwires"},
-    [89406580]={quest=35976, currency=824, label="Warsong Supplies"},
+    [37707060]={quest=34760, loot={ns.rewards.Currency(824)}, label="Treasure of Kull'krosh"},
+    [43305750]={quest=35987, loot={ns.rewards.Currency(824)}, label="Genedar Debris"},
+    [44606750]={quest=36002, loot={ns.rewards.Currency(824)}, label="Genedar Debris"},
+    [47207430]={quest=35576, loot={ns.rewards.Currency(824)}, label="Goblin Pack"},
+    [48006010]={quest=35999, loot={ns.rewards.Currency(824)}, label="Genedar Debris"},
+    [48607270]={quest=36008, loot={ns.rewards.Currency(824)}, label="Genedar Debris"},
+    [51706030]={quest=35695, loot={ns.rewards.Currency(824)}, label="Warsong Cache"},
+    [55306820]={quest=36011, loot={ns.rewards.Currency(824)}, label="Genedar Debris"},
+    [56607290]={quest=36050, loot={ns.rewards.Currency(824)}, label="Adventurer's Pouch"},
+    [73001090]={quest=35951, loot={ns.rewards.Currency(824)}, label="A Pile of Dirt", note="Jump down"},
+    [73006220]={quest=35590, loot={ns.rewards.Currency(824)}, label="Goblin Pack"},
+    [73107550]={quest=35673, loot={ns.rewards.Currency(824)}, label="Appropriated Warsong Supplies"},
+    [77101660]={quest=36174, loot={ns.rewards.Currency(824)}, label="Bounty of the Elements", note="Cave, use the Elemental Stones for access"},
+    [89103310]={quest=36857, loot={ns.rewards.Currency(824)}, label="Smuggler's Cache", note="In a cave, dodge the tripwires"},
+    [89406580]={quest=35976, loot={ns.rewards.Currency(824)}, label="Warsong Supplies"},
     -- treasures
     [38305880]={quest=36109, npc=84068, loot={114054}, label="Goldtoe's Plunder", note="Gold, parrot has the key"},
     [45605200]={quest=35969, label="Adventurer's Pack", note="Gold, random green"},
@@ -81,7 +81,7 @@ ns.RegisterPoints(550, { -- NagrandDraenor
 --]]
 
 ns.RegisterPoints(550, { -- NagrandDraenor
-    [40406860]={quest=37435, currency=824, group="junk", label="Spirit Coffer"},
+    [40406860]={quest=37435, loot={ns.rewards.Currency(824)}, group="junk", label="Spirit Coffer"},
     -- abu'gar
     [38404940]={quest=36711, loot={114245}, inbag=114245, label="Abu'Gar's Favorite Lure", note="Won't show complete until you get Abu'Gar"}, -- 36072
     [65906120]={quest=36711, loot={114242}, inbag=114242, label="Abu'gar's Vitality", note="Won't show complete until you get Abu'Gar"}, -- 35711
@@ -98,7 +98,7 @@ ns.RegisterPoints(550, { -- NagrandDraenor
 
 ns.RegisterPoints(550, { -- NagrandDraenor
     [34607700]={quest=34727, npc=79725, loot={{118244, toy=true}, 116809}}, -- Captain Ironbeard
-    [42207860]={quest=34725, npc=80122, loot={116798}, currency=824, note="In a cave"}, -- Gaz'orda
+    [42207860]={quest=34725, npc=80122, loot={116798, ns.rewards.Currency(824)}, note="In a cave"}, -- Gaz'orda
     [42804920]={quest=35875, npc=83409, loot={116765}}, -- Ophiis
     [45801520]={quest=36229, npc=84435, loot={118690}}, -- Mr. Pinchy Sr.
     [47607080]={quest=35865, npc=83401, loot={{116815, pet=1524}}}, -- Netherspawn

@@ -2,16 +2,16 @@ local myname, ns = ...
 
 ns.RegisterPoints(542, { -- SpiresOfArak
     -- archeology
-    [33302730]={quest=36422, currency=829, label="Sun-Touched Cache", note="Needs archeology"},
-    [42701830]={quest=36244, currency=829, label="Misplaced Scrolls", note="Needs archeology"},
-    [43001640]={quest=36245, currency=829, label="Relics of the Outcasts", note="Needs archeology; on top of the walls"},
-    [43202720]={quest=36355, currency=829, label="Relics of the Outcasts", note="Needs archeology; climb the ropes"},
-    [46004410]={quest=36354, currency=829, label="Relics of the Outcasts", note="Needs archeology; climb the tree, jump to the rope"},
-    [51904890]={quest=36360, currency=829, label="Relics of the Outcasts", note="Needs archeology"},
-    [52404280]={quest=36416, currency=829, label="Misplaced Scroll", note="Needs archeology; start climbing the mountain at 53.6, 47.7"},
-    [56304530]={quest=36433, currency=829, label="Smuggled Apexis Artifacts", note="Needs archeology; climb  the mushrooms up the tree"},
-    [60205390]={quest=36359, currency=829, label="Relics of the Outcasts", note="Needs archeology"},
-    [67403980]={quest=36356, currency=829, label="Relics of the Outcasts", note="Needs archeology"},
+    [33302730]={quest=36422, loot={ns.rewards.Currency(829)}, label="Sun-Touched Cache", note="Needs archeology"},
+    [42701830]={quest=36244, loot={ns.rewards.Currency(829)}, label="Misplaced Scrolls", note="Needs archeology"},
+    [43001640]={quest=36245, loot={ns.rewards.Currency(829)}, label="Relics of the Outcasts", note="Needs archeology; on top of the walls"},
+    [43202720]={quest=36355, loot={ns.rewards.Currency(829)}, label="Relics of the Outcasts", note="Needs archeology; climb the ropes"},
+    [46004410]={quest=36354, loot={ns.rewards.Currency(829)}, label="Relics of the Outcasts", note="Needs archeology; climb the tree, jump to the rope"},
+    [51904890]={quest=36360, loot={ns.rewards.Currency(829)}, label="Relics of the Outcasts", note="Needs archeology"},
+    [52404280]={quest=36416, loot={ns.rewards.Currency(829)}, label="Misplaced Scroll", note="Needs archeology; start climbing the mountain at 53.6, 47.7"},
+    [56304530]={quest=36433, loot={ns.rewards.Currency(829)}, label="Smuggled Apexis Artifacts", note="Needs archeology; climb  the mushrooms up the tree"},
+    [60205390]={quest=36359, loot={ns.rewards.Currency(829)}, label="Relics of the Outcasts", note="Needs archeology"},
+    [67403980]={quest=36356, loot={ns.rewards.Currency(829)}, label="Relics of the Outcasts", note="Needs archeology"},
     -- shrines
     [43802470]={quest=36397, loot={115463}, note="Take to a Shrine of Terrok", repeatable=true},
     [43901500]={quest=36395, loot={115463}, note="Take to a Shrine of Terrok", repeatable=true},
@@ -36,24 +36,24 @@ ns.RegisterPoints(542, { -- SpiresOfArak
     [50402580]={quest=36444, loot={118691}, label="Iron Horde Explosives"},
     [50702880]={quest=36247, label="Lost Herb Satchel", note="Assorted herbs"},
     [36303940]={quest=36402, loot={120337}, label="Orcish Signaling Horn"},
-    [37204740]={quest=36420, currency=824, label="Garrison Supplies"},
+    [37204740]={quest=36420, loot={ns.rewards.Currency(824)}, label="Garrison Supplies"},
     [36505790]={quest=36418, loot={116914}, label="Ephial's Dark Grimoire"},
     [47803610]={quest=36411, loot={116911}, label="Lost Ring"},
     [49203730]={quest=36445, loot={116835}, label="Assassin's Spear"},
     [46903400]={quest=36446, label="Outcast's Pouch", note="Random green"},
     [47903070]={quest=36361, loot={116920}, label="Shattered Hand Lockbox"},
     [42102170]={quest=36447, label="Outcast's Belongings", note="Random green"},
-    [34102750]={quest=36421, currency=824, label="Sun-Touched Cache"},
+    [34102750]={quest=36421, loot={ns.rewards.Currency(824)}, label="Sun-Touched Cache"},
     [68203880]={quest=36375, npc=85190, loot={118692}}, -- Sethekk Idol
     [71604850]={quest=36450, loot={109223}, label="Sethekk Ritual Brew"},
     [41805050]={quest=36451, loot={116918}, label="Garrison Workman's Hammer"},
-    [56202880]={quest=36362, currency=824, label="Shattered Hand Cache"},
+    [56202880]={quest=36362, loot={ns.rewards.Currency(824)}, label="Shattered Hand Cache"},
     [68408900]={quest=36453, label="Coinbender's Payment", note="Gold"},
     [63606740]={quest=36454, label="Mysterious Mushrooms", note="Herbs"},
     [66505650]={quest=36455, label="Waterlogged Satchel", note="Random green"},
-    [54403240]={quest=36364, loot={118695}, currency=824, label="Toxicfang Venom"},
-    [59708130]={quest=36365, currency=824, label="Spray-O-Matic 5000 XT"},
-    [60908460]={quest=36456, currency=824, label="Shredder Parts"},
+    [54403240]={quest=36364, loot={118695, ns.rewards.Currency(824)}, label="Toxicfang Venom"},
+    [59708130]={quest=36365, loot={ns.rewards.Currency(824)}, label="Spray-O-Matic 5000 XT"},
+    [60908460]={quest=36456, loot={ns.rewards.Currency(824)}, label="Shredder Parts"},
     [55509080]={quest=36366, label="Campaign Contributions", note="Gold"},
     [50502210]={quest=36246, loot={116919}, label="Hidden in the water"}, -- Fractured Sunstone
     [44401200]={quest=36377, npc=85206, loot={118693}}, -- Rukhmar's Image
@@ -78,7 +78,7 @@ ns.RegisterPoints(542, { -- SpiresOfArak
 -- Rares
 
 ns.RegisterPoints(542, { -- SpiresOfArak
-    [25202420]={quest=36943, npc=86978, loot={118696}, currency=824}, -- Gaze, not certain about item-drop
+    [25202420]={quest=36943, npc=86978, loot={118696, ns.rewards.Currency(824)}}, -- Gaze, not certain about item-drop
     [29404140]={quest=35334, npc=82050, loot={{118207, pet=1541}}}, -- Varasha
     [33005900]={quest=36305, npc=84951, loot={116836}}, -- Gobblefin
     [33402200]={quest=36265, npc=84805, loot={116858}}, -- Stonespite

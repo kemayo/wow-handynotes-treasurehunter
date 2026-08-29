@@ -2,24 +2,24 @@ local myname, ns = ...
 
 -- ["TanaanJungleIntro"] = {},
 ns.RegisterPoints(534, { -- TanaanJungle
-    -- [42903490] = {quest=nil, loot={128346}, currency=824, label="Suspiciously Glowing Chest", note="Second floor", repeatable=true},
-    -- [35604620] = {quest=nil, loot={128346}, currency=824, label="Suspiciously Glowing Chest", note="in the cave", repeatable=true},
-    -- [49104660] = {quest=nil, loot={128346}, currency=824, label="Suspiciously Glowing Chest", note="on the pile", repeatable=true},
-    -- [22104980] = {quest=nil, loot={128346}, currency=824, label="Suspiciously Glowing Chest", note="on the ridge", repeatable=true},
-    -- [27506940] = {quest=nil, loot={128346}, currency=824, repeatable=true}, -- draenic chest
-    -- [21403570] = {quest=nil, loot={128346}, currency=824, repeatable=true},
+    -- [42903490] = {quest=nil, loot={128346, ns.rewards.Currency(824)}, label="Suspiciously Glowing Chest", note="Second floor", repeatable=true},
+    -- [35604620] = {quest=nil, loot={128346, ns.rewards.Currency(824)}, label="Suspiciously Glowing Chest", note="in the cave", repeatable=true},
+    -- [49104660] = {quest=nil, loot={128346, ns.rewards.Currency(824)}, label="Suspiciously Glowing Chest", note="on the pile", repeatable=true},
+    -- [22104980] = {quest=nil, loot={128346, ns.rewards.Currency(824)}, label="Suspiciously Glowing Chest", note="on the ridge", repeatable=true},
+    -- [27506940] = {quest=nil, loot={128346, ns.rewards.Currency(824)}, repeatable=true}, -- draenic chest
+    -- [21403570] = {quest=nil, loot={128346, ns.rewards.Currency(824)}, repeatable=true},
     [14905440] = {quest=38754, loot={127325}, note="In the tower, on an orc hanging from a chain"}, -- weeping wolf axe
     [15904970] = {quest=38208, loot={127324}, note="Back of cave"}, -- weathered axe
     [16005940] = {quest=38757, loot={128220}, note="Second floor of the tower"}, -- grannok's eye
     [17005300] = {quest=38283, npc=91382, loot={128346}, note="Small chest next to the body"}, -- deserter
-    [17405700] = {quest=38755, loot={128346}, currency=824, note="In the hut"}, -- spoils
+    [17405700] = {quest=38755, loot={128346, ns.rewards.Currency(824)}, note="In the hut"}, -- spoils
     [19304100] = {quest=38320, loot={127338}, note="Bottom of the lake"}, -- blade of Kra'nak
-    [22004780] = {quest=38678, loot={128346}, currency=824, note="In the hut"}, -- warchest
+    [22004780] = {quest=38678, loot={128346, ns.rewards.Currency(824)}, note="In the hut"}, -- warchest
     [25305030] = {quest=38735, loot={128222}, note="Top of tower, use rope to get up"}, -- enchanted spyglass
-    [26506290] = {quest=38741, currency=823, note="Top of tower, use rope to get up"}, -- bleeding hollow chest
+    [26506290] = {quest=38741, loot={ns.rewards.Currency(823)}, note="Top of tower, use rope to get up"}, -- bleeding hollow chest
     [26804410] = {quest=38683, loot={{127709, toy=true}}}, -- Looted Bleeding Hollow Treasure
     [28702330] = {quest=38334, loot={{127668, toy=true}}}, -- Jewel of Hellfire
-    [28803460] = {quest=38863, currency=823}, -- Partially Mined Apexis Crystal
+    [28803460] = {quest=38863, loot={ns.rewards.Currency(823)}}, -- Partially Mined Apexis Crystal
     [30307190] = {quest=38629, loot={127389}}, -- polished crystal
     [31403110] = {quest=38732, loot={127413}}, -- Jeweled Arakkoa Effigy
     [32407040] = {quest=38426, loot={{127670, toy=true}}}, -- sargerei tome
@@ -27,9 +27,9 @@ ns.RegisterPoints(534, { -- TanaanJungle
     [34407830] = {quest=38762, loot={128346}}, -- captain booty 3
     [34703464] = {quest=38742, loot={{127669, toy=true}}, note="Bottom of the cave. Watch out for fall damage."}, -- Mad Chief
     [34707710] = {quest=38761, loot={128346}}, -- captain booty 2
-    [35907860] = {quest=38758, currency=824}, -- Ironbeard's Treasure
+    [35907860] = {quest=38758, loot={ns.rewards.Currency(824)}}, -- Ironbeard's Treasure
     [36304350] = {quest=37956, loot={127397}}, -- Strange Sapphire
-    [37004620] = {quest=38640, currency=824}, -- Pale Removal Equipment
+    [37004620] = {quest=38640, loot={ns.rewards.Currency(824)}}, -- Pale Removal Equipment
     [37808070] = {quest=38788, loot={127770}}, -- brazier
     [40607980] = {quest=38638, loot={127333}}, -- snake flute
     [40807550] = {quest=38639, loot={{127766, toy=true}}}, -- perfect blossom
@@ -46,19 +46,19 @@ ns.RegisterPoints(534, { -- TanaanJungle
     [49907960] = {quest=38703, loot={127354}}, -- Scouts Belongings
     [49908120] = {quest=38702, loot={127312}}, -- Discarded Helm
     [50806490] = {quest=38731, loot={127412}}, -- overgrown relic
-    [51603270] = {quest=39075, currency=823}, -- Fel-Tainted Apexis Formation
+    [51603270] = {quest=39075, loot={ns.rewards.Currency(823)}}, -- Fel-Tainted Apexis Formation
     [51702430] = {quest=38686, loot={127341}}, -- Rune Etched Femur
     [54806930] = {quest=38593, loot={127334}, note="Climb the vine bridge, spear in the side"}, -- spear
-    [54909070] = {quest=39470, currency=824}, -- Dead Mans Chest
+    [54909070] = {quest=39470, loot={ns.rewards.Currency(824)}}, -- Dead Mans Chest
     [56906510] = {quest=38591, loot={127408}}, -- broken selfie sack
     [58502500] = {quest=38679, loot={115804}}, -- Jewel of the Fallen Star
-    [61207580] = {quest=38601, currency=824}, -- Blackfang Isle Cache
+    [61207580] = {quest=38601, loot={ns.rewards.Currency(824)}}, -- Blackfang Isle Cache
     [62107070] = {quest=38602, loot={128217}}, -- Crystalized Fel Spike
     [62602050] = {quest=38682, loot={127401}}, -- Censer of Torment
     [63402810] = {quest=38740, loot={{128309, pet=1690}}}, -- Forgotten Shard of the Cipher
     [64704280] = {quest=38701, loot={127396}}, -- Loose Soil
     [65908500] = {quest=39469, loot={128386}}, -- Bejeweled Egg
-    [69705600] = {quest=38704, currency=824}, -- Forgotten Iron Horde Supplies
+    [69705600] = {quest=38704, loot={ns.rewards.Currency(824)}}, -- Forgotten Iron Horde Supplies
     [73604320] = {quest=38779, note="First floor of north-east tower"}, -- Stashed Bleeding Hollow Loot
 }, {
     achievement=10262,

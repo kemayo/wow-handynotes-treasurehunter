@@ -2,24 +2,24 @@ local myname, ns = ...
 
 ns.RegisterPoints(535, { -- Talador
     -- treasures
-    [33307670]={quest=34259, currency=824, label="Bonechewer Remnants"},
-    [35509660]={quest=34249, currency=824, label="Farmer's Bounty"},
+    [33307670]={quest=34259, loot={ns.rewards.Currency(824)}, label="Bonechewer Remnants"},
+    [35509660]={quest=34249, loot={ns.rewards.Currency(824)}, label="Farmer's Bounty"},
     [36509610]={quest=34182, loot={117567}, label="Aarko's Family Treasure"},
     [37607490]={quest=34148, loot={112371}, label="Bonechewer Spear", note="sticking out of Viperlash, cave entrance @ 36,75"},
-    [38201250]={quest=34258, currency=824, label="Light of the Sea"},
+    [38201250]={quest=34258, loot={ns.rewards.Currency(824)}, label="Light of the Sea"},
     [38408450]={quest=34257, loot={116119}, label="Treasure of Ango'rosh"},
     [39307770]={quest=35162, loot={112699}, label="Teroclaw Nest"},
     [39505520]={quest=34254, loot={117570}, label="Soulbinder's Reliquary"},
     [39807670]={quest=35162, loot={112699}, label="Teroclaw Nest"},
-    [40608950]={quest=34140, currency=824, faction="Alliance", label="Yuuri's Gift", note="You have to complete Nightmare in the Tomb first"},
+    [40608950]={quest=34140, loot={ns.rewards.Currency(824)}, faction="Alliance", label="Yuuri's Gift", note="You have to complete Nightmare in the Tomb first"},
     [47009170]={quest=34256, loot={116128}, label="Relic of Telmor"},
     [52502950]={quest=34235, loot={116132}, label="Luminous Shell"},
     [54002760]={quest=34290, loot={{116402, pet=1515}}, label="Ketya's Stash"},
     [54105630]={quest=35162, loot={112699}, label="Teroclaw Nest"},
-    [55206680]={quest=34253, loot={116118}, currency=824, label="Draenei Weapons"},
+    [55206680]={quest=34253, loot={116118, ns.rewards.Currency(824)}, label="Draenei Weapons"},
     [57402870]={quest=34238, loot={{116120, toy=true}}, label="Foreman's Lunchbox"},
     [58901200]={quest=33933, loot={{108743, toy=true}}, label="Deceptia's Smoldering Boots"},
-    [62003240]={quest=34236, loot={116131}, currency=824, label="Amethyl Crystal"},
+    [62003240]={quest=34236, loot={116131, ns.rewards.Currency(824)}, label="Amethyl Crystal"},
     [62404800]={quest=34252, loot={110506}, label="Barrel of Fish"},
     [64607920]={quest=34251, loot={117571}, label="Iron Box"},
     [64901330]={quest=34232, loot={116117}, label="Rook's Tacklebox"},
@@ -28,7 +28,7 @@ ns.RegisterPoints(535, { -- Talador
     [65908520]={quest=34276, label="Rusted Lockbox", note="Random green"},
     [66608690]={quest=34239, loot={{117569, toy=true}}, label="Curious Deathweb Egg"},
     [68785621]={quest=34101, loot={109192}, label="Lightbearer"},
-    [70100700]={quest=36937, currency=823, label="Burning Blade Cache"},
+    [70100700]={quest=36937, loot={ns.rewards.Currency(823)}, label="Burning Blade Cache"},
     [70803200]={quest=35162, loot={112699}, label="Teroclaw Nest"},
     [70903550]={quest=35162, loot={112699}, label="Teroclaw Nest"},
     [72403700]={quest=35162, loot={112699}, label="Teroclaw Nest"},
@@ -102,7 +102,7 @@ ns.RegisterPoints(535, { -- Talador
     [37802140]={criteria=26579, quest=37342, npc=88494, loot={119385}}, -- Legion Vanguard
     [38001460]={criteria=26580, quest=37343, npc=82922, loot={119435, 119371}}, -- Xothear the Destroyer
     [44003800]={criteria=26465, quest=37339, npc=87597, loot={119413}}, -- Bombardier Gu'gok
-    [46002740]={criteria=26470, quest=37337, npc=88071, loot={119350}, currency=823}, -- War Council: Strategist Ankor, Archmagus Tekar, Soulbinder Naylana
+    [46002740]={criteria=26470, quest=37337, npc=88071, loot={119350, ns.rewards.Currency(823)}}, -- War Council: Strategist Ankor, Archmagus Tekar, Soulbinder Naylana
     [46603520]={criteria=26469, quest=37338, npc=88043, loot={119378}}, -- Avatar of Socrethar
     [47603900]={criteria=26466, quest=37340, npc=83019, loot={119402}}, -- Gug'tol
     [48002500]={criteria=26467, quest=37312, npc=83008, loot={119403}}, -- Haakun the All-Consuming
