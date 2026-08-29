@@ -60,11 +60,11 @@ ns.RegisterPoints(535, { -- Talador
     [57207540]={quest=34134, loot={117563}, faction="Alliance", group="junk", note="Rescue 4 draenei trapped in spider webs, then Isaari's Cache will spawn here"},
     [61107170]={quest=34116, loot={117563}, faction="Horde", group="junk", note="Rescue 4 adventurers trapped in spider webs, then Norana's Cache will spawn here"},
     -- followers
-    [45303700]={quest=34465, follower=190, label="Mysterious Hat", note="collect all the Mysterious items across Draenor"}, -- Archmage Vargoth
-    [62755038]={quest=nil, follower=171, note="Complete the quests starting with Clear!"}, -- Pleasure-Bot 8000 (actually a different quest for alliance and horde)
-    [57405120]={quest=36519, faction="Alliance", follower=207, note="Complete her quest"}, -- Defender Illona
-    [58005300]={quest=36518, faction="Horde", follower=207, note="Complete her quest"}, -- Aeda Brightdawn
-    [56802600]={quest=36522, follower=208, note="Complete his quest. Find him again outside your garrison."}, -- Ahm
+    [45303700]=ns.follower{quest=34465, loot={ns.rewards.GarrisonFollower(190)}, label="Mysterious Hat", note="collect all the Mysterious items across Draenor"}, -- Archmage Vargoth
+    [62755038]=ns.follower{quest=nil, loot={ns.rewards.GarrisonFollower(171)}, note="Complete the quests starting with Clear!"}, -- Pleasure-Bot 8000 (actually a different quest for alliance and horde)
+    [57405120]=ns.follower{quest=36519, faction="Alliance", loot={ns.rewards.GarrisonFollower(207)}, note="Complete her quest"}, -- Defender Illona
+    [58005300]=ns.follower{quest=36518, faction="Horde", loot={ns.rewards.GarrisonFollower(207)}, note="Complete her quest"}, -- Aeda Brightdawn
+    [56802600]=ns.follower{quest=36522, loot={ns.rewards.GarrisonFollower(208)}, note="Complete his quest. Find him again outside your garrison."}, -- Ahm
 }, {
     minimap=true,
 })

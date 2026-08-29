@@ -35,9 +35,9 @@ ns.RegisterPoints(543, { -- Gorgrond
 ns.RegisterPoints(543, { -- Gorgrond
     [57006530]={quest=37249, loot={{118106, pet=1537}}, group="junk", label="Strange Spore", note="on mushrooms on the cliff"},
     -- followers
-    [39703990]={quest=34463, follower=190, label="Mysterious Ring", note="collect all the Mysterious items across Draenor"}, -- Archmage Vargoth
-    [44908690]={quest=36037, npc=83820, follower=193, note="He'll look hostile; fight the things that are attacking him"}, -- Tormmok
-    [42809090]={quest=34279, npc=78030, follower=189, note="Follow the path up and fight him"}, -- Blook
+    [39703990]=ns.follower{quest=34463, loot={ns.rewards.GarrisonFollower(190)}, label="Mysterious Ring", note="collect all the Mysterious items across Draenor"}, -- Archmage Vargoth
+    [44908690]=ns.follower{quest=36037, --[[npc=83820,]] loot={ns.rewards.GarrisonFollower(193)}, note="He'll look hostile; fight the things that are attacking him"}, -- Tormmok
+    [42809090]=ns.follower{quest=34279, --[[npc=78030,]] loot={ns.rewards.GarrisonFollower(189)}, note="Follow the path up and fight him"}, -- Blook
 })
 
 ns.RegisterPoints(597, { -- Blackrock Foundry

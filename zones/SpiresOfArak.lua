@@ -70,7 +70,7 @@ ns.RegisterPoints(542, { -- SpiresOfArak
 
 ns.RegisterPoints(542, { -- SpiresOfArak
     -- followers
-    [55306850]={quest=37168, follower=219, note="Follow the trail up the hill to 54.9,65.4, find him in the cave"}, -- Leorajh
+    [55306850]=ns.follower{quest=37168, loot={ns.rewards.GarrisonFollower(219)}, note="Follow the trail up the hill to 54.9,65.4, find him in the cave"}, -- Leorajh
 }, {
     minimap=true,
 })

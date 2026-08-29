@@ -86,9 +86,9 @@ ns.RegisterPoints(528, { -- Turgall's Den: Bladespite Throne
 
 ns.RegisterPoints(525, { -- FrostfireRidge
     -- followers
-    [39602800]={quest=34733, follower=32, note="Rescue Dagg from the other cage first, then find him outside your garrison"}, -- Dagg
-    [68001900]={quest=34464, follower=190, label="Mysterious Boots", note="collect all the Mysterious items across Draenor"}, -- Archmage Vargoth
-    [65906080]={quest=34733, follower=32, note="Rescue Dagg from the cage, then go to his other location"}, -- Dagg
+    [39602800]=ns.follower{quest=34733, loot={ns.rewards.GarrisonFollower(32)}, note="Rescue Dagg from the other cage first, then find him outside your garrison"}, -- Dagg
+    [68001900]=ns.follower{quest=34464, loot={ns.rewards.GarrisonFollower(190)}, label="Mysterious Boots", note="collect all the Mysterious items across Draenor"}, -- Archmage Vargoth
+    [65906080]=ns.follower{quest=34733, loot={ns.rewards.GarrisonFollower(32)}, note="Rescue Dagg from the cage, then go to his other location"}, -- Dagg
 })
 
 -- Rares

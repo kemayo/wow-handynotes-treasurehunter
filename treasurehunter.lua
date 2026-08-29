@@ -9,5 +9,9 @@ ns.defaultsOverride = {
     -- groupsHidden = {junk=true,},
 }
 
+ns.follower = ns.nodeMaker{
+    atlas="GreenCross", scale=1.5,
+}
+
 ns.groups["junk"] = "Junk"
 ns.groups["evershiftingmirror"] = "{item:129929}"

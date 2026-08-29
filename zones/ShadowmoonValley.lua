@@ -62,7 +62,7 @@ ns.RegisterPoints(540, { -- BloodthornCave
 ns.RegisterPoints(539, { -- ShadowmoonValleyDR
     [51803550]={ quest=33037, label="False-Bottomed Jar", note="Gold", group="junk", },
     -- followers
-    [42804040]={ quest=35614, follower=179, npc=74741, faction="Alliance", note="Do the crystal defense event here to get him", }, -- Artificer Romuul
+    [42804040]=ns.follower{ quest=35614, loot={ns.rewards.GarrisonFollower(179)}, --[[npc=74741,]] faction="Alliance", note="Do the crystal defense event here to get him", }, -- Artificer Romuul
 }, {
     minimap=true,
 })
