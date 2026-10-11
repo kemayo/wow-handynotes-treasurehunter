@@ -11,6 +11,7 @@
 ## X-Wago-ID: WqKQrEGx
 ## SavedVariables: HandyNotes_TreasureHunterDB
 ## RequiredDeps: HandyNotes
+## AllowLoadGameType: standard
 
 handler\handler.xml
 
