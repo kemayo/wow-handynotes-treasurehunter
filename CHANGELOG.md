@@ -1,5 +1,14 @@
 # Changelog
 
+## Changed in v50
+
+* Gorgrond: stop showing the long-removed Sunken Treasure
+* Bring in systems improvements from [my Midnight plugin](https://www.curseforge.com/wow/addons/handynotes-midnight-treasures), notably:
+    * Update Krowi_WorldMapButtons-1.4 to v11
+    * Performance improvements for points with routes
+    * Avoid some taint issues with points that have no loot
+    * Rares dropping mounts, toys or pets could show as less notable
+
 ## Changed in v49
 
 * Garrison follower treasures now use the standard reward display
